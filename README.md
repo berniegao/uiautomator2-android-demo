@@ -2,9 +2,11 @@
 
 > Demo project for Python UiAutomator2 running in Android APP, with the support of chaquopy
 
-一个简单的Demo，使用 [chaquo/chaquopy-console](https://github.com/chaquo/chaquopy-console) 项目作为模板，在Python代码中使用UiAutomator2框架连接本机进行自动化操作，并为其配置adb及其二进制依赖，使其可以在单个APP中独立运行，不再需要PC作为控制端。
+一个简单的Demo，使Python [openatx/uiautomator2](https://github.com/openatx/uiautomator2) 框架可以在安卓APP中运行，并通过ADB连接本机执行操作，不再需要PC作为控制端。
 
-本项目目前颇为粗糙，只是概念验证证明思路可行，实际场景需要重新编写APP，使用此模板并不合适。
+使用 [chaquo/chaquopy-console](https://github.com/chaquo/chaquopy-console) 项目作为模板，并为UiAutomator2配置adb二进制及其依赖库的运行环境。
+
+本项目仅作为概念验证，证明在 APP 中执行二进制 `adb` 并调试自身是完全可行的。实际场景建议重新编写APP，并参考此文的逻辑进行 `adb` 运行环境的配置，这样可以更灵活地实现所需要的业务逻辑和 APP 生命周期管理。
 
 使用的版本号：
 
