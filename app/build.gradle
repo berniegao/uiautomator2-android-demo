@@ -3,6 +3,12 @@ plugins {
     id 'com.chaquo.python'
 }
 
+chaquopy {
+    defaultConfig {
+        version = "3.11"        // Python runtime version
+    }
+}
+
 android {
     namespace 'com.chaquo.python.console'
     compileSdk = 35
@@ -15,7 +21,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         python {
             pip {
-                install "six"
+                install "uiautomator2"
             }
         }
         ndk {
