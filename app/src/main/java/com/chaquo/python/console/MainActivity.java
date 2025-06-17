@@ -25,13 +25,16 @@ public class MainActivity extends PythonConsoleActivity {
         public Task(Application app) {
             super(app);
 
-            // 为ADB二进制构造运行环境
-            File adbDir = new File(getApplication().getFilesDir(), "adb");    // 私有目录 /adb/
-            File adbExecutable = new File(adbDir, "adb");        // 私有目录下的adb二进制文件
+            // Construct runtime environment in private directory for ADB binaries
+            File adbDir = new File(getApplication().getFilesDir(), "adb");    // {PrivateDir}/adb/
+            File adbExecutable = new File(adbDir, "adb");                     // {PrivateDir}/adb/adb (Executable)
             extractADB(adbDir, adbExecutable);
 
-            // 运行UiAutomator2脚本
-            py.getModule("main").callAttr("load_android_configs", adbExecutable.getAbsolutePath(), adbDir.getAbsolutePath());
+            // Execute UiAutomator2 Python script
+            // Call: load_android_configs(app, adb_dir, ld_dir)
+            py.getModule("main")
+                    .callAttr("load_android_configs", getApplication(), adbExecutable.getAbsolutePath(), adbDir.getAbsolutePath());
+            // Call: main()
             py.getModule("main").callAttr("main");
         }
 
@@ -39,12 +42,12 @@ public class MainActivity extends PythonConsoleActivity {
             py.getModule("main").callAttr("main");
         }
 
-        // print到控制台
+        // Print to app console
         private void print(String text) {
             py.getModule("main").callAttr("print_to_console", text);
         }
 
-        // 为ADB创建符号链接
+        // Create symbolic links for ADB binaries
         private void extractADB(File adbDir, File adbExecutable){
             linkBinariesToDir(adbDir, Map.of(
                     "libz.so.1.3.1.so", "libz.so.1",
@@ -53,11 +56,12 @@ public class MainActivity extends PythonConsoleActivity {
             ));
         }
 
-        // 当前平台下对应架构的 libxxx.so 将会被链接到 {linkingDir}/libxxx.so，注意linkingDir必须在应用私有目录下！
-        // 如果fileNameMapping中有自定义名字映射，符号链接将创建为对应的设定好的文件名
+        // The libxxx.so for the architecture of the current platform will be linked to {linkingDir}/libxxx.so.
+        //       (Note that the linkingDir must be in the application's private directory!)
+        // If there is a custom name mapping in fileNameMapping, the symbolic link will be created to the corresponding file name.
         private void linkBinariesToDir(File linkingDir, Map<String, String> fileNameMapping) {
             if(linkingDir.exists())
-                return;     // 目录已存在
+                return;     // The directory already exists
             else
                 linkingDir.mkdirs();
 
@@ -75,7 +79,7 @@ public class MainActivity extends PythonConsoleActivity {
                     try {
                         Os.symlink(srcFile.getAbsolutePath(), linkFile.getAbsolutePath());
                     } catch (ErrnoException e) {
-                        print("创建符号链接失败: " + e.getMessage());
+                        print("Fail to create symbolic link: " + e.getMessage());
                     }
                 }
             }
