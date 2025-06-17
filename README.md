@@ -14,11 +14,11 @@
 
 ## Screenshots
 
-<img src="docs/1.jpg" style="zoom:50%;" />
+<img src="docs/1.jpg" width="300" />
 
 ![](docs/2.png)
 
-<img src="docs/3.jpg" style="zoom:50%;" />
+<img src="docs/3.jpg" width="300" />
 
 ## More Details
 
