@@ -22,4 +22,4 @@
 
 ## More Details
 
-See my blog: 
+详见博客：[安卓 APP 内嵌 UiAutomator2 自动化框架实践 - YQ's Toy Box](https://blog.openyq.top/posts/35685/)
