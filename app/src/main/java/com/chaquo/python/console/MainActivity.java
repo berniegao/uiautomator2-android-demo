@@ -41,7 +41,7 @@ public class MainActivity extends PythonConsoleActivity {
         }
 
         // Print to app console
-        private void print(String text) {
+        public void print(String text) {
             py.getModule("main").callAttr("print_to_console", text);
         }
 
@@ -59,15 +59,12 @@ public class MainActivity extends PythonConsoleActivity {
         // If there is a custom name mapping in fileNameMapping, the symbolic link will be created to the corresponding file name.
         private void linkBinariesToDir(File linkingDir, Map<String, String> fileNameMapping) {
             if(linkingDir.exists())
-                return;     // The directory already exists
-            else
-                linkingDir.mkdirs();
-
+                deleteDir(linkingDir);
+            linkingDir.mkdirs();
             File nativeLibsFolder = new File(getApplication().getApplicationInfo().nativeLibraryDir);
             File[] files = nativeLibsFolder.listFiles();
             if (files == null)
                 return;
-
             for (File srcFile : files) {
                 if (srcFile.isFile()) {
                     String destName = srcFile.getName();
@@ -81,6 +78,23 @@ public class MainActivity extends PythonConsoleActivity {
                     }
                 }
             }
+        }
+
+        public static boolean deleteDir(File f) {
+            if(f == null)
+                return true;
+            if (f.isDirectory()) {
+                String[] children = f.list();
+                if (children != null) {
+                    for (String child : children) {
+                        boolean success = deleteDir(new File(f, child));
+                        if (!success) {
+                            return false;
+                        }
+                    }
+                }
+            }
+            return f.delete();
         }
     }
 }
