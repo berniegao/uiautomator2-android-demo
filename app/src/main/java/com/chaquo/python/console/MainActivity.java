@@ -24,7 +24,9 @@ public class MainActivity extends PythonConsoleActivity {
     public static class Task extends PythonConsoleActivity.Task {
         public Task(Application app) {
             super(app);
+        }
 
+        @Override public void run() {
             // Construct runtime environment in private directory for ADB binaries
             File adbDir = new File(getApplication().getFilesDir(), "adb");    // {PrivateDir}/adb/
             File adbExecutable = new File(adbDir, "adb");                     // {PrivateDir}/adb/adb (Executable)
@@ -35,10 +37,6 @@ public class MainActivity extends PythonConsoleActivity {
             py.getModule("main")
                     .callAttr("load_android_configs", getApplication(), adbExecutable.getAbsolutePath(), adbDir.getAbsolutePath());
             // Call: main()
-            py.getModule("main").callAttr("main");
-        }
-
-        @Override public void run() {
             py.getModule("main").callAttr("main");
         }
 
