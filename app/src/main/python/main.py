@@ -4,11 +4,15 @@ import sys
 import uiautomator2
 
 context = None
+adb_address = ""
 
 # Load configs from Android layor
-def load_android_configs(app_context, adb_path: str, ld_dir: str):
+def load_android_configs(app_context, adb_path: str, ld_dir: str, adb_port: int):
     global context
     context = app_context
+    global adb_address
+    adb_address = f"127.0.0.1:{adb_port}"
+
     os.environ["ADBUTILS_ADB_PATH"] = adb_path
     print("ADB Path set to:", adb_path)
     os.environ['LD_LIBRARY_PATH'] = ld_dir
@@ -20,7 +24,8 @@ def print_to_console(text: str, end="\n"):
 
 
 def main():
-    d = uiautomator2.connect()
+    print(f"Connecting to {adb_address}...")
+    d = uiautomator2.connect(adb_address)
     print("Device has been connected. Device Info:")
     print(d.info)
 

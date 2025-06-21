@@ -1,13 +1,14 @@
 package com.chaquo.python.console;
 
 import android.app.*;
+import android.os.Build;
 import android.system.ErrnoException;
-import android.system.Os;
 
 import com.chaquo.python.utils.*;
 
 import java.io.File;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends PythonConsoleActivity {
 
@@ -47,9 +48,18 @@ public class MainActivity extends PythonConsoleActivity {
                 print("Fail to create symbolic link: " + e.getMessage());
             }
 
+            // Enable wireless ADB and get ADB port number
+            int adbPort = 0;
+            try {
+                adbPort = new AdbActivator().enableAndDiscoverAdbPort(getApplication()).get();
+                print("Wireless ADB service found. ADB port: " + adbPort);
+            } catch (SecurityException | ExecutionException | InterruptedException e) {
+                print("Fail to attach to wireless ADB: " + e.getMessage());
+            }
+
             // Execute UiAutomator2 Python script
             // Call: load_android_configs(app, adb_dir, ld_dir)
-            py.getModule("main").callAttr("load_android_configs", getApplication(), adbExecutable.getAbsolutePath(), adbDir.getAbsolutePath());
+            py.getModule("main").callAttr("load_android_configs", getApplication(), adbExecutable.getAbsolutePath(), adbDir.getAbsolutePath(), adbPort);
             // Call: main()
             py.getModule("main").callAttr("main");
         }
