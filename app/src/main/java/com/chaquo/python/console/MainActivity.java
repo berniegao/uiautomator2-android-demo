@@ -1,10 +1,10 @@
 package com.chaquo.python.console;
 
 import android.app.*;
-import android.os.Build;
 import android.system.ErrnoException;
 
 import com.chaquo.python.PyObject;
+import com.chaquo.python.adb_utils.AdbActivator;
 import com.chaquo.python.utils.*;
 
 import java.io.File;

@@ -1,4 +1,4 @@
-package com.chaquo.python.utils;
+package com.chaquo.python.adb_utils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,7 +15,6 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.NetworkInterface;
 import java.net.ServerSocket;
-import java.util.Collections;
 import java.util.Enumeration;
 
 @RequiresApi(api = Build.VERSION_CODES.R)
