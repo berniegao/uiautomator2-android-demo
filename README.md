@@ -17,15 +17,12 @@
 ## Overall Ideas
 
 - 使用`Chaquopy`执行Python编写的`uiautomator2`脚本
-
 - `uiautomator2`底层需要依赖ADB二进制程序进行工作，因此要在APP中配置二进制程序的运行环境
-
 - `uiautomator2`需要通过无线调试连接到本机，因此在APP中实现：
-
   - 自动启动无线调试
   - 配对设备
   - 通过mDNS服务发现本机无线调试的工作端口并传递给`uiautomator2`
-
+  
   使APP无需人工干预，自动使用ADB连接到本机。
 
 ## Screenshots
