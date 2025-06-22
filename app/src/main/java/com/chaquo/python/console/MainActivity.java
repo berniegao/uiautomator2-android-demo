@@ -51,10 +51,12 @@ public class MainActivity extends PythonConsoleActivity {
                 print("Fail to create symbolic link: " + e.getMessage());
             }
 
-            // 2. Enable wireless ADB and get ADB port number
+            // 2. Enable wireless ADB service and find out ADB port number
+            AdbActivator adbActivator = new AdbActivator(getApplication(), adbDir.getAbsolutePath(), adbExecutable.getAbsolutePath());
             int adbPort = 0;
             try {
-                adbPort = new AdbActivator().enableAndDiscoverAdbPort(getApplication()).get();
+                // adbActivator.pairDevice(41809, "156677");
+                adbPort = adbActivator.enableAndDiscoverAdbPort().get();
                 print("Wireless ADB service found. ADB port: " + adbPort);
             } catch (SecurityException | ExecutionException | InterruptedException | UnsupportedOperationException e) {
                 print("Fail to attach to wireless ADB: " + e.getMessage());
