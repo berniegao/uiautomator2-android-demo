@@ -16,10 +16,11 @@ def load_android_configs(app_context, adb_path: str, ld_dir: str, adb_port: int)
     global adb_address
     adb_address = f"127.0.0.1:{adb_port}"
 
+    print("")
     os.environ["ADBUTILS_ADB_PATH"] = adb_path
-    print("ADB Path set to:", adb_path)
+    print(f"ADB Path set to: {adb_path}")
     os.environ['LD_LIBRARY_PATH'] = ld_dir
-    print("LD_LIBRARY_PATH set to:", ld_dir)
+    print(f"LD_LIBRARY_PATH set to:{ld_dir}\n")
 
 # Print something to python console
 def print_to_console(text: str, end="\n"):
@@ -27,10 +28,9 @@ def print_to_console(text: str, end="\n"):
 
 
 def main():
-    print(f"Connecting to {adb_address}...")
+    print(f"Connecting to {adb_address}...\n")
     d = uiautomator2.connect(adb_address)
-    print("Device has been connected. Device Info:")
-    print(d.info)
+    print(f"Device has been connected. Device Info: {d.info}\n")
 
     # Launch Bilibili APP
     d.app_start('tv.danmaku.bili', stop=True)
