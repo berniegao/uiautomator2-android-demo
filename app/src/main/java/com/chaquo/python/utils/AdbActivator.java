@@ -42,6 +42,8 @@ public class AdbActivator
         executor.submit(() -> {
             final CountDownLatch latch = new CountDownLatch(1);
             AdbMdns adbMdns = new AdbMdns(context, AdbMdns.TLS_CONNECT, port -> {
+                if (port <= 0)
+                    throw new SecurityException("Fail to enable wireless ADB");
                 result.complete(port);
                 latch.countDown();
             });
@@ -62,7 +64,7 @@ public class AdbActivator
     }
 
     // Returns adb port number
-    public CompletableFuture<Integer> enableAndDiscoverAdbPort(final Context context) throws SecurityException
+    public CompletableFuture<Integer> enableAndDiscoverAdbPort(final Context context) throws SecurityException, UnsupportedOperationException
     {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             enableWirelessAdb(context);

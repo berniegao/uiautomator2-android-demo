@@ -4,6 +4,7 @@ import android.app.*;
 import android.os.Build;
 import android.system.ErrnoException;
 
+import com.chaquo.python.PyObject;
 import com.chaquo.python.utils.*;
 
 import java.io.File;
@@ -33,8 +34,10 @@ public class MainActivity extends PythonConsoleActivity {
             py.getModule("main").callAttr("print_to_console", text);
         }
 
-        @Override public void run() {
-            // Construct runtime environment in private directory for ADB binaries
+        // This run() will be called in a background thread, no need to worry about ANR here
+        @Override public void run()
+        {
+            // 1. Construct runtime environment in private directory for ADB binaries
             File adbDir = new File(getApplication().getFilesDir(), "adb");    // {PrivateDir}/adb/
             File adbExecutable = new File(adbDir, "adb");                     // {PrivateDir}/adb/adb (Executable)
             // Create symbolic links for ADB binaries
@@ -48,20 +51,25 @@ public class MainActivity extends PythonConsoleActivity {
                 print("Fail to create symbolic link: " + e.getMessage());
             }
 
-            // Enable wireless ADB and get ADB port number
+            // 2. Enable wireless ADB and get ADB port number
             int adbPort = 0;
             try {
                 adbPort = new AdbActivator().enableAndDiscoverAdbPort(getApplication()).get();
                 print("Wireless ADB service found. ADB port: " + adbPort);
-            } catch (SecurityException | ExecutionException | InterruptedException e) {
+            } catch (SecurityException | ExecutionException | InterruptedException | UnsupportedOperationException e) {
                 print("Fail to attach to wireless ADB: " + e.getMessage());
+                return;
             }
 
-            // Execute UiAutomator2 Python script
-            // Call: load_android_configs(app, adb_dir, ld_dir)
-            py.getModule("main").callAttr("load_android_configs", getApplication(), adbExecutable.getAbsolutePath(), adbDir.getAbsolutePath(), adbPort);
-            // Call: main()
-            py.getModule("main").callAttr("main");
+            // 3. Execute UiAutomator2 Python script
+            try (PyObject mainModule = py.getModule("main")) {
+                // Call: load_android_configs(app, adb_dir, ld_dir, adb_port)
+                mainModule.callAttr("load_android_configs", getApplication(), adbExecutable.getAbsolutePath(), adbDir.getAbsolutePath(), adbPort);
+                // Call: main()
+                mainModule.callAttr("main");
+            } catch (Exception e) {
+                print("Error executing Python script: " + e.getMessage());
+            }
         }
     }
 }
