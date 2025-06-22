@@ -1,7 +1,10 @@
 import os
 import sys
+import warnings
 
 import uiautomator2
+
+warnings.filterwarnings("ignore", category=ResourceWarning)
 
 context = None
 adb_address = ""
