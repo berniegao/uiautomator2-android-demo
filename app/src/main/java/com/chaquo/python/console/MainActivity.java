@@ -55,6 +55,7 @@ public class MainActivity extends PythonConsoleActivity {
             AdbActivator adbActivator = new AdbActivator(getApplication(), adbDir.getAbsolutePath(), adbExecutable.getAbsolutePath());
             int adbPort = 0;
             try {
+                // ======== If launch the app for the first time, uncomment the line below to finish the wireless debug pairing process ========
                 // adbActivator.pairDevice(41809, "156677");
                 adbPort = adbActivator.enableAndDiscoverAdbPort().get();
                 print("Wireless ADB service found. ADB port: " + adbPort);
