@@ -12,6 +12,7 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 /.idea/studiobot.xml
+.idea/
 .DS_Store
 /build
 /captures
