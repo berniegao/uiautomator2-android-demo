@@ -58,6 +58,7 @@ public class MainActivity extends PythonConsoleActivity {
             int adbPort = 0;
             try {
                 adbActivator.pairDevice(40007, "924621");
+                // After pairing, ADB is auto connected to the device.
                 adbPort = adbActivator.enableAndDiscoverAdbPort().get();
                 print("Wireless ADB service found. ADB port: " + adbPort);
             } catch (SecurityException | ExecutionException | InterruptedException | UnsupportedOperationException e) {
