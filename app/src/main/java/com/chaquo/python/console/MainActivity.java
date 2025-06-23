@@ -55,8 +55,12 @@ public class MainActivity extends PythonConsoleActivity {
             AdbActivator adbActivator = new AdbActivator(getApplication(), adbDir.getAbsolutePath(), adbExecutable.getAbsolutePath());
             int adbPort = 0;
             try {
-                // ======== If launch the app for the first time, uncomment the line below to finish the wireless debug pairing process ========
-                // adbActivator.pairDevice(41809, "156677");
+                // ======== If launch the app for the first time, uncomment the lines below to finish the wireless debug pairing process ========
+                if(adbActivator.pairDevice(43479, "166209")) {
+                    print("Success to grant WRITE_SECURE_SETTINGS for " + getApplication().getPackageName()
+                            + "\nRelaunch this app to make WRITE_SECURE_SETTINGS permission take effect.");
+                    return;
+                }
                 adbPort = adbActivator.enableAndDiscoverAdbPort().get();
                 print("Wireless ADB service found. ADB port: " + adbPort);
             } catch (SecurityException | ExecutionException | InterruptedException | UnsupportedOperationException e) {

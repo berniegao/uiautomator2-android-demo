@@ -34,7 +34,17 @@ public class AdbActivator
     // Pair device
     public boolean pairDevice(int pairingPort, String pairingCode) throws SecurityException
     {
-        return adbProcess.pairDevice(pairingPort, pairingCode);
+        if(!adbProcess.pairDevice(pairingPort, pairingCode))
+            throw new SecurityException("Fail to pair the device");
+
+        // After pairing, grant the WRITE_SECURE_SETTINGS permission for current app
+        try {
+            String appPackageName = context.getPackageName();
+            adbProcess.grantPermission(appPackageName, "WRITE_SECURE_SETTINGS");
+        } catch (AdbProcessManager.ExecException e) {
+            throw new SecurityException(e.getMessage() + "\nStderr: " + e.getStderr());
+        }
+        return true;
     }
 
     // Enable wireless ADB through secure settings

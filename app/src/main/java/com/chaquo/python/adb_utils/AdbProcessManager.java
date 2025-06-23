@@ -134,6 +134,21 @@ public class AdbProcessManager {
         return exitCode == 0;
     }
 
+    // Execute adb shell
+    public ExecResult shell(List<String> params) {
+        List<String> cmd = new ArrayList<>(params);
+        cmd.add(0, "shell");
+        return execute(cmd);
+    }
+
+    // Grant permission for app
+    public boolean grantPermission(String appPackageName, String permissionName) throws ExecException{
+        ExecResult result = shell(List.of("grant", appPackageName, permissionName));
+        if(result.getExitCode() != 0)
+            throw new ExecException("Fail to grant permission " + permissionName + " for " + appPackageName, result);
+        return true;
+    }
+
     public static class ExecResult {
         private final int exitCode;
         private final String stdout;
@@ -148,6 +163,19 @@ public class AdbProcessManager {
         public int getExitCode() { return exitCode; }
         public String getStdout() { return stdout; }
         public String getStderr() { return stderr; }
+    }
+
+    public static class ExecException extends Exception {
+        private final ExecResult execResult;
+
+        public ExecException(String message, ExecResult execResult) {
+            super(message); // 通常message可以简要描述
+            this.execResult = execResult;
+        }
+
+        public int getExitCode() { return execResult.getExitCode(); }
+        public String getStdout() { return execResult.getStdout(); }
+        public String getStderr() { return execResult.getStderr(); }
     }
 
     private String readStream(InputStream is) throws IOException {
