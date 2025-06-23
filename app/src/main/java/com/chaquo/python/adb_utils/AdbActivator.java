@@ -11,6 +11,9 @@ import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
+import com.elvishew.xlog.Logger;
+import com.elvishew.xlog.XLog;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -22,6 +25,7 @@ import java.util.concurrent.TimeUnit;
 
 public class AdbActivator
 {
+    private final Logger logger = XLog.tag(this.getClass().getName()).build();
     private Context context = null;
     private AdbProcessManager adbProcess = null;
 
@@ -34,33 +38,64 @@ public class AdbActivator
     // Pair device
     public boolean pairDevice(int pairingPort, String pairingCode) throws SecurityException
     {
-        if(!adbProcess.pairDevice(pairingPort, pairingCode))
+        if (hasWriteSecureSettingsPermission()) {
+            // This permission is only granted after pairing once.
+            // So if this perm is granted, we can confirm that the pairing had been finished.
+            logger.d("Device had been paired. Nothing to do here.");
+            return true;
+        }
+
+        logger.d("Pairing device at port " + pairingPort + " with code " + pairingCode + "...");
+        if(!adbProcess.pairDevice(pairingPort, pairingCode)) {
+            logger.e("Fail to pair the device!");
             throw new SecurityException("Fail to pair the device");
+        }
+        logger.d("Pairing succeeded.");
 
         // After pairing, grant the WRITE_SECURE_SETTINGS permission for current app
+        grantWriteSecureSettingsPermission();
+        return true;
+    }
+
+    // Grant WRITE_SECURE_SETTINGS permission
+    private void grantWriteSecureSettingsPermission() throws SecurityException {
+        String appPackageName = context.getPackageName();
+        logger.d("Granting permission WRITE_SECURE_SETTINGS for current app " + appPackageName);
         try {
-            String appPackageName = context.getPackageName();
-            adbProcess.grantPermission(appPackageName, "WRITE_SECURE_SETTINGS");
+            adbProcess.grantPermission(appPackageName, "android.permission.WRITE_SECURE_SETTINGS");
         } catch (AdbProcessManager.ExecException e) {
+            logger.e(e.getMessage() + "\nStderr: " + e.getStderr());
             throw new SecurityException(e.getMessage() + "\nStderr: " + e.getStderr());
         }
-        return true;
+        logger.d("Permission granted.");
+    }
+
+    // Check WRITE_SECURE_SETTINGS permission
+    private boolean hasWriteSecureSettingsPermission() throws SecurityException {
+        return context.checkSelfPermission(WRITE_SECURE_SETTINGS) == PackageManager.PERMISSION_GRANTED;
     }
 
     // Enable wireless ADB through secure settings
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     protected void enableWirelessAdb() throws SecurityException
     {
-        if(context.checkSelfPermission(WRITE_SECURE_SETTINGS) != PackageManager.PERMISSION_GRANTED)
+        if(!hasWriteSecureSettingsPermission()) {
+            logger.e("No permission for WRITE_SECURE_SETTINGS");
             throw new SecurityException("No permission for WRITE_SECURE_SETTINGS");
+        }
+        logger.d("WRITE_SECURE_SETTINGS permission granted.");
 
+        logger.d("Enabling wireless ADB...");
         final ContentResolver cr = context.getContentResolver();
         Settings.Global.putInt(cr, "adb_wifi_enabled", 1);
         Settings.Global.putInt(cr, Settings.Global.ADB_ENABLED, 1);
         Settings.Global.putLong(cr, "adb_allowed_connection_time", 0L);
 
-        if(Settings.Global.getInt(cr, "adb_wifi_enabled", 0) != 1)
+        if(Settings.Global.getInt(cr, "adb_wifi_enabled", 0) != 1) {
+            logger.e("Fail to enable wireless ADB");
             throw new SecurityException("Fail to enable wireless ADB");
+        }
+        logger.d("Wireless ADB enabled.");
     }
 
     // Discover ADB service on current device with mDNS
@@ -71,16 +106,21 @@ public class AdbActivator
         CompletableFuture<Integer> result = new CompletableFuture<>();
         ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.submit(() -> {
+            logger.d("Finding wireless ADB service...");
             final CountDownLatch latch = new CountDownLatch(1);
             AdbMdns adbMdns = new AdbMdns(context, AdbMdns.TLS_CONNECT, port -> {
-                if (port <= 0)
-                    throw new SecurityException("Fail to enable wireless ADB");
+                if (port <= 0) {
+                    logger.e("Fail to find wireless ADB service.");
+                    throw new SecurityException("Fail to find wireless ADB service");
+                }
+                logger.d("Wireless ADB service found at port " + port);
                 result.complete(port);
                 latch.countDown();
             });
 
             try {
                 if (Settings.Global.getInt(cr, "adb_wifi_enabled", 0) == 1) {
+                    logger.d("Wireless ADB mDNS finding...");
                     adbMdns.start();
                     latch.await(3, TimeUnit.SECONDS);
                     adbMdns.stop();

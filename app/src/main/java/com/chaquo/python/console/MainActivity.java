@@ -6,13 +6,14 @@ import android.system.ErrnoException;
 import com.chaquo.python.PyObject;
 import com.chaquo.python.adb_utils.AdbActivator;
 import com.chaquo.python.utils.*;
+import com.elvishew.xlog.LogLevel;
+import com.elvishew.xlog.XLog;
 
 import java.io.File;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends PythonConsoleActivity {
-
     // On API level 31 and higher, pressing Back in a launcher activity sends it to the back by
     // default, but that would make it difficult to restart the activity.
     @Override public void onBackPressed() {
@@ -27,6 +28,7 @@ public class MainActivity extends PythonConsoleActivity {
     {
         public Task(Application app) {
             super(app);
+            XLog.init(LogLevel.ALL);
         }
 
         // Print to app console
@@ -51,16 +53,11 @@ public class MainActivity extends PythonConsoleActivity {
                 print("Fail to create symbolic link: " + e.getMessage());
             }
 
-            // 2. Enable wireless ADB service and find out ADB port number
+            // 2. Pair device, enable wireless ADB service and find out ADB port number
             AdbActivator adbActivator = new AdbActivator(getApplication(), adbDir.getAbsolutePath(), adbExecutable.getAbsolutePath());
             int adbPort = 0;
             try {
-                // ======== If launch the app for the first time, uncomment the lines below to finish the wireless debug pairing process ========
-                if(adbActivator.pairDevice(43479, "166209")) {
-                    print("Success to grant WRITE_SECURE_SETTINGS for " + getApplication().getPackageName()
-                            + "\nRelaunch this app to make WRITE_SECURE_SETTINGS permission take effect.");
-                    return;
-                }
+                adbActivator.pairDevice(40007, "924621");
                 adbPort = adbActivator.enableAndDiscoverAdbPort().get();
                 print("Wireless ADB service found. ADB port: " + adbPort);
             } catch (SecurityException | ExecutionException | InterruptedException | UnsupportedOperationException e) {
