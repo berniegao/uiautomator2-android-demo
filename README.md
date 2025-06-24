@@ -4,7 +4,11 @@
 
 一个简单的Demo，**将 Python [uiautomator2](https://github.com/openatx/uiautomator2) 自动化脚本打包为APK**，无需PC控制端即可独立运行，并通过ADB连接本机执行操作，全程自动连接无需人工操作，设备不需要root权限。
 
-使用 [chaquo/chaquopy-console](https://github.com/chaquo/chaquopy-console) 项目作为模板，并为UiAutomator2配置adb二进制及其依赖库的运行环境，自动实现ADB无线调试设备配对、启动无线调试、服务发现并连接的全流程，整个过程完全自动执行。
+使用 [chaquo/chaquopy-console](https://github.com/chaquo/chaquopy-console) 项目作为模板，并
+
+- 为UiAutomator2配置adb二进制及其依赖库的运行环境
+- 自动实现ADB无线调试设备配对、启动无线调试、服务发现并连接的全流程，整个过程完全自动执行
+- 实际执行 uiautomator2 自动化脚本，并且可以正常工作
 
 本项目仅作为概念验证，证明在 APP 中执行二进制 `adb` 并调试自身完全可行。实际场景建议从头编写APP，并参考此文的逻辑进行 `adb` 运行环境的配置和ADB服务的自动连接，这样可以更灵活地实现所需要的业务逻辑和 APP 生命周期管理。
 
