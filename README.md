@@ -2,11 +2,11 @@
 
 > Demo project for Python UiAutomator2 running in Android APP, with the support of chaquopy
 
-一个简单的Demo，使Python [openatx/uiautomator2](https://github.com/openatx/uiautomator2) 框架可以在安卓APP中运行，并通过ADB连接本机执行操作，不再需要PC作为控制端。
+一个简单的Demo，**将 Python [uiautomator2](https://github.com/openatx/uiautomator2) 自动化脚本打包为APK**，无需PC控制端即可独立运行，并通过ADB连接本机执行操作，全程自动连接无需人工操作，设备不需要root权限。
 
-使用 [chaquo/chaquopy-console](https://github.com/chaquo/chaquopy-console) 项目作为模板，并为UiAutomator2配置adb二进制及其依赖库的运行环境。
+使用 [chaquo/chaquopy-console](https://github.com/chaquo/chaquopy-console) 项目作为模板，并为UiAutomator2配置adb二进制及其依赖库的运行环境，自动实现ADB无线调试设备配对、启动无线调试、服务发现并连接的全流程，整个过程完全自动执行。
 
-本项目仅作为概念验证，证明在 APP 中执行二进制 `adb` 并调试自身是完全可行的。实际场景建议从头编写APP，并参考此文的逻辑进行 `adb` 运行环境的配置和ADB服务的自动连接，这样可以更灵活地实现所需要的业务逻辑和 APP 生命周期管理。
+本项目仅作为概念验证，证明在 APP 中执行二进制 `adb` 并调试自身完全可行。实际场景建议从头编写APP，并参考此文的逻辑进行 `adb` 运行环境的配置和ADB服务的自动连接，这样可以更灵活地实现所需要的业务逻辑和 APP 生命周期管理。
 
 使用的版本号：
 
@@ -35,4 +35,4 @@
 
 ## More Details
 
-详见博客：[安卓 APP 内嵌 UiAutomator2 自动化框架实践 - YQ's Toy Box](https://blog.openyq.top/posts/35685/)
+详见博客：[Python UiAutomator2 框架打包 APK 实战 - YQ's Toy Box](https://blog.openyq.top/posts/35685/)
