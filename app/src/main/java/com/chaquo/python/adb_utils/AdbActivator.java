@@ -2,8 +2,10 @@ package com.chaquo.python.adb_utils;
 
 import static android.Manifest.permission.WRITE_SECURE_SETTINGS;
 
+import android.content.ActivityNotFoundException;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.provider.Settings;
@@ -142,6 +144,18 @@ public class AdbActivator
             return discoverAdbService();
         } else {
             throw new UnsupportedOperationException("Android version is too old");
+        }
+    }
+
+    // Enter Wireless ADB settings page
+    public void enterWirelessAdbSettings() {
+        Intent intent = new Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.putExtra(":settings:fragment_args_key", "toggle_adb_wireless");
+        try {
+            context.startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            // Do nothing
         }
     }
 }
