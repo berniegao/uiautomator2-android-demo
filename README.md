@@ -31,14 +31,11 @@
 ## Overall Ideas
 
 - 使用`Chaquopy`执行Python编写的`uiautomator2`脚本
-
 - `uiautomator2`底层需要依赖ADB二进制程序进行工作，因此要在APP中配置二进制程序的运行环境，并将adb二进制打包到APK中
-
 - `uiautomator2`需要通过无线调试连接到本机，因此需要在APP中实现如下自动化流程：
   - 自动启动无线调试
   - 配对设备
   - 通过mDNS服务发现本机无线调试的工作端口并传递给`uiautomator2`
-  
 - APP调整无线调试相关设置需要系统内部权限`WRITE_SECURE_SETTINGS`，因此在第一次设备配对完成后，APP自动使用`adb shell pm grant`为自身授予相关权限
 
 ## Screenshots
