@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "android-automation": {
+      "command": "python",
+      "args": [
+        "/path/to/uiautomator2-android-demo/mcp_server/android_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/path/to/uiautomator2-android-demo/mcp_server",
+        "ANDROID_HOME": "/opt/homebrew/share/android-commandlinetools"
+      }
+    }
+  }
+} 

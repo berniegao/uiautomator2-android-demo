@@ -3,6 +3,8 @@ import sys
 import warnings
 
 import uiautomator2
+import asyncio
+from reverse_mcp_bridge import start_reverse_mcp_from_env
 
 warnings.filterwarnings("ignore", category=ResourceWarning)
 
@@ -32,12 +34,47 @@ def main():
     d = uiautomator2.connect(adb_address)
     print(f"Device has been connected. Device Info: {d.info}\n")
 
-    # Launch Bilibili APP
-    d.app_start('tv.danmaku.bili', stop=True)
-    d.wait_activity('.MainActivityV2')
-    d(text="我的").wait(timeout=10)       # Wait for the splash AD to finish
-    d(text="我的").click()
+    # Start reverse MCP bridge in background
+    print("Starting MCP bridge connection...")
+    
+    # Use 127.0.0.1 for adb reverse
+    gateway_url = "http://127.0.0.1:8765"
+    print(f"Using adb reverse gateway URL: {gateway_url}")
+    
+    os.environ.setdefault("MCP_GATEWAY_WS_URL", gateway_url)
+    os.environ.setdefault("MCP_GATEWAY_TOKEN", "devtoken")
+    
+    print(f"MCP Gateway URL: {os.environ['MCP_GATEWAY_WS_URL']}")
+    print(f"MCP Gateway Token: {os.environ['MCP_GATEWAY_TOKEN']}")
+    
+    # Start MCP bridge in background
+    start_reverse_mcp_from_env(adb_address)
+    print("MCP bridge started in background thread")
 
-    # Show the fans count
-    fans_count = d(resourceId="tv.danmaku.bili:id/fans_count").get_text()
-    print(f"Fans count of my bilibili account: {fans_count}")
+    try:
+        # Launch Settings APP
+        print("Starting Settings APP...")
+        d.app_start('com.android.settings', stop=True)
+        print("Settings APP started successfully")
+        
+        # Wait for main activity
+        print("Waiting for main activity...")
+        d.wait_activity('.Settings', timeout=30)
+        print("Settings activity loaded")
+        
+        # Wait a bit for the app to fully load
+        import time
+        time.sleep(3)
+        
+        # Show current page info
+        print("Current page info:", d.app_current())
+        
+        # Keep the app running for MCP bridge to work
+        print("Keeping app running for MCP bridge...")
+        while True:
+            time.sleep(10)
+            print("App still running, MCP bridge active...")
+            
+    except Exception as e:
+        print(f"Error in main execution: {e}")
+        print("Current app info:", d.app_current())

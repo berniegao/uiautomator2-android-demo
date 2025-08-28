@@ -56,18 +56,50 @@ public class MainActivity extends PythonConsoleActivity {
             // 2. Pair device, enable wireless ADB service and find out ADB port number
             AdbActivator adbActivator = new AdbActivator(getApplication(), adbDir.getAbsolutePath(), adbExecutable.getAbsolutePath());
             int adbPort = 0;
-            try {
-                // Need to do wireless adb device pairing when the app is installed for the first time
-                // Once after the successful pairing, this line will be automatically skipped.
-                // ***** Enter the pairing port and pairing code here *****
-                adbActivator.pairDevice(40007, "924621");
+            
+            // Check if running in emulator/Genymotion
+            boolean isEmulator = android.os.Build.FINGERPRINT.startsWith("generic") ||
+                                android.os.Build.FINGERPRINT.startsWith("unknown") ||
+                                android.os.Build.MODEL.contains("google_sdk") ||
+                                android.os.Build.MODEL.contains("Emulator") ||
+                                android.os.Build.MODEL.contains("Android SDK built for x86") ||
+                                android.os.Build.MANUFACTURER.contains("Genymotion") ||
+                                android.os.Build.MANUFACTURER.contains("Genymobile") ||
+                                android.os.Build.FINGERPRINT.contains("motion_phone") ||
+                                (android.os.Build.BRAND.startsWith("generic") && android.os.Build.DEVICE.startsWith("generic")) ||
+                                "google_sdk".equals(android.os.Build.PRODUCT) ||
+                                android.os.Build.MODEL.contains("sdk_gphone") ||
+                                android.os.Build.DEVICE.contains("emu") ||
+                                android.os.Build.PRODUCT.contains("sdk_gphone");
+            
+            // Debug: Print device info
+            print("Device info - FINGERPRINT: " + android.os.Build.FINGERPRINT);
+            print("Device info - MODEL: " + android.os.Build.MODEL);
+            print("Device info - MANUFACTURER: " + android.os.Build.MANUFACTURER);
+            print("Device info - BRAND: " + android.os.Build.BRAND);
+            print("Device info - DEVICE: " + android.os.Build.DEVICE);
+            print("Device info - PRODUCT: " + android.os.Build.PRODUCT);
+            print("Is emulator detected: " + isEmulator);
+            
+            if (isEmulator) {
+                print("Running in emulator environment, using direct ADB connection...");
+                // For emulator, use direct connection without wireless ADB pairing
+                adbPort = 5555; // Default ADB port for emulator
+                print("Using default emulator ADB port: " + adbPort);
+            } else {
+                try {
+                    // Need to do wireless adb device pairing when the app is installed for the first time
+                    // Once after the successful pairing, this line will be automatically skipped.
+                    // ***** Enter the pairing port and pairing code here *****
+                    adbActivator.pairDevice(6555, "924621");
 
-                // After pairing, ADB is auto connected to the device.
-                adbPort = adbActivator.enableAndDiscoverAdbPort().get();
-                print("Wireless ADB service found. ADB port: " + adbPort);
-            } catch (SecurityException | ExecutionException | InterruptedException | UnsupportedOperationException e) {
-                print("Fail to attach to wireless ADB: " + e.getMessage());
-                return;
+                    // After pairing, ADB is auto connected to the device.
+                    adbPort = adbActivator.enableAndDiscoverAdbPort().get();
+                    print("Wireless ADB service found. ADB port: " + adbPort);
+                } catch (SecurityException | ExecutionException | InterruptedException | UnsupportedOperationException e) {
+                    print("Fail to attach to wireless ADB: " + e.getMessage());
+                    return;
+                }
             }
 
             // 3. Execute UiAutomator2 Python script

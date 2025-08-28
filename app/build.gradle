@@ -22,6 +22,10 @@ android {
         python {
             pip {
                 install "uiautomator2"
+                // Reverse-connection WS bridge deps (pure Python only)
+                install "websockets==12.0"
+                install "python-socketio"
+                install "eventlet"
             }
         }
         ndk {
