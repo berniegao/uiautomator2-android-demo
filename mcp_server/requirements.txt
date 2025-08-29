@@ -2,4 +2,5 @@ fastmcp>=0.1.0
 uiautomator2>=3.0.0
 opencv-python>=4.8.0
 pillow>=10.0.0
-requests>=2.31.0 
+requests>=2.31.0
+python-socketio>=5.0.0 

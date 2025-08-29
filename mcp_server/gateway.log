@@ -1,48 +1,406 @@
-(65145) wsgi starting up on http://0.0.0.0:8765
-(65145) accepted ('127.0.0.1', 52401)
-127.0.0.1 - - [29/Aug/2025 13:04:58] "GET /socket.io/?transport=polling&EIO=4&t=1756443898.6525595 HTTP/1.1" 200 300 0.000522
-(65145) accepted ('127.0.0.1', 52402)
-(65145) accepted ('127.0.0.1', 52410)
-127.0.0.1 - - [29/Aug/2025 13:04:59] "GET /socket.io/?transport=polling&EIO=4&t=1756443900.2892969 HTTP/1.1" 200 300 0.000414
-(65145) accepted ('127.0.0.1', 52411)
-127.0.0.1 - - [29/Aug/2025 13:04:59] "GET /socket.io/?transport=polling&EIO=4&t=1756443900.288716 HTTP/1.1" 200 300 0.000112
-(65145) accepted ('127.0.0.1', 52412)
-(65145) accepted ('127.0.0.1', 52413)
-(65145) accepted ('127.0.0.1', 52419)
-127.0.0.1 - - [29/Aug/2025 13:05:01] "GET /socket.io/?transport=polling&EIO=4&t=1756443901.7668586 HTTP/1.1" 200 300 0.000165
-(65145) accepted ('127.0.0.1', 52420)
-(65145) accepted ('127.0.0.1', 52448)
-127.0.0.1 - - [29/Aug/2025 13:05:17] "GET /socket.io/?transport=polling&EIO=4&t=1756443918.459175 HTTP/1.1" 200 300 0.001027
-(65145) accepted ('127.0.0.1', 52449)
-Gateway: Starting main function...
-Gateway: Creating Gateway instance...
-Gateway: Initializing Socket.IO server...
-Gateway: Registering Socket.IO event handlers...
-Gateway: Socket.IO event handlers registered successfully
-Gateway: Gateway instance created successfully
-Gateway: Device connections: 0
-Gateway: Socket.IO server: <socketio.server.Server object at 0x1006af140>
-Gateway: WSGI app: <socketio.middleware.WSGIApp object at 0x102351460>
-Gateway: Starting Socket.IO server on 0.0.0.0:8765
-Gateway: This will listen on ALL network interfaces
-Gateway listening on http://0.0.0.0:8765  (TOKEN=devtoken)
-Gateway: Server should be accessible from external networks
-Gateway: Starting eventlet server on 0.0.0.0:8765
-Gateway: Server started successfully
-Gateway: New connection from y99ZKdNtQOsob-U0AAAB
-Gateway: Environment: {'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.version': (1, 0), 'wsgi.multithread': True, 'wsgi.multiprocess': False, 'wsgi.run_once': False, 'wsgi.url_scheme': 'http', 'REQUEST_METHOD': 'GET', 'SCRIPT_NAME': '', 'RAW_PATH_INFO': '/socket.io/', 'PATH_INFO': '/socket.io/', 'QUERY_STRING': 'transport=polling&EIO=4&t=1756443898.6525595', 'CONTENT_TYPE': 'text/plain', 'SERVER_PROTOCOL': 'HTTP/1.0', 'SERVER_NAME': '127.0.0.1', 'SERVER_PORT': '8765', 'REMOTE_ADDR': '127.0.0.1', 'REMOTE_PORT': '52401', 'GATEWAY_INTERFACE': 'CGI/1.1', 'headers_raw': (('Host', '127.0.0.1:8765'), ('User-Agent', 'python-requests/2.32.5'), ('Accept-Encoding', 'gzip, deflate'), ('Accept', '*/*'), ('Connection', 'keep-alive'), ('Authorization', 'Bearer devtoken'), ('X-Device-Id', '1ba091c5-4478-494a-9e1b-95b2b6d50b46')), 'HTTP_HOST': '127.0.0.1:8765', 'HTTP_USER_AGENT': 'python-requests/2.32.5', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate', 'HTTP_ACCEPT': '*/*', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_AUTHORIZATION': 'Bearer devtoken', 'HTTP_X_DEVICE_ID': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'wsgi.input': <eventlet.wsgi.Input object at 0x1025d3710>, 'eventlet.input': <eventlet.wsgi.Input object at 0x1025d3710>, 'eventlet.posthooks': [], 'eventlet.set_idle': <function HttpProtocol.get_environ.<locals>.set_idle at 0x102650f40>}
-Gateway: Device connected: 8570a40e-1836-4d4a-8e3a-8cf6d07e62b6 (sid: y99ZKdNtQOsob-U0AAAB)
-Gateway: Total connections: 1
-Gateway: New connection from Fs5Owy2uEF_rVsOSAAAE
-Gateway: Environment: {'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.version': (1, 0), 'wsgi.multithread': True, 'wsgi.multiprocess': False, 'wsgi.run_once': False, 'wsgi.url_scheme': 'http', 'REQUEST_METHOD': 'GET', 'SCRIPT_NAME': '', 'RAW_PATH_INFO': '/socket.io/', 'PATH_INFO': '/socket.io/', 'QUERY_STRING': 'transport=polling&EIO=4&t=1756443900.2892969', 'CONTENT_TYPE': 'text/plain', 'SERVER_PROTOCOL': 'HTTP/1.0', 'SERVER_NAME': '127.0.0.1', 'SERVER_PORT': '8765', 'REMOTE_ADDR': '127.0.0.1', 'REMOTE_PORT': '52410', 'GATEWAY_INTERFACE': 'CGI/1.1', 'headers_raw': (('Host', '127.0.0.1:8765'), ('User-Agent', 'python-requests/2.32.5'), ('Accept-Encoding', 'gzip, deflate'), ('Accept', '*/*'), ('Connection', 'keep-alive'), ('Authorization', 'Bearer devtoken'), ('X-Device-Id', '1ba091c5-4478-494a-9e1b-95b2b6d50b46')), 'HTTP_HOST': '127.0.0.1:8765', 'HTTP_USER_AGENT': 'python-requests/2.32.5', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate', 'HTTP_ACCEPT': '*/*', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_AUTHORIZATION': 'Bearer devtoken', 'HTTP_X_DEVICE_ID': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'wsgi.input': <eventlet.wsgi.Input object at 0x10263aae0>, 'eventlet.input': <eventlet.wsgi.Input object at 0x10263aae0>, 'eventlet.posthooks': [], 'eventlet.set_idle': <function HttpProtocol.get_environ.<locals>.set_idle at 0x102651800>}
-Gateway: Device connected: 5064cc33-625b-4a3c-aec9-0516e7ca00ca (sid: Fs5Owy2uEF_rVsOSAAAE)
-Gateway: Total connections: 2
-Gateway: New connection from OpSOd0GiP0UeJ_wQAAAF
-Gateway: Environment: {'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.version': (1, 0), 'wsgi.multithread': True, 'wsgi.multiprocess': False, 'wsgi.run_once': False, 'wsgi.url_scheme': 'http', 'REQUEST_METHOD': 'GET', 'SCRIPT_NAME': '', 'RAW_PATH_INFO': '/socket.io/', 'PATH_INFO': '/socket.io/', 'QUERY_STRING': 'transport=polling&EIO=4&t=1756443900.288716', 'CONTENT_TYPE': 'text/plain', 'SERVER_PROTOCOL': 'HTTP/1.0', 'SERVER_NAME': '127.0.0.1', 'SERVER_PORT': '8765', 'REMOTE_ADDR': '127.0.0.1', 'REMOTE_PORT': '52411', 'GATEWAY_INTERFACE': 'CGI/1.1', 'headers_raw': (('Host', '127.0.0.1:8765'), ('User-Agent', 'python-requests/2.32.5'), ('Accept-Encoding', 'gzip, deflate'), ('Accept', '*/*'), ('Connection', 'keep-alive'), ('Authorization', 'Bearer devtoken'), ('X-Device-Id', '1ba091c5-4478-494a-9e1b-95b2b6d50b46')), 'HTTP_HOST': '127.0.0.1:8765', 'HTTP_USER_AGENT': 'python-requests/2.32.5', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate', 'HTTP_ACCEPT': '*/*', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_AUTHORIZATION': 'Bearer devtoken', 'HTTP_X_DEVICE_ID': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'wsgi.input': <eventlet.wsgi.Input object at 0x10263aff0>, 'eventlet.input': <eventlet.wsgi.Input object at 0x10263aff0>, 'eventlet.posthooks': [], 'eventlet.set_idle': <function HttpProtocol.get_environ.<locals>.set_idle at 0x1026518a0>}
-Gateway: Device connected: c54df406-fcef-49d1-bde1-7bbcc16b9fec (sid: OpSOd0GiP0UeJ_wQAAAF)
-Gateway: Total connections: 3
-Gateway: New connection from ZkgVTPGYSXOg0G0jAAAH
-Gateway: Environment: {'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.version': (1, 0), 'wsgi.multithread': True, 'wsgi.multiprocess': False, 'wsgi.run_once': False, 'wsgi.url_scheme': 'http', 'REQUEST_METHOD': 'GET', 'SCRIPT_NAME': '', 'RAW_PATH_INFO': '/socket.io/', 'PATH_INFO': '/socket.io/', 'QUERY_STRING': 'transport=polling&EIO=4&t=1756443901.7668586', 'CONTENT_TYPE': 'text/plain', 'SERVER_PROTOCOL': 'HTTP/1.0', 'SERVER_NAME': '127.0.0.1', 'SERVER_PORT': '8765', 'REMOTE_ADDR': '127.0.0.1', 'REMOTE_PORT': '52419', 'GATEWAY_INTERFACE': 'CGI/1.1', 'headers_raw': (('Host', '127.0.0.1:8765'), ('User-Agent', 'python-requests/2.32.5'), ('Accept-Encoding', 'gzip, deflate'), ('Accept', '*/*'), ('Connection', 'keep-alive'), ('Authorization', 'Bearer devtoken'), ('X-Device-Id', '1ba091c5-4478-494a-9e1b-95b2b6d50b46')), 'HTTP_HOST': '127.0.0.1:8765', 'HTTP_USER_AGENT': 'python-requests/2.32.5', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate', 'HTTP_ACCEPT': '*/*', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_AUTHORIZATION': 'Bearer devtoken', 'HTTP_X_DEVICE_ID': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'wsgi.input': <eventlet.wsgi.Input object at 0x102675070>, 'eventlet.input': <eventlet.wsgi.Input object at 0x102675070>, 'eventlet.posthooks': [], 'eventlet.set_idle': <function HttpProtocol.get_environ.<locals>.set_idle at 0x102652200>}
-Gateway: Device connected: d15f95bf-e6d7-4ef2-a7d4-e72bbc0e0542 (sid: ZkgVTPGYSXOg0G0jAAAH)
-Gateway: Total connections: 4
-Gateway: New connection from ooQ_xM2YoG7xmtv-AAAJ
+2025-08-29 13:28:18,746 - INFO - Gateway: Starting main function...
+2025-08-29 13:28:18,747 - INFO - Gateway: Creating Gateway instance...
+2025-08-29 13:28:18,747 - INFO - Gateway: Initializing Socket.IO server...
+2025-08-29 13:28:18,752 - INFO - Gateway: Registering Socket.IO event handlers...
+2025-08-29 13:28:18,752 - INFO - Gateway: Socket.IO event handlers registered successfully
+2025-08-29 13:28:18,752 - INFO - Gateway: Gateway instance created successfully
+2025-08-29 13:28:18,752 - INFO - Gateway: Device connections: 0
+2025-08-29 13:28:18,752 - INFO - Gateway: Client connections: 0
+2025-08-29 13:28:18,752 - INFO - Gateway: Total connections: 0
+2025-08-29 13:28:18,752 - INFO - Gateway: Socket.IO server: <socketio.server.Server object at 0x104fee330>
+2025-08-29 13:28:18,752 - INFO - Gateway: WSGI app: <socketio.middleware.WSGIApp object at 0x104f46750>
+2025-08-29 13:28:18,752 - INFO - Gateway: Starting Socket.IO server on 0.0.0.0:8765
+2025-08-29 13:28:18,753 - INFO - Gateway: This will listen on ALL network interfaces
+2025-08-29 13:28:18,753 - INFO - Gateway listening on http://0.0.0.0:8765  (TOKEN=devtoken)
+2025-08-29 13:28:18,753 - INFO - Gateway: Server should be accessible from external networks
+2025-08-29 13:28:18,753 - INFO - Gateway: Starting eventlet server on 0.0.0.0:8765
+2025-08-29 13:28:18,753 - INFO - Gateway: Server started successfully
+(72075) wsgi starting up on http://0.0.0.0:8765
+(72075) accepted ('127.0.0.1', 55902)
+127.0.0.1 - - [29/Aug/2025 13:28:18] "GET /socket.io/?transport=polling&EIO=4&t=1756445299.362968 HTTP/1.1" 200 300 0.000428
+(72075) accepted ('127.0.0.1', 55903)
+2025-08-29 13:28:18,786 - INFO - Gateway: New connection from M-yNGLLMGzLV9YbLAAAB
+2025-08-29 13:28:18,786 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 13:28:18,786 - INFO - Gateway: Total connections: 0
+(72075) accepted ('127.0.0.1', 55904)
+127.0.0.1 - - [29/Aug/2025 13:28:19] "GET /socket.io/?transport=polling&EIO=4&t=1756445299.8883612 HTTP/1.1" 200 300 0.000201
+(72075) accepted ('127.0.0.1', 55905)
+2025-08-29 13:28:19,295 - INFO - Gateway: New connection from 8v3Fs7GWdJSJqL0JAAAD
+2025-08-29 13:28:19,295 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 13:28:19,295 - INFO - Gateway: Total connections: 0
+(72075) accepted ('127.0.0.1', 55906)
+127.0.0.1 - - [29/Aug/2025 13:28:19] "GET /socket.io/?transport=polling&EIO=4&t=1756445299.972551 HTTP/1.1" 200 300 0.000175
+(72075) accepted ('127.0.0.1', 55907)
+2025-08-29 13:28:19,468 - INFO - Gateway: New connection from wDHNTnFetE00XVy4AAAF
+2025-08-29 13:28:19,468 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 13:28:19,468 - INFO - Gateway: Total connections: 0
+(72075) accepted ('127.0.0.1', 55908)
+127.0.0.1 - - [29/Aug/2025 13:28:19] "GET /socket.io/?transport=polling&EIO=4&t=1756445300.145463 HTTP/1.1" 200 300 0.000162
+(72075) accepted ('127.0.0.1', 55909)
+2025-08-29 13:28:19,652 - INFO - Gateway: New connection from UqCb2ALAMAspM_j2AAAH
+2025-08-29 13:28:19,652 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 13:28:19,652 - INFO - Gateway: Total connections: 0
+(72075) accepted ('127.0.0.1', 55915)
+127.0.0.1 - - [29/Aug/2025 13:28:20] "GET /socket.io/?transport=polling&EIO=4&t=1756445300.8839762 HTTP/1.1" 200 300 0.000151
+(72075) accepted ('127.0.0.1', 55916)
+2025-08-29 13:28:20,291 - INFO - Gateway: New connection from Fgc_e6ZJ7MQf6oJwAAAJ
+2025-08-29 13:28:20,291 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 13:28:20,291 - INFO - Gateway: Total connections: 0
+(72075) accepted ('127.0.0.1', 55918)
+127.0.0.1 - - [29/Aug/2025 13:28:21] "GET /socket.io/?transport=polling&EIO=4&t=1756445302.1121252 HTTP/1.1" 200 300 0.000169
+(72075) accepted ('127.0.0.1', 55919)
+2025-08-29 13:28:21,572 - INFO - Gateway: New connection from eelIxOrtOnSDyA4OAAAL
+2025-08-29 13:28:21,573 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 13:28:21,573 - INFO - Gateway: Total connections: 0
+2025-08-29 13:28:21,624 - INFO - Gateway: Received message from eelIxOrtOnSDyA4OAAAL: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 13:28:21,624 - INFO - Gateway: Device connection established: 2191fcc3-598c-4cb2-a2fa-2b62c8ca1bcf (sid: eelIxOrtOnSDyA4OAAAL)
+2025-08-29 13:28:21,624 - INFO - Gateway: Total connections: 1
+2025-08-29 13:28:21,624 - INFO - Gateway: Devices: 1, Clients: 0
+2025-08-29 13:28:21,624 - INFO - Gateway: hello from eelIxOrtOnSDyA4OAAAL: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+(72075) accepted ('127.0.0.1', 55923)
+127.0.0.1 - - [29/Aug/2025 13:28:23] "GET /socket.io/?transport=polling&EIO=4&t=1756445304.0386083 HTTP/1.1" 200 300 0.000146
+(72075) accepted ('127.0.0.1', 55924)
+2025-08-29 13:28:23,452 - INFO - Gateway: New connection from kaveNMpheMNt6MavAAAN
+2025-08-29 13:28:23,452 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 13:28:23,452 - INFO - Gateway: Total connections: 1
+2025-08-29 13:28:23,521 - INFO - Gateway: Received message from eelIxOrtOnSDyA4OAAAL: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 13:28:23,521 - INFO - Gateway: hello from eelIxOrtOnSDyA4OAAAL: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+(72075) accepted ('127.0.0.1', 55925)
+127.0.0.1 - - [29/Aug/2025 13:28:23] "GET /socket.io/?transport=polling&EIO=4&t=1756445304.1769476 HTTP/1.1" 200 300 0.000139
+(72075) accepted ('127.0.0.1', 55926)
+2025-08-29 13:28:23,593 - INFO - Gateway: New connection from t1AskkXuDc4zW4LYAAAP
+2025-08-29 13:28:23,593 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 13:28:23,593 - INFO - Gateway: Total connections: 1
+2025-08-29 13:28:23,609 - INFO - Gateway: Received message from eelIxOrtOnSDyA4OAAAL: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 13:28:23,609 - INFO - Gateway: hello from eelIxOrtOnSDyA4OAAAL: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+(72075) accepted ('127.0.0.1', 55933)
+127.0.0.1 - - [29/Aug/2025 13:28:26] "GET /socket.io/?transport=polling&EIO=4&t=1756445306.650762 HTTP/1.1" 200 300 0.000387
+(72075) accepted ('127.0.0.1', 55934)
+2025-08-29 13:28:26,661 - INFO - Gateway: New connection from cnDsquzMI1-OXJqyAAAR
+2025-08-29 13:28:26,661 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 13:28:26,661 - INFO - Gateway: Total connections: 1
+2025-08-29 13:28:28,669 - INFO - Gateway: Received message from cnDsquzMI1-OXJqyAAAR: {'type': 'rpc.call', 'id': 'start-app-001', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-29 13:28:28,670 - INFO - Gateway: Client connection established: e35f47ef-e2c6-4410-ac54-e69c57a74034 (sid: cnDsquzMI1-OXJqyAAAR)
+2025-08-29 13:28:28,670 - INFO - Gateway: Total connections: 2
+2025-08-29 13:28:28,670 - INFO - Gateway: Devices: 1, Clients: 1
+2025-08-29 13:28:28,670 - INFO - Gateway: RPC call from cnDsquzMI1-OXJqyAAAR: {'type': 'rpc.call', 'id': 'start-app-001', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-29 13:28:28,670 - INFO - Gateway: Forwarding RPC call start-app-001: start_app
+2025-08-29 13:28:28,670 - INFO - Gateway: Forwarding RPC call to device eelIxOrtOnSDyA4OAAAL
+2025-08-29 13:28:30,856 - INFO - Gateway: Received message from eelIxOrtOnSDyA4OAAAL: {'type': 'rpc.result', 'id': 'start-app-001', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-29 13:28:30,856 - INFO - Gateway: RPC result from eelIxOrtOnSDyA4OAAAL: {'type': 'rpc.result', 'id': 'start-app-001', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-29 13:28:31,673 - INFO - Gateway: Client disconnected: cnDsquzMI1-OXJqyAAAR
+2025-08-29 13:28:31,674 - INFO - Gateway: Client disconnected: e35f47ef-e2c6-4410-ac54-e69c57a74034
+2025-08-29 13:28:31,674 - INFO - Gateway: Remaining connections: 1
+2025-08-29 13:28:31,674 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 13:28:31] "GET /socket.io/?transport=websocket&EIO=4&sid=0oAP-byAerqAZ2g0AAAQ&t=1756445306.658195 HTTP/1.1" 200 0 5.015908
+(72075) accepted ('127.0.0.1', 56082)
+127.0.0.1 - - [29/Aug/2025 13:29:09] "GET /socket.io/?transport=polling&EIO=4&t=1756445349.291216 HTTP/1.1" 200 300 0.000328
+(72075) accepted ('127.0.0.1', 56083)
+2025-08-29 13:29:09,299 - INFO - Gateway: New connection from G0vc_LLyvfhVPSCSAAAT
+2025-08-29 13:29:09,301 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 13:29:09,301 - INFO - Gateway: Total connections: 1
+2025-08-29 13:29:11,307 - INFO - Gateway: Received message from G0vc_LLyvfhVPSCSAAAT: {'type': 'rpc.call', 'id': 'start-app-001', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-29 13:29:11,307 - INFO - Gateway: Client connection established: 8963604c-4b4f-4196-8023-c0d3a16d359d (sid: G0vc_LLyvfhVPSCSAAAT)
+2025-08-29 13:29:11,307 - INFO - Gateway: Total connections: 2
+2025-08-29 13:29:11,308 - INFO - Gateway: Devices: 1, Clients: 1
+2025-08-29 13:29:11,308 - INFO - Gateway: RPC call from G0vc_LLyvfhVPSCSAAAT: {'type': 'rpc.call', 'id': 'start-app-001', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-29 13:29:11,308 - INFO - Gateway: Forwarding RPC call start-app-001: start_app
+2025-08-29 13:29:11,308 - INFO - Gateway: Forwarding RPC call to device eelIxOrtOnSDyA4OAAAL
+2025-08-29 13:29:13,016 - INFO - Gateway: Received message from eelIxOrtOnSDyA4OAAAL: {'type': 'rpc.result', 'id': 'start-app-001', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-29 13:29:13,016 - INFO - Gateway: RPC result from eelIxOrtOnSDyA4OAAAL: {'type': 'rpc.result', 'id': 'start-app-001', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-29 13:29:14,312 - INFO - Gateway: Client disconnected: G0vc_LLyvfhVPSCSAAAT
+2025-08-29 13:29:14,313 - INFO - Gateway: Client disconnected: 8963604c-4b4f-4196-8023-c0d3a16d359d
+2025-08-29 13:29:14,313 - INFO - Gateway: Remaining connections: 1
+2025-08-29 13:29:14,313 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 13:29:14] "GET /socket.io/?transport=websocket&EIO=4&sid=6IO-js4SeJilYxGjAAAS&t=1756445349.297141 HTTP/1.1" 200 0 5.016399
+2025-08-29 13:30:44,314 - INFO - Gateway: Client disconnected: 8v3Fs7GWdJSJqL0JAAAD
+2025-08-29 13:30:44,317 - INFO - Gateway: Remaining connections: 1
+2025-08-29 13:30:44,317 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 13:30:44] "GET /socket.io/?transport=websocket&EIO=4&sid=HuP5Z0EXtuojajryAAAC&t=1756445299.892163 HTTP/1.1" 200 0 145.024509
+2025-08-29 13:30:44,428 - INFO - Gateway: Client disconnected: wDHNTnFetE00XVy4AAAF
+2025-08-29 13:30:44,429 - INFO - Gateway: Remaining connections: 1
+2025-08-29 13:30:44,429 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 13:30:44] "GET /socket.io/?transport=websocket&EIO=4&sid=TRczYKbxKY95u5AhAAAE&t=1756445300.02257 HTTP/1.1" 200 0 144.986761
+2025-08-29 13:30:44,588 - INFO - Gateway: Client disconnected: UqCb2ALAMAspM_j2AAAH
+2025-08-29 13:30:44,588 - INFO - Gateway: Remaining connections: 1
+2025-08-29 13:30:44,588 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 13:30:44] "GET /socket.io/?transport=websocket&EIO=4&sid=NxozjaMH3h8CwL91AAAG&t=1756445300.1811495 HTTP/1.1" 200 0 144.998730
+2025-08-29 13:30:45,310 - INFO - Gateway: Client disconnected: Fgc_e6ZJ7MQf6oJwAAAJ
+2025-08-29 13:30:45,311 - INFO - Gateway: Remaining connections: 1
+2025-08-29 13:30:45,311 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 13:30:45] "GET /socket.io/?transport=websocket&EIO=4&sid=EwH71LDBHkSBgzdfAAAI&t=1756445300.887283 HTTP/1.1" 200 0 145.023169
+2025-08-29 13:30:46,714 - INFO - Gateway: Client disconnected: eelIxOrtOnSDyA4OAAAL
+2025-08-29 13:30:46,715 - INFO - Gateway: Device disconnected: 2191fcc3-598c-4cb2-a2fa-2b62c8ca1bcf
+2025-08-29 13:30:46,715 - INFO - Gateway: Remaining connections: 0
+2025-08-29 13:30:46,715 - INFO - Gateway: Devices: 0, Clients: 0
+127.0.0.1 - - [29/Aug/2025 13:30:46] "GET /socket.io/?transport=websocket&EIO=4&sid=jK1ZLfHAInaV2JC8AAAK&t=1756445302.1686985 HTTP/1.1" 200 0 145.145422
+2025-08-29 13:30:48,463 - INFO - Gateway: Client disconnected: kaveNMpheMNt6MavAAAN
+2025-08-29 13:30:48,463 - INFO - Gateway: Remaining connections: 0
+2025-08-29 13:30:48,464 - INFO - Gateway: Devices: 0, Clients: 0
+127.0.0.1 - - [29/Aug/2025 13:30:48] "GET /socket.io/?transport=websocket&EIO=4&sid=2ubLqxsyP0_XJ2HtAAAM&t=1756445304.044297 HTTP/1.1" 200 0 145.016207
+2025-08-29 13:30:48,613 - INFO - Gateway: Client disconnected: t1AskkXuDc4zW4LYAAAP
+2025-08-29 13:30:48,613 - INFO - Gateway: Remaining connections: 0
+2025-08-29 13:30:48,614 - INFO - Gateway: Devices: 0, Clients: 0
+127.0.0.1 - - [29/Aug/2025 13:30:48] "GET /socket.io/?transport=websocket&EIO=4&sid=Z-iZG19_TKaf3-yQAAAO&t=1756445304.190731 HTTP/1.1" 200 0 145.022608
+2025-08-29 13:31:08,844 - INFO - Gateway: Client disconnected: M-yNGLLMGzLV9YbLAAAB
+2025-08-29 13:31:08,844 - INFO - Gateway: Remaining connections: 0
+2025-08-29 13:31:08,844 - INFO - Gateway: Devices: 0, Clients: 0
+127.0.0.1 - - [29/Aug/2025 13:31:08] "GET /socket.io/?transport=websocket&EIO=4&sid=ZdgmUTsmaaefPZlmAAAA&t=1756445299.375311 HTTP/1.1" 200 0 170.066352
+127.0.0.1 - - [29/Aug/2025 15:04:33] "GET /socket.io/?transport=polling&EIO=4&t=1756451073.722495 HTTP/1.1" 200 300 0.003000
+127.0.0.1 - - [29/Aug/2025 15:04:33] "GET /socket.io/?transport=polling&EIO=4&t=1756451073.860268 HTTP/1.1" 200 300 0.000151
+127.0.0.1 - - [29/Aug/2025 15:04:33] "GET /socket.io/?transport=polling&EIO=4&t=1756451073.77607 HTTP/1.1" 200 300 0.000067
+(72075) accepted ('127.0.0.1', 49747)
+(72075) accepted ('127.0.0.1', 49748)
+(72075) accepted ('127.0.0.1', 49749)
+2025-08-29 15:04:33,300 - INFO - Gateway: New connection from UI3xaAIi1s8W3qp5AAAX
+2025-08-29 15:04:33,301 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:04:33,301 - INFO - Gateway: Total connections: 0
+2025-08-29 15:04:33,302 - INFO - Gateway: New connection from dvKucYE14zC8ZSRdAAAY
+2025-08-29 15:04:33,302 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:04:33,302 - INFO - Gateway: Total connections: 0
+2025-08-29 15:04:33,310 - INFO - Gateway: Received message from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:33,311 - INFO - Gateway: Device connection established: 0d4b2dee-b9d9-407a-a538-985e15ffb293 (sid: UI3xaAIi1s8W3qp5AAAX)
+2025-08-29 15:04:33,311 - INFO - Gateway: Total connections: 1
+2025-08-29 15:04:33,311 - INFO - Gateway: Devices: 1, Clients: 0
+2025-08-29 15:04:33,311 - INFO - Gateway: hello from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:33,312 - INFO - Gateway: Received message from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:33,312 - INFO - Gateway: hello from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+127.0.0.1 - - [29/Aug/2025 15:04:33] "GET /socket.io/?transport=polling&EIO=4&t=1756451073.9934597 HTTP/1.1" 200 300 0.000425
+(72075) accepted ('127.0.0.1', 49750)
+2025-08-29 15:04:33,385 - INFO - Gateway: New connection from odADpBCNkl8Fn9pSAAAa
+2025-08-29 15:04:33,385 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:04:33,385 - INFO - Gateway: Total connections: 1
+2025-08-29 15:04:33,419 - INFO - Gateway: Received message from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:33,419 - INFO - Gateway: hello from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+127.0.0.1 - - [29/Aug/2025 15:04:33] "GET /socket.io/?transport=polling&EIO=4&t=1756451074.0904963 HTTP/1.1" 200 300 0.000395
+(72075) accepted ('127.0.0.1', 49751)
+2025-08-29 15:04:33,444 - INFO - Gateway: New connection from XMtsmAvHKqGcjmV0AAAc
+2025-08-29 15:04:33,444 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:04:33,445 - INFO - Gateway: Total connections: 1
+2025-08-29 15:04:33,455 - INFO - Gateway: Received message from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:33,456 - INFO - Gateway: hello from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+127.0.0.1 - - [29/Aug/2025 15:04:33] "GET /socket.io/?transport=polling&EIO=4&t=1756451074.2499626 HTTP/1.1" 200 300 0.000269
+(72075) accepted ('127.0.0.1', 49752)
+2025-08-29 15:04:33,590 - INFO - Gateway: New connection from 9-Sq5XVH-7V_U7ceAAAe
+2025-08-29 15:04:33,590 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:04:33,590 - INFO - Gateway: Total connections: 1
+127.0.0.1 - - [29/Aug/2025 15:04:33] "GET /socket.io/?transport=polling&EIO=4&t=1756451074.2887666 HTTP/1.1" 200 300 0.000292
+(72075) accepted ('127.0.0.1', 49753)
+2025-08-29 15:04:33,629 - INFO - Gateway: New connection from 7bEt7IhNeme1J6YDAAAg
+2025-08-29 15:04:33,630 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:04:33,630 - INFO - Gateway: Total connections: 1
+2025-08-29 15:04:33,634 - INFO - Gateway: Received message from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:33,634 - INFO - Gateway: hello from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:33,639 - INFO - Gateway: Received message from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:33,639 - INFO - Gateway: hello from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+127.0.0.1 - - [29/Aug/2025 15:04:33] "GET /socket.io/?transport=polling&EIO=4&t=1756451074.4771547 HTTP/1.1" 200 300 0.000266
+(72075) accepted ('127.0.0.1', 49755)
+2025-08-29 15:04:33,817 - INFO - Gateway: New connection from k5F3XJ8YncCGBocZAAAi
+2025-08-29 15:04:33,817 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:04:33,817 - INFO - Gateway: Total connections: 1
+2025-08-29 15:04:33,826 - INFO - Gateway: Received message from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:33,826 - INFO - Gateway: hello from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+127.0.0.1 - - [29/Aug/2025 15:04:34] "GET /socket.io/?transport=websocket&EIO=4&sid=5I2EDomYkpm3oz-mAAAV&t=1756451073.935471 HTTP/1.1" 200 0 1.024237
+127.0.0.1 - - [29/Aug/2025 15:04:36] "GET /socket.io/?transport=polling&EIO=4&t=1756451076.770056 HTTP/1.1" 200 300 0.000460
+(72075) accepted ('127.0.0.1', 49759)
+2025-08-29 15:04:36,113 - INFO - Gateway: New connection from uPk3z59N-DH06IkUAAAk
+2025-08-29 15:04:36,114 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:04:36,114 - INFO - Gateway: Total connections: 1
+2025-08-29 15:04:36,114 - INFO - Gateway: Client disconnected: uPk3z59N-DH06IkUAAAk
+2025-08-29 15:04:36,114 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:04:36,114 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:04:36] "GET /socket.io/?transport=websocket&EIO=4&sid=kEvLp9SUx_4-qXSQAAAj&t=1756451076.7736945 HTTP/1.1" 200 0 0.005143
+2025-08-29 15:04:36,128 - INFO - Gateway: Received message from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:36,128 - INFO - Gateway: hello from UI3xaAIi1s8W3qp5AAAX: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:36,267 - INFO - Gateway: Client disconnected: UI3xaAIi1s8W3qp5AAAX
+2025-08-29 15:04:36,267 - INFO - Gateway: Device disconnected: 0d4b2dee-b9d9-407a-a538-985e15ffb293
+2025-08-29 15:04:36,267 - INFO - Gateway: Remaining connections: 0
+2025-08-29 15:04:36,267 - INFO - Gateway: Devices: 0, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:04:36] "GET /socket.io/?transport=websocket&EIO=4&sid=DL7O8ORl8R89iS-yAAAU&t=1756451073.9348068 HTTP/1.1" 200 0 2.987797
+(72075) accepted ('127.0.0.1', 49762)
+127.0.0.1 - - [29/Aug/2025 15:04:37] "GET /socket.io/?transport=polling&EIO=4&t=1756451077.9446542 HTTP/1.1" 200 300 0.000277
+(72075) accepted ('127.0.0.1', 49763)
+2025-08-29 15:04:37,294 - INFO - Gateway: New connection from VP_LEYfIMLrDbpG0AAAm
+2025-08-29 15:04:37,295 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:04:37,295 - INFO - Gateway: Total connections: 0
+2025-08-29 15:04:37,360 - INFO - Gateway: Received message from VP_LEYfIMLrDbpG0AAAm: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:04:37,361 - INFO - Gateway: Device connection established: b3ee29be-5abf-42a5-ba7c-688e52198804 (sid: VP_LEYfIMLrDbpG0AAAm)
+2025-08-29 15:04:37,361 - INFO - Gateway: Total connections: 1
+2025-08-29 15:04:37,361 - INFO - Gateway: Devices: 1, Clients: 0
+2025-08-29 15:04:37,361 - INFO - Gateway: hello from VP_LEYfIMLrDbpG0AAAm: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+(72075) accepted ('127.0.0.1', 53010)
+127.0.0.1 - - [29/Aug/2025 15:29:48] "GET /socket.io/?transport=polling&EIO=4&t=1756452588.778392 HTTP/1.1" 200 276 0.000515
+2025-08-29 15:29:48,782 - INFO - Gateway: New connection from deTMOoFYyUdAmj4EAAAo
+2025-08-29 15:29:48,783 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:29:48,783 - INFO - Gateway: Total connections: 1
+2025-08-29 15:29:50,785 - INFO - Gateway: Client disconnected: deTMOoFYyUdAmj4EAAAo
+2025-08-29 15:29:50,785 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:29:50,785 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:29:50] "GET /socket.io/?transport=websocket&EIO=4&sid=cuvu0mrRfHIdWvbYAAAn&t=1756452588.780898 HTTP/1.1" 200 0 2.004651
+(72075) accepted ('127.0.0.1', 53067)
+127.0.0.1 - - [29/Aug/2025 15:30:15] "GET /socket.io/?transport=polling&EIO=4&t=1756452615.186573 HTTP/1.1" 200 276 0.000121
+2025-08-29 15:30:15,189 - INFO - Gateway: New connection from qZQdh0xDoUvm2WPmAAAq
+2025-08-29 15:30:15,189 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:30:15,189 - INFO - Gateway: Total connections: 1
+2025-08-29 15:30:17,192 - INFO - Gateway: Client disconnected: qZQdh0xDoUvm2WPmAAAq
+2025-08-29 15:30:17,192 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:30:17,192 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:30:17] "GET /socket.io/?transport=websocket&EIO=4&sid=s5xTnp2nr-X7HApVAAAp&t=1756452615.187957 HTTP/1.1" 200 0 2.005055
+(72075) accepted ('127.0.0.1', 53121)
+127.0.0.1 - - [29/Aug/2025 15:30:44] "GET /socket.io/?transport=polling&EIO=4&t=1756452644.8367 HTTP/1.1" 200 276 0.000150
+2025-08-29 15:30:44,839 - INFO - Gateway: New connection from bwH7H407ZlI2dwZ9AAAs
+2025-08-29 15:30:44,839 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:30:44,839 - INFO - Gateway: Total connections: 1
+2025-08-29 15:30:46,841 - INFO - Gateway: Client disconnected: bwH7H407ZlI2dwZ9AAAs
+2025-08-29 15:30:46,842 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:30:46,842 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:30:46] "GET /socket.io/?transport=websocket&EIO=4&sid=1IYLIr4R5DcKNSHRAAAr&t=1756452644.8380108 HTTP/1.1" 200 0 2.004010
+(72075) accepted ('127.0.0.1', 53167)
+127.0.0.1 - - [29/Aug/2025 15:31:11] "GET /socket.io/?transport=polling&EIO=4&t=1756452671.6733272 HTTP/1.1" 200 276 0.000120
+2025-08-29 15:31:11,676 - INFO - Gateway: New connection from 3AQfX5LIFKzqLjQLAAAu
+2025-08-29 15:31:11,676 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:31:11,676 - INFO - Gateway: Total connections: 1
+2025-08-29 15:31:13,678 - INFO - Gateway: Received message from 3AQfX5LIFKzqLjQLAAAu: {'type': 'rpc.call', 'id': 'mcp-get_device_info-4376137920', 'method': 'get_device_info', 'params': {}}
+2025-08-29 15:31:13,678 - INFO - Gateway: Client connection established: ca4f7442-5a0c-4512-9e5d-8cabcf87fa05 (sid: 3AQfX5LIFKzqLjQLAAAu)
+2025-08-29 15:31:13,678 - INFO - Gateway: Total connections: 2
+2025-08-29 15:31:13,678 - INFO - Gateway: Devices: 1, Clients: 1
+2025-08-29 15:31:13,678 - INFO - Gateway: RPC call from 3AQfX5LIFKzqLjQLAAAu: {'type': 'rpc.call', 'id': 'mcp-get_device_info-4376137920', 'method': 'get_device_info', 'params': {}}
+2025-08-29 15:31:13,678 - INFO - Gateway: Forwarding RPC call mcp-get_device_info-4376137920: get_device_info
+2025-08-29 15:31:13,678 - INFO - Gateway: Forwarding RPC call to device VP_LEYfIMLrDbpG0AAAm
+2025-08-29 15:31:13,678 - INFO - Gateway: Received message from 3AQfX5LIFKzqLjQLAAAu: {'type': 'rpc.call', 'id': 'mcp-start_app-4410406528', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-29 15:31:13,678 - INFO - Gateway: RPC call from 3AQfX5LIFKzqLjQLAAAu: {'type': 'rpc.call', 'id': 'mcp-start_app-4410406528', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-29 15:31:13,678 - INFO - Gateway: Forwarding RPC call mcp-start_app-4410406528: start_app
+2025-08-29 15:31:13,679 - INFO - Gateway: Forwarding RPC call to device VP_LEYfIMLrDbpG0AAAm
+2025-08-29 15:31:14,360 - INFO - Gateway: Received message from VP_LEYfIMLrDbpG0AAAm: {'type': 'rpc.result', 'id': 'mcp-get_device_info-4376137920', 'result': {'success': True, 'device_info': {'currentPackageName': 'com.chaquo.python.console', 'displayHeight': 2400, 'displayRotation': 0, 'displaySizeDpX': 411, 'displaySizeDpY': 914, 'displayWidth': 1080, 'productName': 'sdk_gphone64_arm64', 'screenOn': True, 'sdkInt': 36, 'naturalOrientation': True}}}
+2025-08-29 15:31:14,361 - INFO - Gateway: RPC result from VP_LEYfIMLrDbpG0AAAm: {'type': 'rpc.result', 'id': 'mcp-get_device_info-4376137920', 'result': {'success': True, 'device_info': {'currentPackageName': 'com.chaquo.python.console', 'displayHeight': 2400, 'displayRotation': 0, 'displaySizeDpX': 411, 'displaySizeDpY': 914, 'displayWidth': 1080, 'productName': 'sdk_gphone64_arm64', 'screenOn': True, 'sdkInt': 36, 'naturalOrientation': True}}}
+2025-08-29 15:31:15,441 - INFO - Gateway: Received message from VP_LEYfIMLrDbpG0AAAm: {'type': 'rpc.result', 'id': 'mcp-start_app-4410406528', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-29 15:31:15,441 - INFO - Gateway: RPC result from VP_LEYfIMLrDbpG0AAAm: {'type': 'rpc.result', 'id': 'mcp-start_app-4410406528', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-29 15:31:15,679 - INFO - Gateway: Client disconnected: 3AQfX5LIFKzqLjQLAAAu
+2025-08-29 15:31:15,680 - INFO - Gateway: Client disconnected: ca4f7442-5a0c-4512-9e5d-8cabcf87fa05
+2025-08-29 15:31:15,680 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:31:15,680 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:31:15] "GET /socket.io/?transport=websocket&EIO=4&sid=96w-abfH3mDeRBzDAAAt&t=1756452671.674817 HTTP/1.1" 200 0 4.005663
+2025-08-29 15:32:48,537 - INFO - Gateway: Client disconnected: dvKucYE14zC8ZSRdAAAY
+2025-08-29 15:32:48,539 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:32:48,539 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:32:48] "GET /socket.io/?transport=websocket&EIO=4&sid=ENk1DilQHyhcR2CQAAAW&t=1756451073.9385746 HTTP/1.1" 200 0 1695.259179
+2025-08-29 15:32:48,540 - INFO - Gateway: Client disconnected: odADpBCNkl8Fn9pSAAAa
+2025-08-29 15:32:48,540 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:32:48,540 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:32:48] "GET /socket.io/?transport=websocket&EIO=4&sid=yPzZlJeBSA4mV--LAAAZ&t=1756451074.0163531 HTTP/1.1" 200 0 1695.162905
+2025-08-29 15:32:48,540 - INFO - Gateway: Client disconnected: XMtsmAvHKqGcjmV0AAAc
+2025-08-29 15:32:48,540 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:32:48,540 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:32:48] "GET /socket.io/?transport=websocket&EIO=4&sid=f0SkjGzokqhWwiBrAAAb&t=1756451074.0929923 HTTP/1.1" 200 0 1695.111964
+2025-08-29 15:32:48,600 - INFO - Gateway: Client disconnected: 9-Sq5XVH-7V_U7ceAAAe
+2025-08-29 15:32:48,600 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:32:48,600 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:32:48] "GET /socket.io/?transport=websocket&EIO=4&sid=z98Wmjjxy4ps1NJ-AAAd&t=1756451074.2523282 HTTP/1.1" 200 0 1695.012926
+2025-08-29 15:32:48,943 - INFO - Gateway: Client disconnected: 7bEt7IhNeme1J6YDAAAg
+2025-08-29 15:32:48,943 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:32:48,943 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:32:48] "GET /socket.io/?transport=websocket&EIO=4&sid=fdn-CdFxGVQ1jSm6AAAf&t=1756451074.2911427 HTTP/1.1" 200 0 1695.317287
+2025-08-29 15:32:48,964 - INFO - Gateway: Client disconnected: k5F3XJ8YncCGBocZAAAi
+2025-08-29 15:32:48,964 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:32:48,964 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:32:48] "GET /socket.io/?transport=websocket&EIO=4&sid=SOoXEEjeL4hBsOKqAAAh&t=1756451074.4795468 HTTP/1.1" 200 0 1695.149978
+2025-08-29 15:32:52,360 - INFO - Gateway: Client disconnected: VP_LEYfIMLrDbpG0AAAm
+2025-08-29 15:32:52,360 - INFO - Gateway: Device disconnected: b3ee29be-5abf-42a5-ba7c-688e52198804
+2025-08-29 15:32:52,360 - INFO - Gateway: Remaining connections: 0
+2025-08-29 15:32:52,360 - INFO - Gateway: Devices: 0, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:32:52] "GET /socket.io/?transport=websocket&EIO=4&sid=RQbj46nDq0dExwpyAAAl&t=1756451077.9537766 HTTP/1.1" 200 0 1695.071031
+(72075) accepted ('127.0.0.1', 53464)
+127.0.0.1 - - [29/Aug/2025 15:33:29] "GET /socket.io/?transport=polling&EIO=4&t=1756452809.932409 HTTP/1.1" 200 276 0.000284
+2025-08-29 15:33:29,935 - INFO - Gateway: New connection from q9g696ZVajYV2iDeAAAw
+2025-08-29 15:33:29,935 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:33:29,935 - INFO - Gateway: Total connections: 0
+2025-08-29 15:33:31,940 - INFO - Gateway: Received message from q9g696ZVajYV2iDeAAAw: {'type': 'rpc.call', 'id': 'mcp-get_device_info-4333270656', 'method': 'get_device_info', 'params': {}}
+2025-08-29 15:33:31,941 - INFO - Gateway: Client connection established: 301ecff6-bc6f-458f-8923-4fb9bdf5c10b (sid: q9g696ZVajYV2iDeAAAw)
+2025-08-29 15:33:31,941 - INFO - Gateway: Total connections: 1
+2025-08-29 15:33:31,941 - INFO - Gateway: Devices: 0, Clients: 1
+2025-08-29 15:33:31,941 - INFO - Gateway: RPC call from q9g696ZVajYV2iDeAAAw: {'type': 'rpc.call', 'id': 'mcp-get_device_info-4333270656', 'method': 'get_device_info', 'params': {}}
+2025-08-29 15:33:31,941 - INFO - Gateway: Forwarding RPC call mcp-get_device_info-4333270656: get_device_info
+2025-08-29 15:33:31,942 - WARNING - Gateway: No device available for RPC call
+2025-08-29 15:33:31,942 - INFO - Gateway: Received message from q9g696ZVajYV2iDeAAAw: {'type': 'rpc.call', 'id': 'mcp-start_app-4390896064', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-29 15:33:31,942 - INFO - Gateway: RPC call from q9g696ZVajYV2iDeAAAw: {'type': 'rpc.call', 'id': 'mcp-start_app-4390896064', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-29 15:33:31,942 - INFO - Gateway: Forwarding RPC call mcp-start_app-4390896064: start_app
+2025-08-29 15:33:31,942 - WARNING - Gateway: No device available for RPC call
+2025-08-29 15:33:33,940 - INFO - Gateway: Client disconnected: q9g696ZVajYV2iDeAAAw
+2025-08-29 15:33:33,940 - INFO - Gateway: Client disconnected: 301ecff6-bc6f-458f-8923-4fb9bdf5c10b
+2025-08-29 15:33:33,940 - INFO - Gateway: Remaining connections: 0
+2025-08-29 15:33:33,940 - INFO - Gateway: Devices: 0, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:33:33] "GET /socket.io/?transport=websocket&EIO=4&sid=MsV5BwXv0XzuGwDCAAAv&t=1756452809.934081 HTTP/1.1" 200 0 4.006195
+127.0.0.1 - - [29/Aug/2025 15:33:54] "GET /socket.io/?transport=polling&EIO=4&t=1756452835.941979 HTTP/1.1" 200 300 0.000789
+127.0.0.1 - - [29/Aug/2025 15:33:54] "GET /socket.io/?transport=polling&EIO=4&t=1756452835.9305716 HTTP/1.1" 200 300 0.000171
+127.0.0.1 - - [29/Aug/2025 15:33:54] "GET /socket.io/?transport=polling&EIO=4&t=1756452835.9601102 HTTP/1.1" 200 300 0.000217
+127.0.0.1 - - [29/Aug/2025 15:33:54] "GET /socket.io/?transport=polling&EIO=4&t=1756452835.956082 HTTP/1.1" 200 300 0.000269
+(72075) accepted ('127.0.0.1', 53511)
+(72075) accepted ('127.0.0.1', 53512)
+(72075) accepted ('127.0.0.1', 53513)
+(72075) accepted ('127.0.0.1', 53514)
+2025-08-29 15:33:55,009 - INFO - Gateway: New connection from BFLrYrga1_-loEN1AAA1
+2025-08-29 15:33:55,010 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:33:55,010 - INFO - Gateway: Total connections: 0
+2025-08-29 15:33:55,018 - INFO - Gateway: New connection from ETv0utIUJ8n-nGLXAAA2
+2025-08-29 15:33:55,020 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:33:55,020 - INFO - Gateway: Total connections: 0
+127.0.0.1 - - [29/Aug/2025 15:33:55] "GET /socket.io/?transport=polling&EIO=4&t=1756452835.9981344 HTTP/1.1" 200 300 0.000229
+2025-08-29 15:33:55,022 - INFO - Gateway: New connection from RDArIjuItmWAfDMYAAA4
+2025-08-29 15:33:55,022 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:33:55,022 - INFO - Gateway: Total connections: 0
+(72075) accepted ('127.0.0.1', 53517)
+2025-08-29 15:33:55,167 - INFO - Gateway: New connection from fN7EpkCjkP4VzyuHAAA5
+2025-08-29 15:33:55,167 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:33:55,167 - INFO - Gateway: Total connections: 0
+127.0.0.1 - - [29/Aug/2025 15:33:55] "GET /socket.io/?transport=polling&EIO=4&t=1756452836.3900182 HTTP/1.1" 200 300 0.000292
+127.0.0.1 - - [29/Aug/2025 15:33:55] "GET /socket.io/?transport=polling&EIO=4&t=1756452836.4287887 HTTP/1.1" 200 300 0.000284
+(72075) accepted ('127.0.0.1', 53520)
+(72075) accepted ('127.0.0.1', 53521)
+2025-08-29 15:33:55,556 - INFO - Gateway: New connection from eSFFihKxBhOQbK8CAAA8
+2025-08-29 15:33:55,557 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:33:55,557 - INFO - Gateway: Total connections: 0
+2025-08-29 15:33:55,571 - INFO - Gateway: New connection from mZWubHtNQfKWguwOAAA9
+2025-08-29 15:33:55,571 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:33:55,571 - INFO - Gateway: Total connections: 0
+2025-08-29 15:33:55,644 - INFO - Gateway: Received message from mZWubHtNQfKWguwOAAA9: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:33:55,645 - INFO - Gateway: Device connection established: f15324f4-db70-48cc-8076-0bce39a73be4 (sid: mZWubHtNQfKWguwOAAA9)
+2025-08-29 15:33:55,645 - INFO - Gateway: Total connections: 1
+2025-08-29 15:33:55,646 - INFO - Gateway: Devices: 1, Clients: 0
+2025-08-29 15:33:55,646 - INFO - Gateway: hello from mZWubHtNQfKWguwOAAA9: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+127.0.0.1 - - [29/Aug/2025 15:33:56] "GET /socket.io/?transport=websocket&EIO=4&sid=6BxE2yrgyjnb2PE2AAAx&t=1756452835.972784 HTTP/1.1" 200 0 1.048300
+127.0.0.1 - - [29/Aug/2025 15:33:58] "GET /socket.io/?transport=polling&EIO=4&t=1756452839.273463 HTTP/1.1" 200 300 0.000498
+(72075) accepted ('127.0.0.1', 53526)
+2025-08-29 15:33:58,304 - INFO - Gateway: New connection from uBJdS26dluIaTFbYAAA_
+2025-08-29 15:33:58,304 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:33:58,305 - INFO - Gateway: Total connections: 1
+2025-08-29 15:33:58,305 - INFO - Gateway: Client disconnected: uBJdS26dluIaTFbYAAA_
+2025-08-29 15:33:58,305 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:33:58,305 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:33:58] "GET /socket.io/?transport=websocket&EIO=4&sid=nlBYRFfa1YQWRUT8AAA-&t=1756452839.2825618 HTTP/1.1" 200 0 0.007383
+2025-08-29 15:33:58,315 - INFO - Gateway: Received message from mZWubHtNQfKWguwOAAA9: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+2025-08-29 15:33:58,315 - INFO - Gateway: hello from mZWubHtNQfKWguwOAAA9: {'type': 'hello', 'session': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'device': '127.0.0.1:5555'}
+(72075) accepted ('127.0.0.1', 53544)
+127.0.0.1 - - [29/Aug/2025 15:34:10] "GET /socket.io/?transport=polling&EIO=4&t=1756452850.706051 HTTP/1.1" 200 276 0.000191
+2025-08-29 15:34:10,709 - INFO - Gateway: New connection from IQtVecbmc955ynYIAABB
+2025-08-29 15:34:10,709 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-29 15:34:10,709 - INFO - Gateway: Total connections: 1
+2025-08-29 15:34:12,714 - INFO - Gateway: Received message from IQtVecbmc955ynYIAABB: {'type': 'rpc.call', 'id': 'mcp-get_device_info-4351197504', 'method': 'get_device_info', 'params': {}}
+2025-08-29 15:34:12,715 - INFO - Gateway: Client connection established: 6252de58-ede6-47bd-951d-e44f2a06dee1 (sid: IQtVecbmc955ynYIAABB)
+2025-08-29 15:34:12,715 - INFO - Gateway: Total connections: 2
+2025-08-29 15:34:12,715 - INFO - Gateway: Devices: 1, Clients: 1
+2025-08-29 15:34:12,715 - INFO - Gateway: RPC call from IQtVecbmc955ynYIAABB: {'type': 'rpc.call', 'id': 'mcp-get_device_info-4351197504', 'method': 'get_device_info', 'params': {}}
+2025-08-29 15:34:12,715 - INFO - Gateway: Forwarding RPC call mcp-get_device_info-4351197504: get_device_info
+2025-08-29 15:34:12,715 - INFO - Gateway: Forwarding RPC call to device mZWubHtNQfKWguwOAAA9
+2025-08-29 15:34:12,716 - INFO - Gateway: Received message from IQtVecbmc955ynYIAABB: {'type': 'rpc.call', 'id': 'mcp-start_app-4411457856', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-29 15:34:12,716 - INFO - Gateway: RPC call from IQtVecbmc955ynYIAABB: {'type': 'rpc.call', 'id': 'mcp-start_app-4411457856', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-29 15:34:12,716 - INFO - Gateway: Forwarding RPC call mcp-start_app-4411457856: start_app
+2025-08-29 15:34:12,716 - INFO - Gateway: Forwarding RPC call to device mZWubHtNQfKWguwOAAA9
+2025-08-29 15:34:13,205 - INFO - Gateway: Received message from mZWubHtNQfKWguwOAAA9: {'type': 'rpc.result', 'id': 'mcp-get_device_info-4351197504', 'result': {'success': True, 'device_info': {'currentPackageName': 'com.chaquo.python.console', 'displayHeight': 2400, 'displayRotation': 0, 'displaySizeDpX': 411, 'displaySizeDpY': 914, 'displayWidth': 1080, 'productName': 'sdk_gphone64_arm64', 'screenOn': True, 'sdkInt': 36, 'naturalOrientation': True}}}
+2025-08-29 15:34:13,205 - INFO - Gateway: RPC result from mZWubHtNQfKWguwOAAA9: {'type': 'rpc.result', 'id': 'mcp-get_device_info-4351197504', 'result': {'success': True, 'device_info': {'currentPackageName': 'com.chaquo.python.console', 'displayHeight': 2400, 'displayRotation': 0, 'displaySizeDpX': 411, 'displaySizeDpY': 914, 'displayWidth': 1080, 'productName': 'sdk_gphone64_arm64', 'screenOn': True, 'sdkInt': 36, 'naturalOrientation': True}}}
+2025-08-29 15:34:14,083 - INFO - Gateway: Received message from mZWubHtNQfKWguwOAAA9: {'type': 'rpc.result', 'id': 'mcp-start_app-4411457856', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-29 15:34:14,083 - INFO - Gateway: RPC result from mZWubHtNQfKWguwOAAA9: {'type': 'rpc.result', 'id': 'mcp-start_app-4411457856', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-29 15:34:14,714 - INFO - Gateway: Client disconnected: IQtVecbmc955ynYIAABB
+2025-08-29 15:34:14,715 - INFO - Gateway: Client disconnected: 6252de58-ede6-47bd-951d-e44f2a06dee1
+2025-08-29 15:34:14,715 - INFO - Gateway: Remaining connections: 1
+2025-08-29 15:34:14,715 - INFO - Gateway: Devices: 1, Clients: 0
+127.0.0.1 - - [29/Aug/2025 15:34:14] "GET /socket.io/?transport=websocket&EIO=4&sid=LKX2hOI3p7gyNrMiAABA&t=1756452850.707548 HTTP/1.1" 200 0 4.007405

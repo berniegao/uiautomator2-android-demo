@@ -45,7 +45,9 @@ TOKEN = os.environ.get("GATEWAY_TOKEN", "devtoken")
 
 class Gateway:
     def __init__(self):
-        self.device_connections: Dict[str, str] = {}  # device_id -> sid
+        self.device_connections: Dict[str, str] = {}  # device_id -> sid (手机设备)
+        self.client_connections: Dict[str, str] = {}  # client_id -> sid (客户端)
+        self.connection_types: Dict[str, str] = {}    # sid -> connection_type ("device" or "client")
         self.pending: Dict[str, threading.Event] = {}
         self.results: Dict[str, dict] = {}
         
@@ -69,24 +71,43 @@ class Gateway:
     def on_connect(self, sid, environ):
         logger.info(f"Gateway: New connection from {sid}")
         logger.debug(f"Gateway: Environment: {environ}")
-        device_id = str(uuid.uuid4())
-        self.device_connections[device_id] = sid
-        logger.info(f"Gateway: Device connected: {device_id} (sid: {sid})")
-        logger.info(f"Gateway: Total connections: {len(self.device_connections)}")
+        # 新连接暂时不分配类型，等待第一个消息来判断
+        logger.info(f"Gateway: New connection established, waiting for message type...")
+        logger.info(f"Gateway: Total connections: {len(self.connection_types)}")
 
     def on_disconnect(self, sid):
         logger.info(f"Gateway: Client disconnected: {sid}")
-        # Find and remove device
-        for device_id, device_sid in list(self.device_connections.items()):
-            if device_sid == sid:
-                self.device_connections.pop(device_id, None)
-                logger.info(f"Gateway: Device disconnected: {device_id}")
-                break
-        logger.info(f"Gateway: Remaining connections: {len(self.device_connections)}")
+        
+        # 根据连接类型处理断开
+        connection_type = self.connection_types.get(sid)
+        if connection_type == "device":
+            # 设备断开
+            for device_id, device_sid in list(self.device_connections.items()):
+                if device_sid == sid:
+                    self.device_connections.pop(device_id, None)
+                    logger.info(f"Gateway: Device disconnected: {device_id}")
+                    break
+        elif connection_type == "client":
+            # 客户端断开
+            for client_id, client_sid in list(self.client_connections.items()):
+                if client_sid == sid:
+                    self.client_connections.pop(client_id, None)
+                    logger.info(f"Gateway: Client disconnected: {client_id}")
+                    break
+        
+        # 清理连接类型
+        self.connection_types.pop(sid, None)
+        logger.info(f"Gateway: Remaining connections: {len(self.connection_types)}")
+        logger.info(f"Gateway: Devices: {len(self.device_connections)}, Clients: {len(self.client_connections)}")
 
     def on_message(self, sid, data):
         logger.info(f"Gateway: Received message from {sid}: {data}")
         logger.debug(f"Gateway: Message type: {type(data)}")
+        
+        # 如果这是新连接的第一个消息，判断连接类型
+        if sid not in self.connection_types:
+            self._determine_connection_type(sid, data)
+        
         # Handle different message types
         if isinstance(data, dict):
             msg_type = data.get("type")
@@ -101,31 +122,18 @@ class Gateway:
                 logger.debug(f"Gateway: Sent pong response to {sid}")
             elif msg_type == "rpc.call":
                 logger.info(f"Gateway: RPC call from {sid}: {data}")
-                # Forward to device
-                req_id = data.get("id")
-                method = data.get("method")
-                params = data.get("params", {})
-                logger.info(f"Gateway: Forwarding RPC call {req_id}: {method}")
-                
-                # Find the device that sent this RPC call
-                device_sid = None
-                for device_id, device_sid in self.device_connections.items():
-                    if device_sid == sid:  # Check if this is the device
-                        break
-                
-                if device_sid:
-                    # Forward RPC call to the device
-                    logger.info(f"Gateway: Forwarding RPC call to device {device_sid}")
-                    self.sio.emit('message', data, room=device_sid)
+                # 检查发送者是否是客户端
+                if self.connection_types.get(sid) == "client":
+                    self._forward_rpc_to_device(sid, data)
                 else:
-                    # No device found, send error response
+                    logger.warning(f"Gateway: RPC call from non-client connection {sid}")
+                    # 发送错误响应
                     response = {
                         "type": "rpc.error",
-                        "id": req_id,
-                        "error": "No device connected"
+                        "id": data.get("id"),
+                        "error": "Only clients can send RPC calls"
                     }
                     self.sio.emit('message', response, room=sid)
-                    logger.warning(f"Gateway: No device found, sent error response")
             elif msg_type == "rpc.result":
                 logger.info(f"Gateway: RPC result from {sid}: {data}")
                 req_id = data.get("id")
@@ -183,6 +191,49 @@ class Gateway:
         finally:
             self.pending.pop(req_id, None)
 
+    def _determine_connection_type(self, sid, data):
+        """根据第一个消息判断连接类型"""
+        if isinstance(data, dict):
+            msg_type = data.get("type")
+            if msg_type == "hello" and "device" in data:
+                # 这是手机设备连接
+                device_id = str(uuid.uuid4())
+                self.device_connections[device_id] = sid
+                self.connection_types[sid] = "device"
+                logger.info(f"Gateway: Device connection established: {device_id} (sid: {sid})")
+            else:
+                # 这是客户端连接
+                client_id = str(uuid.uuid4())
+                self.client_connections[client_id] = sid
+                self.connection_types[sid] = "client"
+                logger.info(f"Gateway: Client connection established: {client_id} (sid: {sid})")
+        
+        logger.info(f"Gateway: Total connections: {len(self.connection_types)}")
+        logger.info(f"Gateway: Devices: {len(self.device_connections)}, Clients: {len(self.client_connections)}")
+
+    def _forward_rpc_to_device(self, client_sid, rpc_data):
+        """将RPC调用从客户端转发到设备"""
+        req_id = rpc_data.get("id")
+        method = rpc_data.get("method")
+        params = rpc_data.get("params", {})
+        logger.info(f"Gateway: Forwarding RPC call {req_id}: {method}")
+        
+        # 查找可用的设备连接
+        if self.device_connections:
+            # 选择第一个可用的设备
+            device_sid = list(self.device_connections.values())[0]
+            logger.info(f"Gateway: Forwarding RPC call to device {device_sid}")
+            self.sio.emit('message', rpc_data, room=device_sid)
+        else:
+            # 没有设备连接，发送错误响应
+            logger.warning(f"Gateway: No device available for RPC call")
+            response = {
+                "type": "rpc.error",
+                "id": req_id,
+                "error": "No device connected"
+            }
+            self.sio.emit('message', response, room=client_sid)
+
 
 def repl(gw: Gateway):
     logger.info("Commands:\n  devices\n  use <deviceId>\n  call <method> <json_params>\n  quit")
@@ -198,7 +249,8 @@ def repl(gw: Gateway):
         if line in ("quit", "exit"):
             break
         if line == "devices":
-            logger.info("Connected:", list(gw.device_connections.keys()))
+            logger.info(f"Connected devices: {list(gw.device_connections.keys())}")
+            logger.info(f"Connected clients: {list(gw.client_connections.keys())}")
             continue
         if line.startswith("use "):
             current = line.split(" ", 1)[1]
@@ -234,6 +286,8 @@ def main():
         gw = Gateway()
         logger.info("Gateway: Gateway instance created successfully")
         logger.info(f"Gateway: Device connections: {len(gw.device_connections)}")
+        logger.info(f"Gateway: Client connections: {len(gw.client_connections)}")
+        logger.info(f"Gateway: Total connections: {len(gw.connection_types)}")
         logger.info(f"Gateway: Socket.IO server: {gw.sio}")
         logger.info(f"Gateway: WSGI app: {gw.app}")
     except Exception as e:
