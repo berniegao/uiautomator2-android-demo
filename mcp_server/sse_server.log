@@ -1,0 +1,44 @@
+2025-08-29 22:46:11,654 - INFO - Starting SSE server on 0.0.0.0:8766 at path /mcp
+2025-08-29 22:46:11,655 - INFO - SSE URL: http://0.0.0.0:8766/mcp
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/engineio/async_client.py:339: DeprecationWarning: parameter 'timeout' of type 'float' is deprecated, please use 'timeout=ClientWSTimeout(ws_close=...)'
+  ws = await self.http.ws_connect(
+2025-08-29 22:46:11,659 - INFO - Connected to gateway
+2025-08-29 22:46:11,659 - INFO - Successfully connected to gateway
+/Users/berniegao/workstation/source_code/uiautomator2-phone-copilot/uiautomator2-android-demo/mcp_server/uiautomator_mcp_server.py:176: DeprecationWarning: The run_sse_async method is deprecated (as of 2.3.2). Use run_http_async for a modern (non-SSE) alternative, or create an SSE app with `fastmcp.server.http.create_sse_app` and run it directly.
+  await self.server.run_sse_async(
+
+
+╭─ FastMCP 2.0 ──────────────────────────────────────────────────────────────╮
+│                                                                            │
+│        _ __ ___ ______           __  __  _____________    ____    ____     │
+│       _ __ ___ / ____/___ ______/ /_/  |/  / ____/ __ \  |___ \  / __ \    │
+│      _ __ ___ / /_  / __ `/ ___/ __/ /|_/ / /   / /_/ /  ___/ / / / / /    │
+│     _ __ ___ / __/ / /_/ (__  ) /_/ /  / / /___/ ____/  /  __/_/ /_/ /     │
+│    _ __ ___ /_/    \__,_/____/\__/_/  /_/\____/_/      /_____(_)____/      │
+│                                                                            │
+│                                                                            │
+│                                                                            │
+│    🖥️  Server name:     uiautomator-mcp-server                              │
+│    📦 Transport:       SSE                                                 │
+│    🔗 Server URL:      http://0.0.0.0:8766/mcp                             │
+│                                                                            │
+│    📚 Docs:            https://gofastmcp.com                               │
+│    🚀 Deploy:          https://fastmcp.cloud                               │
+│                                                                            │
+│    🏎️  FastMCP version: 2.11.3                                              │
+│    🤝 MCP version:     1.13.0                                              │
+│                                                                            │
+╰────────────────────────────────────────────────────────────────────────────╯
+
+
+[08/29/25 22:46:11] INFO     Starting MCP server 'uiautomator-mcp-server' with transport      server.py:1522
+                             'sse' on http://0.0.0.0:8766/mcp                                               
+INFO:     Started server process [25804]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8766): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+2025-08-29 22:46:11,684 - INFO - Disconnecting from gateway...
+2025-08-29 22:46:11,684 - INFO - Disconnected from gateway
+2025-08-29 22:46:11,685 - INFO - Disconnected from gateway

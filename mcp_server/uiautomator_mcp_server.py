@@ -13,7 +13,6 @@ import socketio
 from typing import Any, Dict, List, Optional
 
 from fastmcp.server.server import FastMCP
-from fastmcp.server.server import stdio_server
 
 # Configure logging
 logging.basicConfig(
@@ -25,6 +24,11 @@ logger = logging.getLogger(__name__)
 # Gateway configuration
 GATEWAY_URL = "http://127.0.0.1:8765"
 GATEWAY_TOKEN = "devtoken"
+
+# SSE Server configuration
+SSE_HOST = "0.0.0.0"
+SSE_PORT = 8766
+SSE_PATH = "/mcp"
 
 # Global MCP server instance
 mcp_server_instance = None
@@ -160,16 +164,29 @@ class UIAutomatorMCPServer:
         }
 
     async def run(self):
-        """Run the MCP server"""
-        # Connect to gateway
-        await self.connect_to_gateway()
-        
+        """Run the MCP server using SSE transport"""
         try:
-            # Start MCP server
-            await stdio_server(self.server)
+            logger.info(f"Starting SSE server on {SSE_HOST}:{SSE_PORT} at path {SSE_PATH}")
+            logger.info(f"SSE URL: http://{SSE_HOST}:{SSE_PORT}{SSE_PATH}")
+            
+            # Connect to gateway
+            await self.connect_to_gateway()
+            
+            # Start MCP server with SSE transport
+            await self.server.run_sse_async(
+                host=SSE_HOST,
+                port=SSE_PORT,
+                path=SSE_PATH,
+                log_level="info"
+            )
+        except Exception as e:
+            logger.error(f"Error in run: {e}")
+            raise
         finally:
-            # Disconnect from gateway
-            await self.disconnect_from_gateway()
+            # Disconnect from gateway if connected
+            if self.connected:
+                logger.info("Disconnecting from gateway...")
+                await self.disconnect_from_gateway()
 
 
 async def main():
