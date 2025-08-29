@@ -13,6 +13,7 @@ import socketio
 from typing import Any, Dict, List, Optional
 
 from fastmcp.server.server import FastMCP
+from fastmcp.server.http import create_sse_app
 
 # Configure logging
 logging.basicConfig(
@@ -134,12 +135,15 @@ class UIAutomatorMCPServer:
 
     async def disconnect_from_gateway(self):
         """Disconnect from the gateway server"""
+        logger.info("Disconnecting from gateway...")
         if self.connected:
             await self.sio.disconnect()
             logger.info("Disconnected from gateway")
 
     async def send_rpc_call(self, method: str, params: dict) -> dict:
         """Send RPC call to gateway and wait for response"""
+        logger.info(f"Preparing to send RPC call: method={method}, params={params}")
+        logger.info(f"Connected to gateway: {self.connected}")
         if not self.connected:
             raise RuntimeError("Not connected to gateway")
         
@@ -166,19 +170,32 @@ class UIAutomatorMCPServer:
     async def run(self):
         """Run the MCP server using SSE transport"""
         try:
-            logger.info(f"Starting SSE server on {SSE_HOST}:{SSE_PORT} at path {SSE_PATH}")
+            logger.info(f"Starting SSE server on {SSE_HOST}:{SSE_PORT}")
             logger.info(f"SSE URL: http://{SSE_HOST}:{SSE_PORT}{SSE_PATH}")
             
             # Connect to gateway
             await self.connect_to_gateway()
+            logger.info(f"Connected to gateway: {self.connected}")
             
-            # Start MCP server with SSE transport
-            await self.server.run_sse_async(
+            # Create SSE app with correct paths
+            app = create_sse_app(
+                server=self.server,
+                sse_path=SSE_PATH,  # Path for SSE connections
+                message_path=f"{SSE_PATH}/messages",  # Path for messages
+                debug=True
+            )
+            
+            # Start the server using uvicorn
+            import uvicorn
+            config = uvicorn.Config(
+                app,
                 host=SSE_HOST,
                 port=SSE_PORT,
-                path=SSE_PATH,
                 log_level="info"
             )
+            server = uvicorn.Server(config)
+            await server.serve()
+            
         except Exception as e:
             logger.error(f"Error in run: {e}")
             raise

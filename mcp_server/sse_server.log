@@ -1,44 +1,293 @@
-2025-08-29 22:46:11,654 - INFO - Starting SSE server on 0.0.0.0:8766 at path /mcp
-2025-08-29 22:46:11,655 - INFO - SSE URL: http://0.0.0.0:8766/mcp
+2025-08-30 00:39:16,947 - INFO - Starting SSE server on 0.0.0.0:8766
+2025-08-30 00:39:16,947 - INFO - SSE URL: http://0.0.0.0:8766/mcp
 /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/engineio/async_client.py:339: DeprecationWarning: parameter 'timeout' of type 'float' is deprecated, please use 'timeout=ClientWSTimeout(ws_close=...)'
   ws = await self.http.ws_connect(
-2025-08-29 22:46:11,659 - INFO - Connected to gateway
-2025-08-29 22:46:11,659 - INFO - Successfully connected to gateway
-/Users/berniegao/workstation/source_code/uiautomator2-phone-copilot/uiautomator2-android-demo/mcp_server/uiautomator_mcp_server.py:176: DeprecationWarning: The run_sse_async method is deprecated (as of 2.3.2). Use run_http_async for a modern (non-SSE) alternative, or create an SSE app with `fastmcp.server.http.create_sse_app` and run it directly.
-  await self.server.run_sse_async(
-
-
-╭─ FastMCP 2.0 ──────────────────────────────────────────────────────────────╮
-│                                                                            │
-│        _ __ ___ ______           __  __  _____________    ____    ____     │
-│       _ __ ___ / ____/___ ______/ /_/  |/  / ____/ __ \  |___ \  / __ \    │
-│      _ __ ___ / /_  / __ `/ ___/ __/ /|_/ / /   / /_/ /  ___/ / / / / /    │
-│     _ __ ___ / __/ / /_/ (__  ) /_/ /  / / /___/ ____/  /  __/_/ /_/ /     │
-│    _ __ ___ /_/    \__,_/____/\__/_/  /_/\____/_/      /_____(_)____/      │
-│                                                                            │
-│                                                                            │
-│                                                                            │
-│    🖥️  Server name:     uiautomator-mcp-server                              │
-│    📦 Transport:       SSE                                                 │
-│    🔗 Server URL:      http://0.0.0.0:8766/mcp                             │
-│                                                                            │
-│    📚 Docs:            https://gofastmcp.com                               │
-│    🚀 Deploy:          https://fastmcp.cloud                               │
-│                                                                            │
-│    🏎️  FastMCP version: 2.11.3                                              │
-│    🤝 MCP version:     1.13.0                                              │
-│                                                                            │
-╰────────────────────────────────────────────────────────────────────────────╯
-
-
-[08/29/25 22:46:11] INFO     Starting MCP server 'uiautomator-mcp-server' with transport      server.py:1522
-                             'sse' on http://0.0.0.0:8766/mcp                                               
-INFO:     Started server process [25804]
+2025-08-30 00:39:16,953 - INFO - Connected to gateway
+2025-08-30 00:39:16,953 - INFO - Successfully connected to gateway
+2025-08-30 00:39:16,954 - INFO - Connected to gateway: True
+INFO:     Started server process [45241]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8766): address already in use
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-2025-08-29 22:46:11,684 - INFO - Disconnecting from gateway...
-2025-08-29 22:46:11,684 - INFO - Disconnected from gateway
-2025-08-29 22:46:11,685 - INFO - Disconnected from gateway
+INFO:     Uvicorn running on http://0.0.0.0:8766 (Press CTRL+C to quit)
+INFO:     127.0.0.1:54182 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54183 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54184 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54185 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54259 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54260 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54261 - "POST /mcp/messages HTTP/1.1" 307 Temporary Redirect
+2025-08-30 00:39:27,007 - WARNING - Received request without session_id
+INFO:     127.0.0.1:54261 - "POST /mcp/messages/ HTTP/1.1" 400 Bad Request
+2025-08-30 00:39:27,008 - WARNING - Received invalid session ID: test-session-123
+INFO:     127.0.0.1:54262 - "POST /mcp/messages/?session_id=test-session-123 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:54262 - "GET /mcp/ HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:54262 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54263 - "GET /mcp/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54264 - "GET /mcp/status HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54265 - "GET /mcp/api HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54266 - "GET /mcp/tools HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54422 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54423 - "POST /mcp/messages?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:54424 - "POST /mcp/messages/?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:54423 - "POST /mcp/messages?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:54424 - "POST /mcp/messages/?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:54423 - "POST /mcp/messages?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:54424 - "POST /mcp/messages/?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 202 Accepted
+2025-08-30 00:39:47,726 - INFO - Processing request of type ListToolsRequest
+INFO:     127.0.0.1:54423 - "POST /mcp/messages?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:54424 - "POST /mcp/messages/?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 202 Accepted
+2025-08-30 00:39:47,734 - INFO - Processing request of type PingRequest
+INFO:     127.0.0.1:54423 - "POST /mcp/messages?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:54424 - "POST /mcp/messages/?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 202 Accepted
+2025-08-30 00:39:47,741 - INFO - Processing request of type ListPromptsRequest
+INFO:     127.0.0.1:54423 - "POST /mcp/messages?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:54424 - "POST /mcp/messages/?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 202 Accepted
+2025-08-30 00:39:47,752 - INFO - Processing request of type PingRequest
+INFO:     127.0.0.1:54423 - "POST /mcp/messages?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:54424 - "POST /mcp/messages/?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 202 Accepted
+2025-08-30 00:39:47,755 - INFO - Processing request of type ListResourcesRequest
+INFO:     127.0.0.1:54423 - "POST /mcp/messages?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:54424 - "POST /mcp/messages/?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 202 Accepted
+2025-08-30 00:39:47,760 - INFO - Processing request of type PingRequest
+INFO:     127.0.0.1:54423 - "POST /mcp/messages?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:54424 - "POST /mcp/messages/?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 202 Accepted
+2025-08-30 00:39:47,778 - INFO - Processing request of type PingRequest
+INFO:     127.0.0.1:54591 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55043 - "POST /mcp/messages?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:55044 - "POST /mcp/messages/?session_id=e1c7489b886d45e0907bb5290bb138ac HTTP/1.1" 202 Accepted
+2025-08-30 00:41:08,268 - INFO - Processing request of type PingRequest
+INFO:     127.0.0.1:55917 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56425 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56447 - "POST /mcp/messages?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:56448 - "POST /mcp/messages/?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56447 - "POST /mcp/messages?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:56448 - "POST /mcp/messages/?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56447 - "POST /mcp/messages?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:56448 - "POST /mcp/messages/?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 202 Accepted
+2025-08-30 00:44:04,788 - INFO - Processing request of type ListToolsRequest
+INFO:     127.0.0.1:56447 - "POST /mcp/messages?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:56448 - "POST /mcp/messages/?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 202 Accepted
+2025-08-30 00:44:04,793 - INFO - Processing request of type PingRequest
+INFO:     127.0.0.1:56447 - "POST /mcp/messages?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:56448 - "POST /mcp/messages/?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 202 Accepted
+2025-08-30 00:44:04,798 - INFO - Processing request of type PingRequest
+INFO:     127.0.0.1:56447 - "POST /mcp/messages?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:56448 - "POST /mcp/messages?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:56447 - "POST /mcp/messages/?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56449 - "POST /mcp/messages?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:56450 - "POST /mcp/messages/?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56447 - "POST /mcp/messages/?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 202 Accepted
+2025-08-30 00:44:06,270 - INFO - Processing request of type PingRequest
+2025-08-30 00:44:06,271 - INFO - Processing request of type PingRequest
+2025-08-30 00:44:06,271 - INFO - Processing request of type PingRequest
+INFO:     127.0.0.1:56447 - "POST /mcp/messages?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:56448 - "POST /mcp/messages?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:56449 - "POST /mcp/messages/?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56447 - "POST /mcp/messages/?session_id=7d9e8b0b039a41b2addaf0b55e79b70b HTTP/1.1" 202 Accepted
+2025-08-30 00:44:06,273 - INFO - Processing request of type ListResourcesRequest
+2025-08-30 00:44:06,274 - INFO - Processing request of type ListPromptsRequest
+INFO:     127.0.0.1:57460 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57670 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57671 - "POST /mcp/messages?session_id=0fae88c9d0af49619a25046f626d85f0 HTTP/1.1" 307 Temporary Redirect
+2025-08-30 00:46:43,591 - ERROR - Failed to parse message
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mcp/server/sse.py", line 234, in handle_post_message
+    message = types.JSONRPCMessage.model_validate_json(body)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 746, in model_validate_json
+    return cls.__pydantic_validator__.validate_json(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 6 validation errors for JSONRPCMessage
+JSONRPCRequest.jsonrpc
+  Field required [type=missing, input_value={'method': 'tools/list', 'id': 1}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+JSONRPCNotification.jsonrpc
+  Field required [type=missing, input_value={'method': 'tools/list', 'id': 1}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+JSONRPCResponse.jsonrpc
+  Field required [type=missing, input_value={'method': 'tools/list', 'id': 1}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+JSONRPCResponse.result
+  Field required [type=missing, input_value={'method': 'tools/list', 'id': 1}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+JSONRPCError.jsonrpc
+  Field required [type=missing, input_value={'method': 'tools/list', 'id': 1}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+JSONRPCError.error
+  Field required [type=missing, input_value={'method': 'tools/list', 'id': 1}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+INFO:     127.0.0.1:57671 - "POST /mcp/messages/?session_id=0fae88c9d0af49619a25046f626d85f0 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58075 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58076 - "POST /mcp/messages?session_id=e589883842bc41daa6a1ad19b98ea2cb HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58076 - "POST /mcp/messages/?session_id=e589883842bc41daa6a1ad19b98ea2cb HTTP/1.1" 202 Accepted
+2025-08-30 00:47:33,362 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:58076 - "POST /mcp/messages?session_id=e589883842bc41daa6a1ad19b98ea2cb HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58076 - "POST /mcp/messages/?session_id=e589883842bc41daa6a1ad19b98ea2cb HTTP/1.1" 202 Accepted
+2025-08-30 00:47:33,365 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:58076 - "POST /mcp/messages?session_id=e589883842bc41daa6a1ad19b98ea2cb HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58076 - "POST /mcp/messages/?session_id=e589883842bc41daa6a1ad19b98ea2cb HTTP/1.1" 202 Accepted
+2025-08-30 00:47:33,367 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:58327 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58328 - "POST /mcp/messages?session_id=1243b6d7fc6b458a9b88dcf147c336e1 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58328 - "POST /mcp/messages/?session_id=1243b6d7fc6b458a9b88dcf147c336e1 HTTP/1.1" 202 Accepted
+2025-08-30 00:48:05,715 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:58328 - "POST /mcp/messages?session_id=1243b6d7fc6b458a9b88dcf147c336e1 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58328 - "POST /mcp/messages/?session_id=1243b6d7fc6b458a9b88dcf147c336e1 HTTP/1.1" 202 Accepted
+2025-08-30 00:48:05,716 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:58328 - "POST /mcp/messages?session_id=1243b6d7fc6b458a9b88dcf147c336e1 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58328 - "POST /mcp/messages/?session_id=1243b6d7fc6b458a9b88dcf147c336e1 HTTP/1.1" 202 Accepted
+2025-08-30 00:48:05,718 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:58729 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58730 - "POST /mcp/messages?session_id=1f99eff536444eb881914c3aa08dca39 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58730 - "POST /mcp/messages/?session_id=1f99eff536444eb881914c3aa08dca39 HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:58730 - "POST /mcp/messages?session_id=1f99eff536444eb881914c3aa08dca39 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58730 - "POST /mcp/messages/?session_id=1f99eff536444eb881914c3aa08dca39 HTTP/1.1" 202 Accepted
+2025-08-30 00:48:59,049 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:58730 - "POST /mcp/messages?session_id=1f99eff536444eb881914c3aa08dca39 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58730 - "POST /mcp/messages/?session_id=1f99eff536444eb881914c3aa08dca39 HTTP/1.1" 202 Accepted
+2025-08-30 00:48:59,052 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:58730 - "POST /mcp/messages?session_id=1f99eff536444eb881914c3aa08dca39 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58730 - "POST /mcp/messages/?session_id=1f99eff536444eb881914c3aa08dca39 HTTP/1.1" 202 Accepted
+2025-08-30 00:48:59,054 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:58940 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58941 - "POST /mcp/messages?session_id=ef542b895b1940fda2257e4cbb2e572b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58941 - "POST /mcp/messages/?session_id=ef542b895b1940fda2257e4cbb2e572b HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:58941 - "POST /mcp/messages?session_id=ef542b895b1940fda2257e4cbb2e572b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58941 - "POST /mcp/messages/?session_id=ef542b895b1940fda2257e4cbb2e572b HTTP/1.1" 202 Accepted
+2025-08-30 00:49:24,886 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:58941 - "POST /mcp/messages?session_id=ef542b895b1940fda2257e4cbb2e572b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58941 - "POST /mcp/messages/?session_id=ef542b895b1940fda2257e4cbb2e572b HTTP/1.1" 202 Accepted
+2025-08-30 00:49:24,888 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:58941 - "POST /mcp/messages?session_id=ef542b895b1940fda2257e4cbb2e572b HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58941 - "POST /mcp/messages/?session_id=ef542b895b1940fda2257e4cbb2e572b HTTP/1.1" 202 Accepted
+2025-08-30 00:49:24,890 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:59190 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59191 - "POST /mcp/messages?session_id=aa3840d3d4ed479285f0371f8e6277db HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:59191 - "POST /mcp/messages/?session_id=aa3840d3d4ed479285f0371f8e6277db HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:59191 - "POST /mcp/messages?session_id=aa3840d3d4ed479285f0371f8e6277db HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:59191 - "POST /mcp/messages/?session_id=aa3840d3d4ed479285f0371f8e6277db HTTP/1.1" 202 Accepted
+2025-08-30 00:49:56,598 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:59191 - "POST /mcp/messages?session_id=aa3840d3d4ed479285f0371f8e6277db HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:59191 - "POST /mcp/messages/?session_id=aa3840d3d4ed479285f0371f8e6277db HTTP/1.1" 202 Accepted
+2025-08-30 00:49:56,600 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:59191 - "POST /mcp/messages?session_id=aa3840d3d4ed479285f0371f8e6277db HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:59191 - "POST /mcp/messages/?session_id=aa3840d3d4ed479285f0371f8e6277db HTTP/1.1" 202 Accepted
+2025-08-30 00:49:56,602 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:62161 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62162 - "POST /mcp/messages?session_id=aa5032ddd30d477189f17c0cc80a1440 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62162 - "POST /mcp/messages/?session_id=aa5032ddd30d477189f17c0cc80a1440 HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:62162 - "POST /mcp/messages?session_id=aa5032ddd30d477189f17c0cc80a1440 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62162 - "POST /mcp/messages/?session_id=aa5032ddd30d477189f17c0cc80a1440 HTTP/1.1" 202 Accepted
+2025-08-30 00:55:29,591 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:62162 - "POST /mcp/messages?session_id=aa5032ddd30d477189f17c0cc80a1440 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62162 - "POST /mcp/messages/?session_id=aa5032ddd30d477189f17c0cc80a1440 HTTP/1.1" 202 Accepted
+2025-08-30 00:55:29,594 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:62162 - "POST /mcp/messages?session_id=aa5032ddd30d477189f17c0cc80a1440 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62162 - "POST /mcp/messages/?session_id=aa5032ddd30d477189f17c0cc80a1440 HTTP/1.1" 202 Accepted
+2025-08-30 00:55:29,596 - WARNING - Failed to validate request: Received request before initialization was complete
+INFO:     127.0.0.1:62468 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62469 - "POST /mcp/messages?session_id=9dba9e6ff24943479165b7e66344da9f HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62469 - "POST /mcp/messages/?session_id=9dba9e6ff24943479165b7e66344da9f HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:62469 - "POST /mcp/messages?session_id=9dba9e6ff24943479165b7e66344da9f HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62469 - "POST /mcp/messages/?session_id=9dba9e6ff24943479165b7e66344da9f HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:62469 - "POST /mcp/messages?session_id=9dba9e6ff24943479165b7e66344da9f HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62469 - "POST /mcp/messages/?session_id=9dba9e6ff24943479165b7e66344da9f HTTP/1.1" 202 Accepted
+2025-08-30 00:56:07,602 - INFO - Processing request of type ListToolsRequest
+INFO:     127.0.0.1:62469 - "POST /mcp/messages?session_id=9dba9e6ff24943479165b7e66344da9f HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62469 - "POST /mcp/messages/?session_id=9dba9e6ff24943479165b7e66344da9f HTTP/1.1" 202 Accepted
+2025-08-30 00:56:07,605 - INFO - Processing request of type CallToolRequest
+2025-08-30 00:56:07,607 - INFO - Preparing to send RPC call: method=get_device_info, params={}
+2025-08-30 00:56:07,607 - INFO - Connected to gateway: True
+2025-08-30 00:56:07,607 - INFO - Sending RPC call: get_device_info with params: {}
+INFO:     127.0.0.1:62469 - "POST /mcp/messages?session_id=9dba9e6ff24943479165b7e66344da9f HTTP/1.1" 307 Temporary Redirect
+2025-08-30 00:56:07,610 - ERROR - RPC error for mcp-get_device_info-4358506048: No device connected
+INFO:     127.0.0.1:62469 - "POST /mcp/messages/?session_id=9dba9e6ff24943479165b7e66344da9f HTTP/1.1" 202 Accepted
+2025-08-30 00:56:07,611 - INFO - Processing request of type CallToolRequest
+2025-08-30 00:56:07,611 - INFO - Preparing to send RPC call: method=start_app, params={'package_name': 'com.android.settings', 'stop': True}
+2025-08-30 00:56:07,611 - INFO - Connected to gateway: True
+2025-08-30 00:56:07,611 - INFO - Sending RPC call: start_app with params: {'package_name': 'com.android.settings', 'stop': True}
+2025-08-30 00:56:07,613 - ERROR - RPC error for mcp-start_app-4359338944: No device connected
+INFO:     127.0.0.1:62962 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62963 - "POST /mcp/messages?session_id=1dc47822afbc402c991b68b8f83d0642 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62963 - "POST /mcp/messages/?session_id=1dc47822afbc402c991b68b8f83d0642 HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:62963 - "POST /mcp/messages?session_id=1dc47822afbc402c991b68b8f83d0642 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62963 - "POST /mcp/messages/?session_id=1dc47822afbc402c991b68b8f83d0642 HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:62963 - "POST /mcp/messages?session_id=1dc47822afbc402c991b68b8f83d0642 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62963 - "POST /mcp/messages/?session_id=1dc47822afbc402c991b68b8f83d0642 HTTP/1.1" 202 Accepted
+2025-08-30 00:57:05,266 - INFO - Processing request of type ListToolsRequest
+INFO:     127.0.0.1:62963 - "POST /mcp/messages?session_id=1dc47822afbc402c991b68b8f83d0642 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62963 - "POST /mcp/messages/?session_id=1dc47822afbc402c991b68b8f83d0642 HTTP/1.1" 202 Accepted
+2025-08-30 00:57:05,269 - INFO - Processing request of type CallToolRequest
+2025-08-30 00:57:05,270 - INFO - Preparing to send RPC call: method=get_device_info, params={}
+2025-08-30 00:57:05,270 - INFO - Connected to gateway: True
+2025-08-30 00:57:05,270 - INFO - Sending RPC call: get_device_info with params: {}
+INFO:     127.0.0.1:62963 - "POST /mcp/messages?session_id=1dc47822afbc402c991b68b8f83d0642 HTTP/1.1" 307 Temporary Redirect
+2025-08-30 00:57:05,273 - ERROR - RPC error for mcp-get_device_info-4359201600: No device connected
+INFO:     127.0.0.1:62963 - "POST /mcp/messages/?session_id=1dc47822afbc402c991b68b8f83d0642 HTTP/1.1" 202 Accepted
+2025-08-30 00:57:05,274 - INFO - Processing request of type CallToolRequest
+2025-08-30 00:57:05,275 - INFO - Preparing to send RPC call: method=start_app, params={'package_name': 'com.android.settings', 'stop': True}
+2025-08-30 00:57:05,275 - INFO - Connected to gateway: True
+2025-08-30 00:57:05,275 - INFO - Sending RPC call: start_app with params: {'package_name': 'com.android.settings', 'stop': True}
+2025-08-30 00:57:05,276 - ERROR - RPC error for mcp-start_app-4359327808: No device connected
+INFO:     127.0.0.1:63158 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63159 - "POST /mcp/messages?session_id=0b08f04dccf8422bb5d05b96f03d6386 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63159 - "POST /mcp/messages/?session_id=0b08f04dccf8422bb5d05b96f03d6386 HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63159 - "POST /mcp/messages?session_id=0b08f04dccf8422bb5d05b96f03d6386 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63159 - "POST /mcp/messages/?session_id=0b08f04dccf8422bb5d05b96f03d6386 HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63159 - "POST /mcp/messages?session_id=0b08f04dccf8422bb5d05b96f03d6386 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63159 - "POST /mcp/messages/?session_id=0b08f04dccf8422bb5d05b96f03d6386 HTTP/1.1" 202 Accepted
+2025-08-30 00:57:31,060 - INFO - Processing request of type ListToolsRequest
+INFO:     127.0.0.1:63159 - "POST /mcp/messages?session_id=0b08f04dccf8422bb5d05b96f03d6386 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63159 - "POST /mcp/messages/?session_id=0b08f04dccf8422bb5d05b96f03d6386 HTTP/1.1" 202 Accepted
+2025-08-30 00:57:31,062 - INFO - Processing request of type CallToolRequest
+2025-08-30 00:57:31,062 - INFO - Preparing to send RPC call: method=get_device_info, params={}
+2025-08-30 00:57:31,062 - INFO - Connected to gateway: True
+2025-08-30 00:57:31,062 - INFO - Sending RPC call: get_device_info with params: {}
+INFO:     127.0.0.1:63159 - "POST /mcp/messages?session_id=0b08f04dccf8422bb5d05b96f03d6386 HTTP/1.1" 307 Temporary Redirect
+2025-08-30 00:57:31,064 - ERROR - RPC error for mcp-get_device_info-4359336256: No device connected
+INFO:     127.0.0.1:63159 - "POST /mcp/messages/?session_id=0b08f04dccf8422bb5d05b96f03d6386 HTTP/1.1" 202 Accepted
+2025-08-30 00:57:31,065 - INFO - Processing request of type CallToolRequest
+2025-08-30 00:57:31,065 - INFO - Preparing to send RPC call: method=start_app, params={'package_name': 'com.android.settings', 'stop': True}
+2025-08-30 00:57:31,065 - INFO - Connected to gateway: True
+2025-08-30 00:57:31,065 - INFO - Sending RPC call: start_app with params: {'package_name': 'com.android.settings', 'stop': True}
+2025-08-30 00:57:31,067 - ERROR - RPC error for mcp-start_app-4357300992: No device connected
+INFO:     127.0.0.1:63494 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63495 - "POST /mcp/messages?session_id=f2a2b591ec704acfa90e56f62be60ee0 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63495 - "POST /mcp/messages/?session_id=f2a2b591ec704acfa90e56f62be60ee0 HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63495 - "POST /mcp/messages?session_id=f2a2b591ec704acfa90e56f62be60ee0 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63495 - "POST /mcp/messages/?session_id=f2a2b591ec704acfa90e56f62be60ee0 HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63495 - "POST /mcp/messages?session_id=f2a2b591ec704acfa90e56f62be60ee0 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63495 - "POST /mcp/messages/?session_id=f2a2b591ec704acfa90e56f62be60ee0 HTTP/1.1" 202 Accepted
+2025-08-30 00:58:13,432 - INFO - Processing request of type ListToolsRequest
+INFO:     127.0.0.1:63495 - "POST /mcp/messages?session_id=f2a2b591ec704acfa90e56f62be60ee0 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63495 - "POST /mcp/messages/?session_id=f2a2b591ec704acfa90e56f62be60ee0 HTTP/1.1" 202 Accepted
+2025-08-30 00:58:13,434 - INFO - Processing request of type CallToolRequest
+2025-08-30 00:58:13,435 - INFO - Preparing to send RPC call: method=get_device_info, params={}
+2025-08-30 00:58:13,435 - INFO - Connected to gateway: True
+2025-08-30 00:58:13,436 - INFO - Sending RPC call: get_device_info with params: {}
+INFO:     127.0.0.1:63495 - "POST /mcp/messages?session_id=f2a2b591ec704acfa90e56f62be60ee0 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63495 - "POST /mcp/messages/?session_id=f2a2b591ec704acfa90e56f62be60ee0 HTTP/1.1" 202 Accepted
+2025-08-30 00:58:13,440 - INFO - Processing request of type CallToolRequest
+2025-08-30 00:58:13,441 - INFO - Preparing to send RPC call: method=start_app, params={'package_name': 'com.android.settings', 'stop': True}
+2025-08-30 00:58:13,441 - INFO - Connected to gateway: True
+2025-08-30 00:58:13,441 - INFO - Sending RPC call: start_app with params: {'package_name': 'com.android.settings', 'stop': True}
+INFO:     127.0.0.1:63602 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63603 - "POST /mcp/messages?session_id=c3b3250c448f462582325817b5ae38d8 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63603 - "POST /mcp/messages/?session_id=c3b3250c448f462582325817b5ae38d8 HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63603 - "POST /mcp/messages?session_id=c3b3250c448f462582325817b5ae38d8 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63603 - "POST /mcp/messages/?session_id=c3b3250c448f462582325817b5ae38d8 HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63603 - "POST /mcp/messages?session_id=c3b3250c448f462582325817b5ae38d8 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63603 - "POST /mcp/messages/?session_id=c3b3250c448f462582325817b5ae38d8 HTTP/1.1" 202 Accepted
+2025-08-30 00:58:28,507 - INFO - Processing request of type ListToolsRequest
+INFO:     127.0.0.1:63603 - "POST /mcp/messages?session_id=c3b3250c448f462582325817b5ae38d8 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63603 - "POST /mcp/messages/?session_id=c3b3250c448f462582325817b5ae38d8 HTTP/1.1" 202 Accepted
+2025-08-30 00:58:28,510 - INFO - Processing request of type CallToolRequest
+2025-08-30 00:58:28,511 - INFO - Preparing to send RPC call: method=get_device_info, params={}
+2025-08-30 00:58:28,511 - INFO - Connected to gateway: True
+2025-08-30 00:58:28,511 - INFO - Sending RPC call: get_device_info with params: {}
+INFO:     127.0.0.1:63603 - "POST /mcp/messages?session_id=c3b3250c448f462582325817b5ae38d8 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63603 - "POST /mcp/messages/?session_id=c3b3250c448f462582325817b5ae38d8 HTTP/1.1" 202 Accepted
+2025-08-30 00:58:28,516 - INFO - Processing request of type CallToolRequest
+2025-08-30 00:58:28,517 - INFO - Preparing to send RPC call: method=start_app, params={'package_name': 'com.android.settings', 'stop': True}
+2025-08-30 00:58:28,517 - INFO - Connected to gateway: True
+2025-08-30 00:58:28,517 - INFO - Sending RPC call: start_app with params: {'package_name': 'com.android.settings', 'stop': True}
