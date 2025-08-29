@@ -1,0 +1,48 @@
+(65145) wsgi starting up on http://0.0.0.0:8765
+(65145) accepted ('127.0.0.1', 52401)
+127.0.0.1 - - [29/Aug/2025 13:04:58] "GET /socket.io/?transport=polling&EIO=4&t=1756443898.6525595 HTTP/1.1" 200 300 0.000522
+(65145) accepted ('127.0.0.1', 52402)
+(65145) accepted ('127.0.0.1', 52410)
+127.0.0.1 - - [29/Aug/2025 13:04:59] "GET /socket.io/?transport=polling&EIO=4&t=1756443900.2892969 HTTP/1.1" 200 300 0.000414
+(65145) accepted ('127.0.0.1', 52411)
+127.0.0.1 - - [29/Aug/2025 13:04:59] "GET /socket.io/?transport=polling&EIO=4&t=1756443900.288716 HTTP/1.1" 200 300 0.000112
+(65145) accepted ('127.0.0.1', 52412)
+(65145) accepted ('127.0.0.1', 52413)
+(65145) accepted ('127.0.0.1', 52419)
+127.0.0.1 - - [29/Aug/2025 13:05:01] "GET /socket.io/?transport=polling&EIO=4&t=1756443901.7668586 HTTP/1.1" 200 300 0.000165
+(65145) accepted ('127.0.0.1', 52420)
+(65145) accepted ('127.0.0.1', 52448)
+127.0.0.1 - - [29/Aug/2025 13:05:17] "GET /socket.io/?transport=polling&EIO=4&t=1756443918.459175 HTTP/1.1" 200 300 0.001027
+(65145) accepted ('127.0.0.1', 52449)
+Gateway: Starting main function...
+Gateway: Creating Gateway instance...
+Gateway: Initializing Socket.IO server...
+Gateway: Registering Socket.IO event handlers...
+Gateway: Socket.IO event handlers registered successfully
+Gateway: Gateway instance created successfully
+Gateway: Device connections: 0
+Gateway: Socket.IO server: <socketio.server.Server object at 0x1006af140>
+Gateway: WSGI app: <socketio.middleware.WSGIApp object at 0x102351460>
+Gateway: Starting Socket.IO server on 0.0.0.0:8765
+Gateway: This will listen on ALL network interfaces
+Gateway listening on http://0.0.0.0:8765  (TOKEN=devtoken)
+Gateway: Server should be accessible from external networks
+Gateway: Starting eventlet server on 0.0.0.0:8765
+Gateway: Server started successfully
+Gateway: New connection from y99ZKdNtQOsob-U0AAAB
+Gateway: Environment: {'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.version': (1, 0), 'wsgi.multithread': True, 'wsgi.multiprocess': False, 'wsgi.run_once': False, 'wsgi.url_scheme': 'http', 'REQUEST_METHOD': 'GET', 'SCRIPT_NAME': '', 'RAW_PATH_INFO': '/socket.io/', 'PATH_INFO': '/socket.io/', 'QUERY_STRING': 'transport=polling&EIO=4&t=1756443898.6525595', 'CONTENT_TYPE': 'text/plain', 'SERVER_PROTOCOL': 'HTTP/1.0', 'SERVER_NAME': '127.0.0.1', 'SERVER_PORT': '8765', 'REMOTE_ADDR': '127.0.0.1', 'REMOTE_PORT': '52401', 'GATEWAY_INTERFACE': 'CGI/1.1', 'headers_raw': (('Host', '127.0.0.1:8765'), ('User-Agent', 'python-requests/2.32.5'), ('Accept-Encoding', 'gzip, deflate'), ('Accept', '*/*'), ('Connection', 'keep-alive'), ('Authorization', 'Bearer devtoken'), ('X-Device-Id', '1ba091c5-4478-494a-9e1b-95b2b6d50b46')), 'HTTP_HOST': '127.0.0.1:8765', 'HTTP_USER_AGENT': 'python-requests/2.32.5', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate', 'HTTP_ACCEPT': '*/*', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_AUTHORIZATION': 'Bearer devtoken', 'HTTP_X_DEVICE_ID': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'wsgi.input': <eventlet.wsgi.Input object at 0x1025d3710>, 'eventlet.input': <eventlet.wsgi.Input object at 0x1025d3710>, 'eventlet.posthooks': [], 'eventlet.set_idle': <function HttpProtocol.get_environ.<locals>.set_idle at 0x102650f40>}
+Gateway: Device connected: 8570a40e-1836-4d4a-8e3a-8cf6d07e62b6 (sid: y99ZKdNtQOsob-U0AAAB)
+Gateway: Total connections: 1
+Gateway: New connection from Fs5Owy2uEF_rVsOSAAAE
+Gateway: Environment: {'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.version': (1, 0), 'wsgi.multithread': True, 'wsgi.multiprocess': False, 'wsgi.run_once': False, 'wsgi.url_scheme': 'http', 'REQUEST_METHOD': 'GET', 'SCRIPT_NAME': '', 'RAW_PATH_INFO': '/socket.io/', 'PATH_INFO': '/socket.io/', 'QUERY_STRING': 'transport=polling&EIO=4&t=1756443900.2892969', 'CONTENT_TYPE': 'text/plain', 'SERVER_PROTOCOL': 'HTTP/1.0', 'SERVER_NAME': '127.0.0.1', 'SERVER_PORT': '8765', 'REMOTE_ADDR': '127.0.0.1', 'REMOTE_PORT': '52410', 'GATEWAY_INTERFACE': 'CGI/1.1', 'headers_raw': (('Host', '127.0.0.1:8765'), ('User-Agent', 'python-requests/2.32.5'), ('Accept-Encoding', 'gzip, deflate'), ('Accept', '*/*'), ('Connection', 'keep-alive'), ('Authorization', 'Bearer devtoken'), ('X-Device-Id', '1ba091c5-4478-494a-9e1b-95b2b6d50b46')), 'HTTP_HOST': '127.0.0.1:8765', 'HTTP_USER_AGENT': 'python-requests/2.32.5', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate', 'HTTP_ACCEPT': '*/*', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_AUTHORIZATION': 'Bearer devtoken', 'HTTP_X_DEVICE_ID': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'wsgi.input': <eventlet.wsgi.Input object at 0x10263aae0>, 'eventlet.input': <eventlet.wsgi.Input object at 0x10263aae0>, 'eventlet.posthooks': [], 'eventlet.set_idle': <function HttpProtocol.get_environ.<locals>.set_idle at 0x102651800>}
+Gateway: Device connected: 5064cc33-625b-4a3c-aec9-0516e7ca00ca (sid: Fs5Owy2uEF_rVsOSAAAE)
+Gateway: Total connections: 2
+Gateway: New connection from OpSOd0GiP0UeJ_wQAAAF
+Gateway: Environment: {'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.version': (1, 0), 'wsgi.multithread': True, 'wsgi.multiprocess': False, 'wsgi.run_once': False, 'wsgi.url_scheme': 'http', 'REQUEST_METHOD': 'GET', 'SCRIPT_NAME': '', 'RAW_PATH_INFO': '/socket.io/', 'PATH_INFO': '/socket.io/', 'QUERY_STRING': 'transport=polling&EIO=4&t=1756443900.288716', 'CONTENT_TYPE': 'text/plain', 'SERVER_PROTOCOL': 'HTTP/1.0', 'SERVER_NAME': '127.0.0.1', 'SERVER_PORT': '8765', 'REMOTE_ADDR': '127.0.0.1', 'REMOTE_PORT': '52411', 'GATEWAY_INTERFACE': 'CGI/1.1', 'headers_raw': (('Host', '127.0.0.1:8765'), ('User-Agent', 'python-requests/2.32.5'), ('Accept-Encoding', 'gzip, deflate'), ('Accept', '*/*'), ('Connection', 'keep-alive'), ('Authorization', 'Bearer devtoken'), ('X-Device-Id', '1ba091c5-4478-494a-9e1b-95b2b6d50b46')), 'HTTP_HOST': '127.0.0.1:8765', 'HTTP_USER_AGENT': 'python-requests/2.32.5', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate', 'HTTP_ACCEPT': '*/*', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_AUTHORIZATION': 'Bearer devtoken', 'HTTP_X_DEVICE_ID': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'wsgi.input': <eventlet.wsgi.Input object at 0x10263aff0>, 'eventlet.input': <eventlet.wsgi.Input object at 0x10263aff0>, 'eventlet.posthooks': [], 'eventlet.set_idle': <function HttpProtocol.get_environ.<locals>.set_idle at 0x1026518a0>}
+Gateway: Device connected: c54df406-fcef-49d1-bde1-7bbcc16b9fec (sid: OpSOd0GiP0UeJ_wQAAAF)
+Gateway: Total connections: 3
+Gateway: New connection from ZkgVTPGYSXOg0G0jAAAH
+Gateway: Environment: {'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.version': (1, 0), 'wsgi.multithread': True, 'wsgi.multiprocess': False, 'wsgi.run_once': False, 'wsgi.url_scheme': 'http', 'REQUEST_METHOD': 'GET', 'SCRIPT_NAME': '', 'RAW_PATH_INFO': '/socket.io/', 'PATH_INFO': '/socket.io/', 'QUERY_STRING': 'transport=polling&EIO=4&t=1756443901.7668586', 'CONTENT_TYPE': 'text/plain', 'SERVER_PROTOCOL': 'HTTP/1.0', 'SERVER_NAME': '127.0.0.1', 'SERVER_PORT': '8765', 'REMOTE_ADDR': '127.0.0.1', 'REMOTE_PORT': '52419', 'GATEWAY_INTERFACE': 'CGI/1.1', 'headers_raw': (('Host', '127.0.0.1:8765'), ('User-Agent', 'python-requests/2.32.5'), ('Accept-Encoding', 'gzip, deflate'), ('Accept', '*/*'), ('Connection', 'keep-alive'), ('Authorization', 'Bearer devtoken'), ('X-Device-Id', '1ba091c5-4478-494a-9e1b-95b2b6d50b46')), 'HTTP_HOST': '127.0.0.1:8765', 'HTTP_USER_AGENT': 'python-requests/2.32.5', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate', 'HTTP_ACCEPT': '*/*', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_AUTHORIZATION': 'Bearer devtoken', 'HTTP_X_DEVICE_ID': '1ba091c5-4478-494a-9e1b-95b2b6d50b46', 'wsgi.input': <eventlet.wsgi.Input object at 0x102675070>, 'eventlet.input': <eventlet.wsgi.Input object at 0x102675070>, 'eventlet.posthooks': [], 'eventlet.set_idle': <function HttpProtocol.get_environ.<locals>.set_idle at 0x102652200>}
+Gateway: Device connected: d15f95bf-e6d7-4ef2-a7d4-e72bbc0e0542 (sid: ZkgVTPGYSXOg0G0jAAAH)
+Gateway: Total connections: 4
+Gateway: New connection from ooQ_xM2YoG7xmtv-AAAJ

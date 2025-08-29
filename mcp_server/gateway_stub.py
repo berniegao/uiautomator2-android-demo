@@ -37,9 +37,13 @@ class Gateway:
         self.pending: Dict[str, threading.Event] = {}
         self.results: Dict[str, dict] = {}
         
+        print("Gateway: Initializing Socket.IO server...")
+        
         # Create Socket.IO server
         self.sio = socketio.Server(cors_allowed_origins='*')
         self.app = socketio.WSGIApp(self.sio)
+        
+        print("Gateway: Registering Socket.IO event handlers...")
         
         # Register Socket.IO events
         self.sio.on('connect', self.on_connect)
@@ -47,6 +51,8 @@ class Gateway:
         self.sio.on('message', self.on_message)
         self.sio.on('rpc_result', self.on_rpc_result)
         self.sio.on('rpc_error', self.on_rpc_error)
+        
+        print("Gateway: Socket.IO event handlers registered successfully")
 
     def on_connect(self, sid, environ):
         print(f"Gateway: New connection from {sid}")
@@ -88,14 +94,26 @@ class Gateway:
                 method = data.get("method")
                 params = data.get("params", {})
                 print(f"Gateway: Forwarding RPC call {req_id}: {method}")
-                # For now, just echo back
-                response = {
-                    "type": "rpc.result",
-                    "id": req_id,
-                    "result": {"success": True, "message": f"Echo: {method}"}
-                }
-                self.sio.emit('message', response, room=sid)
-                print(f"Gateway: Sent RPC response to {sid}")
+                
+                # Find the device that sent this RPC call
+                device_sid = None
+                for device_id, device_sid in self.device_connections.items():
+                    if device_sid == sid:  # Check if this is the device
+                        break
+                
+                if device_sid:
+                    # Forward RPC call to the device
+                    print(f"Gateway: Forwarding RPC call to device {device_sid}")
+                    self.sio.emit('message', data, room=device_sid)
+                else:
+                    # No device found, send error response
+                    response = {
+                        "type": "rpc.error",
+                        "id": req_id,
+                        "error": "No device connected"
+                    }
+                    self.sio.emit('message', response, room=sid)
+                    print(f"Gateway: No device found, sent error response")
             elif msg_type == "rpc.result":
                 print(f"Gateway: RPC result from {sid}: {data}")
                 req_id = data.get("id")
@@ -194,7 +212,23 @@ def repl(gw: Gateway):
 
 
 def main():
-    gw = Gateway()
+    import sys
+    import os
+    
+    print("Gateway: Starting main function...")
+    
+    try:
+        print("Gateway: Creating Gateway instance...")
+        gw = Gateway()
+        print("Gateway: Gateway instance created successfully")
+        print(f"Gateway: Device connections: {len(gw.device_connections)}")
+        print(f"Gateway: Socket.IO server: {gw.sio}")
+        print(f"Gateway: WSGI app: {gw.app}")
+    except Exception as e:
+        print(f"Gateway: Error creating Gateway instance: {e}")
+        import traceback
+        traceback.print_exc()
+        return
     
     # Force listen on all interfaces
     host = "0.0.0.0"
@@ -207,23 +241,22 @@ def main():
     print(f"Gateway listening on http://{host}:{port}  (TOKEN={TOKEN})")
     print(f"Gateway: Server should be accessible from external networks")
     
-    # Start server in a separate thread
-    def run_server():
-        print(f"Gateway: Starting eventlet server on {host}:{port}")
-        eventlet.wsgi.server(eventlet.listen((host, port)), gw.app)
+    # Start server using eventlet spawn
+    print(f"Gateway: Starting eventlet server on {host}:{port}")
+    try:
+        # Start server in background
+        eventlet.spawn(eventlet.wsgi.server, eventlet.listen((host, port)), gw.app)
+        print("Gateway: Server started successfully")
+    except Exception as e:
+        print(f"Gateway: Error starting server: {e}")
+        import traceback
+        traceback.print_exc()
+        return
     
-    server_thread = threading.Thread(target=run_server, daemon=True)
-    server_thread.start()
-    
-    # Wait a moment for server to start
-    import time
-    time.sleep(2)
-    
-    # Keep server running without REPL for now
+    # Keep server running
     try:
         while True:
-            import time
-            time.sleep(1)
+            eventlet.sleep(1)
     except KeyboardInterrupt:
         pass
 

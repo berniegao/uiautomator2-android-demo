@@ -142,9 +142,46 @@ class ReverseMcpBridge:
         while True:
             try:
                 print(f"MCP Bridge: Attempting to connect to gateway...")
+                
+                # Force disconnect if still connected
+                if self.sio.connected:
+                    print(f"MCP Bridge: Force disconnecting existing connection...")
+                    self.sio.disconnect()
+                    self.connected = False
+                    time.sleep(1)
+                
+                # Create new Socket.IO client for each connection attempt
+                if self.sio:
+                    self.sio.disconnect()
+                self.sio = socketio.Client()
+                
+                # Re-register event handlers
+                @self.sio.event
+                def connect():
+                    self.connected = True
+                    self.reconnect_count = 0
+                    print(f"MCP Bridge: Successfully connected to gateway!")
+                    
+                    # Send hello message
+                    hello_msg = {"type": "hello", "session": self.session_id, "device": self.adb_address}
+                    self.send(hello_msg)
+                    print(f"MCP Bridge: Sent hello message: {hello_msg}")
+                
+                @self.sio.event
+                def disconnect():
+                    self.connected = False
+                    print(f"MCP Bridge: Disconnected from gateway")
+                
+                @self.sio.event
+                def message(data):
+                    print(f"MCP Bridge: Received message: {data}")
+                    self.handle_incoming_message(data)
+                
+                # Attempt connection
                 self.sio.connect(
                     self.ws_url, 
-                    headers={"Authorization": f"Bearer {self.token}", "X-Device-Id": self.session_id}
+                    headers={"Authorization": f"Bearer {self.token}", "X-Device-Id": self.session_id},
+                    wait_timeout=10  # 10 second timeout
                 )
                 
                 # Keep connection alive
@@ -154,6 +191,14 @@ class ReverseMcpBridge:
             except Exception as e:
                 self.connected = False
                 print(f"MCP Bridge: Connection error: {e}")
+                print(f"MCP Bridge: Error type: {type(e).__name__}")
+                
+                # Force cleanup
+                try:
+                    if self.sio and self.sio.connected:
+                        self.sio.disconnect()
+                except:
+                    pass
             
             # Wait before reconnecting
             self.reconnect_count += 1
