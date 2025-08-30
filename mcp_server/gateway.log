@@ -404,3 +404,828 @@
 2025-08-29 15:34:14,715 - INFO - Gateway: Remaining connections: 1
 2025-08-29 15:34:14,715 - INFO - Gateway: Devices: 1, Clients: 0
 127.0.0.1 - - [29/Aug/2025 15:34:14] "GET /socket.io/?transport=websocket&EIO=4&sid=LKX2hOI3p7gyNrMiAABA&t=1756452850.707548 HTTP/1.1" 200 0 4.007405
+2025-08-30 04:50:37,634 - INFO - Gateway: Starting main function...
+2025-08-30 04:50:37,634 - INFO - Gateway: Creating Gateway instance...
+2025-08-30 04:50:37,634 - INFO - Gateway: Initializing Socket.IO server...
+2025-08-30 04:50:37,640 - INFO - Gateway: Registering Socket.IO event handlers...
+2025-08-30 04:50:37,640 - INFO - Gateway: Socket.IO event handlers registered successfully
+2025-08-30 04:50:37,640 - INFO - Gateway: Gateway instance created successfully
+2025-08-30 04:50:37,640 - INFO - Gateway: Device connections: 0
+2025-08-30 04:50:37,640 - INFO - Gateway: Client connections: 0
+2025-08-30 04:50:37,640 - INFO - Gateway: Total connections: 0
+2025-08-30 04:50:37,641 - INFO - Gateway: Socket.IO server: <socketio.server.Server object at 0x106e55b20>
+2025-08-30 04:50:37,641 - INFO - Gateway: WSGI app: <socketio.middleware.WSGIApp object at 0x106c03950>
+2025-08-30 04:50:37,641 - INFO - Gateway: Starting Socket.IO server on 0.0.0.0:8765
+2025-08-30 04:50:37,641 - INFO - Gateway: This will listen on ALL network interfaces
+2025-08-30 04:50:37,641 - INFO - Gateway listening on http://0.0.0.0:8765  (TOKEN=devtoken)
+2025-08-30 04:50:37,641 - INFO - Gateway: Server should be accessible from external networks
+2025-08-30 04:50:37,641 - INFO - Gateway: Starting eventlet server on 0.0.0.0:8765
+2025-08-30 04:50:37,641 - INFO - Gateway: Server started successfully
+2025-08-30 04:50:38,930 - INFO - Gateway: New connection from k6p8lN4RI0oPmtDwAAAB
+2025-08-30 04:50:38,930 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 04:50:38,930 - INFO - Gateway: Total connections: 0
+2025-08-30 04:50:39,342 - INFO - Gateway: New connection from UY0TFfoc1w4X4Y9wAAAD
+2025-08-30 04:50:39,343 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 04:50:39,343 - INFO - Gateway: Total connections: 0
+2025-08-30 04:50:42,121 - INFO - Gateway: New connection from dwZ3kAse0ebRHDPzAAAF
+2025-08-30 04:50:42,121 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 04:50:42,121 - INFO - Gateway: Total connections: 0
+2025-08-30 04:50:42,125 - INFO - Gateway: Received message from dwZ3kAse0ebRHDPzAAAF: {'type': 'hello', 'session': 'f64bbcfa-58b9-4f94-86b7-ab6acf0467bd', 'device': '127.0.0.1'}
+2025-08-30 04:50:42,125 - INFO - Gateway: Device connection established: b31f529d-0cba-44b4-9f92-cff66821e720 (sid: dwZ3kAse0ebRHDPzAAAF)
+2025-08-30 04:50:42,125 - INFO - Gateway: Total connections: 1
+2025-08-30 04:50:42,125 - INFO - Gateway: Devices: 1, Clients: 0
+2025-08-30 04:50:42,125 - INFO - Gateway: hello from dwZ3kAse0ebRHDPzAAAF: {'type': 'hello', 'session': 'f64bbcfa-58b9-4f94-86b7-ab6acf0467bd', 'device': '127.0.0.1'}
+2025-08-30 04:51:52,753 - INFO - Gateway: Starting main function...
+2025-08-30 04:51:52,753 - INFO - Gateway: Creating Gateway instance...
+2025-08-30 04:51:52,753 - INFO - Gateway: Initializing Socket.IO server...
+2025-08-30 04:51:52,759 - INFO - Gateway: Registering Socket.IO event handlers...
+2025-08-30 04:51:52,759 - INFO - Gateway: Socket.IO event handlers registered successfully
+2025-08-30 04:51:52,759 - INFO - Gateway: Gateway instance created successfully
+2025-08-30 04:51:52,759 - INFO - Gateway: Device connections: 0
+2025-08-30 04:51:52,759 - INFO - Gateway: Client connections: 0
+2025-08-30 04:51:52,759 - INFO - Gateway: Total connections: 0
+2025-08-30 04:51:52,759 - INFO - Gateway: Socket.IO server: <socketio.server.Server object at 0x1050cd310>
+2025-08-30 04:51:52,759 - INFO - Gateway: WSGI app: <socketio.middleware.WSGIApp object at 0x10511b380>
+2025-08-30 04:51:52,759 - INFO - Gateway: Starting Socket.IO server on 0.0.0.0:8765
+2025-08-30 04:51:52,759 - INFO - Gateway: This will listen on ALL network interfaces
+2025-08-30 04:51:52,759 - INFO - Gateway listening on http://0.0.0.0:8765  (TOKEN=devtoken)
+2025-08-30 04:51:52,759 - INFO - Gateway: Server should be accessible from external networks
+2025-08-30 04:51:52,759 - INFO - Gateway: Starting eventlet server on 0.0.0.0:8765
+2025-08-30 04:51:52,759 - INFO - Gateway: Server started successfully
+2025-08-30 04:51:52,791 - INFO - Gateway: New connection from TLIDUfJEiVfYsr2vAAAB
+2025-08-30 04:51:52,791 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 04:51:52,791 - INFO - Gateway: Total connections: 0
+2025-08-30 04:51:53,704 - INFO - Gateway: New connection from ihgw3G48MT02xRZWAAAD
+2025-08-30 04:51:53,705 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 04:51:53,705 - INFO - Gateway: Total connections: 0
+2025-08-30 04:51:56,293 - INFO - Gateway: New connection from p-0FvXmc3_zE9U5ZAAAF
+2025-08-30 04:51:56,293 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 04:51:56,293 - INFO - Gateway: Total connections: 0
+2025-08-30 04:52:09,389 - INFO - Gateway: New connection from b4QjnS3gYYU96br8AAAH
+2025-08-30 04:52:09,392 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 04:52:09,392 - INFO - Gateway: Total connections: 0
+2025-08-30 04:52:09,402 - INFO - Gateway: Received message from b4QjnS3gYYU96br8AAAH: {'type': 'hello', 'session': 'f64bbcfa-58b9-4f94-86b7-ab6acf0467bd', 'device': '127.0.0.1'}
+2025-08-30 04:52:09,402 - INFO - Gateway: Device connection established: 0fb28695-b736-4183-848f-958c02b5d9aa (sid: b4QjnS3gYYU96br8AAAH)
+2025-08-30 04:52:09,402 - INFO - Gateway: Total connections: 1
+2025-08-30 04:52:09,402 - INFO - Gateway: Devices: 1, Clients: 0
+2025-08-30 04:52:09,402 - INFO - Gateway: hello from b4QjnS3gYYU96br8AAAH: {'type': 'hello', 'session': 'f64bbcfa-58b9-4f94-86b7-ab6acf0467bd', 'device': '127.0.0.1'}
+2025-08-30 04:52:39,198 - INFO - Gateway: Client disconnected: b4QjnS3gYYU96br8AAAH
+2025-08-30 04:52:39,199 - INFO - Gateway: Device disconnected: 0fb28695-b736-4183-848f-958c02b5d9aa
+2025-08-30 04:52:39,199 - INFO - Gateway: Remaining connections: 0
+2025-08-30 04:52:39,199 - INFO - Gateway: Devices: 0, Clients: 0
+2025-08-30 04:52:39,207 - INFO - Gateway: Client disconnected: ihgw3G48MT02xRZWAAAD
+2025-08-30 04:52:39,207 - INFO - Gateway: Remaining connections: 0
+2025-08-30 04:52:39,207 - INFO - Gateway: Devices: 0, Clients: 0
+2025-08-30 04:52:39,211 - INFO - Gateway: Client disconnected: TLIDUfJEiVfYsr2vAAAB
+2025-08-30 04:52:39,211 - INFO - Gateway: Remaining connections: 0
+2025-08-30 04:52:39,211 - INFO - Gateway: Devices: 0, Clients: 0
+2025-08-30 05:05:45,516 - INFO - Gateway: New connection from 44biZnFys5XGu-VKAAAJ
+2025-08-30 05:05:45,517 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 05:05:45,517 - INFO - Gateway: Total connections: 0
+2025-08-30 05:05:45,525 - INFO - Gateway: Received message from 44biZnFys5XGu-VKAAAJ: {'type': 'hello', 'session': '339426d3-a223-4bf8-93ee-9d7c21228b32', 'device': '127.0.0.1'}
+2025-08-30 05:05:45,525 - INFO - Gateway: Device connection established: 939b595e-b318-4ebd-a871-f68c214ceca5 (sid: 44biZnFys5XGu-VKAAAJ)
+2025-08-30 05:05:45,525 - INFO - Gateway: Total connections: 1
+2025-08-30 05:05:45,525 - INFO - Gateway: Devices: 1, Clients: 0
+2025-08-30 05:05:45,525 - INFO - Gateway: hello from 44biZnFys5XGu-VKAAAJ: {'type': 'hello', 'session': '339426d3-a223-4bf8-93ee-9d7c21228b32', 'device': '127.0.0.1'}
+2025-08-30 05:10:15,766 - INFO - Gateway: Client disconnected: 44biZnFys5XGu-VKAAAJ
+2025-08-30 05:10:15,767 - INFO - Gateway: Device disconnected: 939b595e-b318-4ebd-a871-f68c214ceca5
+2025-08-30 05:10:15,767 - INFO - Gateway: Remaining connections: 0
+2025-08-30 05:10:15,767 - INFO - Gateway: Devices: 0, Clients: 0
+2025-08-30 05:12:13,237 - INFO - Gateway: New connection from oR9R4u9uVjGKuWU0AAAL
+2025-08-30 05:12:13,238 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 05:12:13,238 - INFO - Gateway: Total connections: 0
+2025-08-30 05:12:13,246 - INFO - Gateway: Received message from oR9R4u9uVjGKuWU0AAAL: {'type': 'hello', 'session': 'd2338a47-8c3f-4ccf-bda3-d32acdda0983', 'device': '127.0.0.1'}
+2025-08-30 05:12:13,246 - INFO - Gateway: Device connection established: 21ef2323-2b30-47bc-b133-f8082d07ceeb (sid: oR9R4u9uVjGKuWU0AAAL)
+2025-08-30 05:12:13,246 - INFO - Gateway: Total connections: 1
+2025-08-30 05:12:13,246 - INFO - Gateway: Devices: 1, Clients: 0
+2025-08-30 05:12:13,246 - INFO - Gateway: hello from oR9R4u9uVjGKuWU0AAAL: {'type': 'hello', 'session': 'd2338a47-8c3f-4ccf-bda3-d32acdda0983', 'device': '127.0.0.1'}
+2025-08-30 11:13:36,082 - INFO - Gateway: Received message from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4359337344', 'method': 'start_app', 'params': {'package_name': 'com.google.android.youtube', 'stop': True}}
+2025-08-30 11:13:36,085 - INFO - Gateway: Client connection established: ba309cd3-5292-4f54-81db-4bea7f7d6d27 (sid: p-0FvXmc3_zE9U5ZAAAF)
+2025-08-30 11:13:36,086 - INFO - Gateway: Total connections: 2
+2025-08-30 11:13:36,086 - INFO - Gateway: Devices: 1, Clients: 1
+2025-08-30 11:13:36,086 - INFO - Gateway: RPC call from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4359337344', 'method': 'start_app', 'params': {'package_name': 'com.google.android.youtube', 'stop': True}}
+2025-08-30 11:13:36,087 - INFO - Gateway: Forwarding RPC call mcp-start_app-4359337344: start_app
+2025-08-30 11:13:36,087 - INFO - Gateway: Forwarding RPC call to device oR9R4u9uVjGKuWU0AAAL
+2025-08-30 11:13:49,981 - INFO - Gateway: Received message from oR9R4u9uVjGKuWU0AAAL: {'type': 'rpc.result', 'id': 'mcp-start_app-4359337344', 'result': {'success': False, 'error': 'device 127.0.0.1 not online'}}
+2025-08-30 11:13:49,982 - INFO - Gateway: RPC result from oR9R4u9uVjGKuWU0AAAL: {'type': 'rpc.result', 'id': 'mcp-start_app-4359337344', 'result': {'success': False, 'error': 'device 127.0.0.1 not online'}}
+2025-08-30 11:17:16,876 - INFO - Gateway: Client disconnected: oR9R4u9uVjGKuWU0AAAL
+2025-08-30 11:17:16,879 - INFO - Gateway: Device disconnected: 21ef2323-2b30-47bc-b133-f8082d07ceeb
+2025-08-30 11:17:16,879 - INFO - Gateway: Remaining connections: 1
+2025-08-30 11:17:16,879 - INFO - Gateway: Devices: 0, Clients: 1
+2025-08-30 12:01:43,719 - INFO - Gateway: New connection from XsoinJaj5la7nB6oAAAN
+2025-08-30 12:01:43,719 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 12:01:43,720 - INFO - Gateway: Total connections: 1
+2025-08-30 12:01:45,727 - INFO - Gateway: Received message from XsoinJaj5la7nB6oAAAN: {'type': 'rpc.call', 'id': 'start-app-001', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 12:01:45,727 - INFO - Gateway: Client connection established: d3c9b95d-d14f-45f0-9497-c35ae0bb01e6 (sid: XsoinJaj5la7nB6oAAAN)
+2025-08-30 12:01:45,727 - INFO - Gateway: Total connections: 2
+2025-08-30 12:01:45,728 - INFO - Gateway: Devices: 0, Clients: 2
+2025-08-30 12:01:45,728 - INFO - Gateway: RPC call from XsoinJaj5la7nB6oAAAN: {'type': 'rpc.call', 'id': 'start-app-001', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 12:01:45,728 - INFO - Gateway: Forwarding RPC call start-app-001: start_app
+2025-08-30 12:01:45,728 - WARNING - Gateway: No device available for RPC call
+2025-08-30 12:01:48,729 - INFO - Gateway: Client disconnected: XsoinJaj5la7nB6oAAAN
+2025-08-30 12:01:48,729 - INFO - Gateway: Client disconnected: d3c9b95d-d14f-45f0-9497-c35ae0bb01e6
+2025-08-30 12:01:48,729 - INFO - Gateway: Remaining connections: 1
+2025-08-30 12:01:48,729 - INFO - Gateway: Devices: 0, Clients: 1
+2025-08-30 12:05:36,324 - INFO - Gateway: New connection from Xr6tZt6Skd6yNfKNAAAP
+2025-08-30 12:05:36,324 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 12:05:36,324 - INFO - Gateway: Total connections: 1
+2025-08-30 12:05:38,331 - INFO - Gateway: Received message from Xr6tZt6Skd6yNfKNAAAP: {'type': 'rpc.call', 'id': 'start-app-001', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 12:05:38,332 - INFO - Gateway: Client connection established: 8cac423c-8e85-4de9-bf6a-d86c6728556c (sid: Xr6tZt6Skd6yNfKNAAAP)
+2025-08-30 12:05:38,332 - INFO - Gateway: Total connections: 2
+2025-08-30 12:05:38,332 - INFO - Gateway: Devices: 0, Clients: 2
+2025-08-30 12:05:38,332 - INFO - Gateway: RPC call from Xr6tZt6Skd6yNfKNAAAP: {'type': 'rpc.call', 'id': 'start-app-001', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 12:05:38,332 - INFO - Gateway: Forwarding RPC call start-app-001: start_app
+2025-08-30 12:05:38,332 - WARNING - Gateway: No device available for RPC call
+2025-08-30 12:05:41,335 - INFO - Gateway: Client disconnected: Xr6tZt6Skd6yNfKNAAAP
+2025-08-30 12:05:41,335 - INFO - Gateway: Client disconnected: 8cac423c-8e85-4de9-bf6a-d86c6728556c
+2025-08-30 12:05:41,335 - INFO - Gateway: Remaining connections: 1
+2025-08-30 12:05:41,335 - INFO - Gateway: Devices: 0, Clients: 1
+2025-08-30 12:07:25,764 - INFO - Gateway: New connection from _MMlleLQi1JwtxkMAAAR
+2025-08-30 12:07:25,765 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 12:07:25,765 - INFO - Gateway: Total connections: 1
+2025-08-30 12:07:27,773 - INFO - Gateway: Received message from _MMlleLQi1JwtxkMAAAR: {'type': 'rpc.call', 'id': 'start-app-001', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 12:07:27,774 - INFO - Gateway: Client connection established: 6feb80fe-58fa-4aef-80e6-d6f1de7de95d (sid: _MMlleLQi1JwtxkMAAAR)
+2025-08-30 12:07:27,774 - INFO - Gateway: Total connections: 2
+2025-08-30 12:07:27,774 - INFO - Gateway: Devices: 0, Clients: 2
+2025-08-30 12:07:27,774 - INFO - Gateway: RPC call from _MMlleLQi1JwtxkMAAAR: {'type': 'rpc.call', 'id': 'start-app-001', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 12:07:27,774 - INFO - Gateway: Forwarding RPC call start-app-001: start_app
+2025-08-30 12:07:27,774 - WARNING - Gateway: No device available for RPC call
+2025-08-30 12:07:30,774 - INFO - Gateway: Client disconnected: _MMlleLQi1JwtxkMAAAR
+2025-08-30 12:07:30,774 - INFO - Gateway: Client disconnected: 6feb80fe-58fa-4aef-80e6-d6f1de7de95d
+2025-08-30 12:07:30,774 - INFO - Gateway: Remaining connections: 1
+2025-08-30 12:07:30,774 - INFO - Gateway: Devices: 0, Clients: 1
+2025-08-30 12:44:23,135 - INFO - Gateway: New connection from TNSNoYwVtpU-gEAkAAAT
+2025-08-30 12:44:23,137 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 12:44:23,137 - INFO - Gateway: Total connections: 1
+2025-08-30 12:44:23,142 - INFO - Gateway: Received message from TNSNoYwVtpU-gEAkAAAT: {'type': 'hello', 'session': 'c7a53531-49d0-4d2f-b35b-34fff2d027a0', 'device': '127.0.0.1:5555'}
+2025-08-30 12:44:23,142 - INFO - Gateway: Device connection established: 32ef6454-5930-4c61-801e-690351ebeda9 (sid: TNSNoYwVtpU-gEAkAAAT)
+2025-08-30 12:44:23,142 - INFO - Gateway: Total connections: 2
+2025-08-30 12:44:23,142 - INFO - Gateway: Devices: 1, Clients: 1
+2025-08-30 12:44:23,142 - INFO - Gateway: hello from TNSNoYwVtpU-gEAkAAAT: {'type': 'hello', 'session': 'c7a53531-49d0-4d2f-b35b-34fff2d027a0', 'device': '127.0.0.1:5555'}
+2025-08-30 12:46:36,875 - INFO - Gateway: Received message from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4359263616', 'method': 'start_app', 'params': {'package_name': 'com.google.android.youtube', 'stop': True}}
+2025-08-30 12:46:36,876 - INFO - Gateway: RPC call from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4359263616', 'method': 'start_app', 'params': {'package_name': 'com.google.android.youtube', 'stop': True}}
+2025-08-30 12:46:36,876 - INFO - Gateway: Forwarding RPC call mcp-start_app-4359263616: start_app
+2025-08-30 12:46:36,876 - INFO - Gateway: Forwarding RPC call to device TNSNoYwVtpU-gEAkAAAT
+2025-08-30 12:46:37,957 - INFO - Gateway: Received message from TNSNoYwVtpU-gEAkAAAT: {'type': 'rpc.result', 'id': 'mcp-start_app-4359263616', 'result': {'success': True, 'message': 'App com.google.android.youtube started'}}
+2025-08-30 12:46:37,958 - INFO - Gateway: RPC result from TNSNoYwVtpU-gEAkAAAT: {'type': 'rpc.result', 'id': 'mcp-start_app-4359263616', 'result': {'success': True, 'message': 'App com.google.android.youtube started'}}
+2025-08-30 12:46:45,441 - INFO - Gateway: Client disconnected: TNSNoYwVtpU-gEAkAAAT
+2025-08-30 12:46:45,442 - INFO - Gateway: Device disconnected: 32ef6454-5930-4c61-801e-690351ebeda9
+2025-08-30 12:46:45,442 - INFO - Gateway: Remaining connections: 1
+2025-08-30 12:46:45,442 - INFO - Gateway: Devices: 0, Clients: 1
+2025-08-30 12:54:50,820 - INFO - Gateway: Received message from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4357175232', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 12:54:50,821 - INFO - Gateway: RPC call from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4357175232', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 12:54:50,821 - INFO - Gateway: Forwarding RPC call mcp-start_app-4357175232: start_app
+2025-08-30 12:54:50,821 - WARNING - Gateway: No device available for RPC call
+2025-08-30 12:54:58,937 - INFO - Gateway: New connection from hStCXXnglFoUtIlLAAAW
+2025-08-30 12:54:58,938 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 12:54:58,938 - INFO - Gateway: Total connections: 1
+2025-08-30 12:54:58,939 - INFO - Gateway: New connection from XaUd9vzd-oowSycvAAAX
+2025-08-30 12:54:58,939 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 12:54:58,939 - INFO - Gateway: Total connections: 1
+2025-08-30 12:54:58,949 - INFO - Gateway: Received message from XaUd9vzd-oowSycvAAAX: {'type': 'hello', 'session': 'c7a53531-49d0-4d2f-b35b-34fff2d027a0', 'device': '127.0.0.1:5555'}
+2025-08-30 12:54:58,950 - INFO - Gateway: Device connection established: 4a7498bc-fd86-41c9-9fc0-a7480479c5e8 (sid: XaUd9vzd-oowSycvAAAX)
+2025-08-30 12:54:58,950 - INFO - Gateway: Total connections: 2
+2025-08-30 12:54:58,950 - INFO - Gateway: Devices: 1, Clients: 1
+2025-08-30 12:54:58,950 - INFO - Gateway: hello from XaUd9vzd-oowSycvAAAX: {'type': 'hello', 'session': 'c7a53531-49d0-4d2f-b35b-34fff2d027a0', 'device': '127.0.0.1:5555'}
+2025-08-30 13:09:39,041 - INFO - Gateway: Client disconnected: hStCXXnglFoUtIlLAAAW
+2025-08-30 13:09:39,042 - INFO - Gateway: Remaining connections: 2
+2025-08-30 13:09:39,042 - INFO - Gateway: Devices: 1, Clients: 1
+2025-08-30 13:09:39,053 - INFO - Gateway: Client disconnected: XaUd9vzd-oowSycvAAAX
+2025-08-30 13:09:39,053 - INFO - Gateway: Device disconnected: 4a7498bc-fd86-41c9-9fc0-a7480479c5e8
+2025-08-30 13:09:39,053 - INFO - Gateway: Remaining connections: 1
+2025-08-30 13:09:39,053 - INFO - Gateway: Devices: 0, Clients: 1
+2025-08-30 13:12:18,917 - INFO - Gateway: New connection from bYkyliGDmURlrIJ1AAAZ
+2025-08-30 13:12:18,918 - INFO - Gateway: New connection established, waiting for message type...
+2025-08-30 13:12:18,918 - INFO - Gateway: Total connections: 1
+2025-08-30 13:12:18,922 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'hello', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'device': '127.0.0.1:5555'}
+2025-08-30 13:12:18,923 - INFO - Gateway: Device connection established: 29c2bcd1-3f0b-4013-bf80-6472776782be (sid: bYkyliGDmURlrIJ1AAAZ)
+2025-08-30 13:12:18,923 - INFO - Gateway: Total connections: 2
+2025-08-30 13:12:18,923 - INFO - Gateway: Devices: 1, Clients: 1
+2025-08-30 13:12:18,923 - INFO - Gateway: hello from bYkyliGDmURlrIJ1AAAZ: {'type': 'hello', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'device': '127.0.0.1:5555'}
+2025-08-30 13:12:34,894 - INFO - Gateway: Received message from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4357296128', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 13:12:34,894 - INFO - Gateway: RPC call from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4357296128', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 13:12:34,894 - INFO - Gateway: Forwarding RPC call mcp-start_app-4357296128: start_app
+2025-08-30 13:12:34,894 - INFO - Gateway: Forwarding RPC call to device bYkyliGDmURlrIJ1AAAZ
+2025-08-30 13:12:36,026 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'rpc.result', 'id': 'mcp-start_app-4357296128', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-30 13:12:36,026 - INFO - Gateway: RPC result from bYkyliGDmURlrIJ1AAAZ: {'type': 'rpc.result', 'id': 'mcp-start_app-4357296128', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-30 13:13:05,171 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530785.526872}
+2025-08-30 13:13:06,198 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530786.5662796}
+2025-08-30 13:13:07,216 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530787.5858274}
+2025-08-30 13:13:08,229 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530788.5979877}
+2025-08-30 13:13:09,241 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530789.6112976}
+2025-08-30 13:13:10,258 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530790.6292882}
+2025-08-30 13:13:11,265 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530791.6366825}
+2025-08-30 13:13:12,279 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530792.6504343}
+2025-08-30 13:13:13,286 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530793.6570168}
+2025-08-30 13:13:14,298 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530794.667235}
+2025-08-30 13:13:15,322 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530795.6901116}
+2025-08-30 13:13:16,341 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530796.711979}
+2025-08-30 13:13:17,353 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530797.7206933}
+2025-08-30 13:13:18,365 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530798.73251}
+2025-08-30 13:13:19,375 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530799.7465272}
+2025-08-30 13:13:20,386 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530800.757426}
+2025-08-30 13:13:21,403 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530801.7731116}
+2025-08-30 13:13:22,424 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530802.7953494}
+2025-08-30 13:13:23,457 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530803.8257368}
+2025-08-30 13:13:24,534 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530804.8789394}
+2025-08-30 13:13:25,589 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530805.9584255}
+2025-08-30 13:13:25,682 - INFO - Gateway: Received message from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4359373824', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 13:13:25,682 - INFO - Gateway: RPC call from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4359373824', 'method': 'start_app', 'params': {'package_name': 'com.android.settings', 'stop': True}}
+2025-08-30 13:13:25,682 - INFO - Gateway: Forwarding RPC call mcp-start_app-4359373824: start_app
+2025-08-30 13:13:25,682 - INFO - Gateway: Forwarding RPC call to device bYkyliGDmURlrIJ1AAAZ
+2025-08-30 13:13:26,453 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'rpc.result', 'id': 'mcp-start_app-4359373824', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-30 13:13:26,454 - INFO - Gateway: RPC result from bYkyliGDmURlrIJ1AAAZ: {'type': 'rpc.result', 'id': 'mcp-start_app-4359373824', 'result': {'success': True, 'message': 'App com.android.settings started'}}
+2025-08-30 13:13:56,522 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530836.8861797}
+2025-08-30 13:13:57,546 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530837.9179032}
+2025-08-30 13:13:58,572 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530838.9435496}
+2025-08-30 13:13:59,584 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530839.9561846}
+2025-08-30 13:14:00,620 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530840.9887166}
+2025-08-30 13:14:01,644 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530842.0145974}
+2025-08-30 13:14:02,671 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530843.0434825}
+2025-08-30 13:14:03,697 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530844.067592}
+2025-08-30 13:14:04,716 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530845.087037}
+2025-08-30 13:14:05,734 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530846.105371}
+2025-08-30 13:14:06,752 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530847.1228914}
+2025-08-30 13:14:07,783 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530848.15416}
+2025-08-30 13:14:08,808 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530849.1807783}
+2025-08-30 13:14:09,840 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530850.211603}
+2025-08-30 13:14:10,876 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530851.2463193}
+2025-08-30 13:14:11,905 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530852.2760327}
+2025-08-30 13:14:12,925 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530853.2960842}
+2025-08-30 13:14:13,944 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530854.313878}
+2025-08-30 13:14:14,964 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530855.3342197}
+2025-08-30 13:14:16,000 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530856.3711994}
+2025-08-30 13:14:17,019 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530857.391093}
+2025-08-30 13:14:18,047 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530858.4189396}
+2025-08-30 13:14:19,073 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530859.444518}
+2025-08-30 13:14:20,111 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530860.4818478}
+2025-08-30 13:14:21,144 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530861.5156028}
+2025-08-30 13:14:22,164 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530862.5361488}
+2025-08-30 13:14:23,186 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530863.5578244}
+2025-08-30 13:14:24,212 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530864.5813692}
+2025-08-30 13:14:25,241 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530865.61097}
+2025-08-30 13:14:26,262 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530866.6336281}
+2025-08-30 13:14:27,286 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530867.6563551}
+2025-08-30 13:14:28,312 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530868.6838493}
+2025-08-30 13:14:29,344 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530869.7162905}
+2025-08-30 13:14:30,374 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530870.7454445}
+2025-08-30 13:14:31,396 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530871.766249}
+2025-08-30 13:14:32,427 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530872.7984953}
+2025-08-30 13:14:33,446 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530873.8202136}
+2025-08-30 13:14:34,554 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530874.850732}
+2025-08-30 13:14:35,537 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530875.9090612}
+2025-08-30 13:14:36,557 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530876.9286146}
+2025-08-30 13:14:37,585 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530877.9578094}
+2025-08-30 13:14:38,622 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530878.9960294}
+2025-08-30 13:14:39,655 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530880.0269847}
+2025-08-30 13:14:40,679 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530881.0511937}
+2025-08-30 13:14:41,710 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530882.082146}
+2025-08-30 13:14:42,723 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530883.0964973}
+2025-08-30 13:14:43,748 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530884.1199677}
+2025-08-30 13:14:44,782 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530885.1547694}
+2025-08-30 13:14:45,810 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530886.1810966}
+2025-08-30 13:14:46,827 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530887.2001364}
+2025-08-30 13:14:47,857 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530888.2297683}
+2025-08-30 13:14:48,875 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530889.246121}
+2025-08-30 13:14:49,894 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530890.265685}
+2025-08-30 13:14:50,928 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530891.3014753}
+2025-08-30 13:14:51,967 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530892.3395789}
+2025-08-30 13:14:52,987 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530893.360183}
+2025-08-30 13:14:54,006 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530894.3781924}
+2025-08-30 13:14:55,024 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530895.3970354}
+2025-08-30 13:14:56,053 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530896.4255974}
+2025-08-30 13:14:57,078 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530897.4518433}
+2025-08-30 13:14:58,115 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530898.4881382}
+2025-08-30 13:14:59,140 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530899.5127618}
+2025-08-30 13:15:00,160 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530900.5308206}
+2025-08-30 13:15:01,176 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530901.549932}
+2025-08-30 13:15:02,213 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530902.5865366}
+2025-08-30 13:15:03,236 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530903.6078928}
+2025-08-30 13:15:04,262 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530904.6348746}
+2025-08-30 13:15:05,290 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530905.6626403}
+2025-08-30 13:15:06,325 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530906.6983695}
+2025-08-30 13:15:07,349 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530907.7221599}
+2025-08-30 13:15:08,373 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530908.7466583}
+2025-08-30 13:15:09,408 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530909.7810762}
+2025-08-30 13:15:10,416 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530910.7889328}
+2025-08-30 13:15:11,440 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530911.8129044}
+2025-08-30 13:15:12,465 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530912.8368168}
+2025-08-30 13:15:13,480 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530913.8547056}
+2025-08-30 13:15:14,502 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530914.876545}
+2025-08-30 13:15:15,526 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530915.8987198}
+2025-08-30 13:15:16,545 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530916.9181828}
+2025-08-30 13:15:17,574 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530917.9475107}
+2025-08-30 13:15:18,593 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530918.9670246}
+2025-08-30 13:15:19,624 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530919.9979913}
+2025-08-30 13:15:20,650 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530921.0236712}
+2025-08-30 13:15:21,677 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530922.0496156}
+2025-08-30 13:15:22,693 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530923.0673375}
+2025-08-30 13:15:23,705 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530924.0790632}
+2025-08-30 13:15:24,722 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530925.0962424}
+2025-08-30 13:15:25,737 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530926.1116238}
+2025-08-30 13:15:26,761 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530927.134104}
+2025-08-30 13:15:27,791 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530928.1653361}
+2025-08-30 13:15:28,810 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530929.1840987}
+2025-08-30 13:15:29,829 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530930.203445}
+2025-08-30 13:15:30,862 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530931.2340047}
+2025-08-30 13:15:31,896 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530932.2695322}
+2025-08-30 13:15:32,914 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530933.288436}
+2025-08-30 13:15:33,967 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530934.3368807}
+2025-08-30 13:15:34,989 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530935.3592582}
+2025-08-30 13:15:36,013 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530936.387313}
+2025-08-30 13:15:37,030 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530937.4047587}
+2025-08-30 13:15:38,044 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530938.41887}
+2025-08-30 13:15:39,066 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530939.4407713}
+2025-08-30 13:15:40,079 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530940.4550703}
+2025-08-30 13:15:41,104 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530941.4801662}
+2025-08-30 13:15:42,125 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530942.4980805}
+2025-08-30 13:15:43,146 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530943.5219}
+2025-08-30 13:15:44,226 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530944.6015477}
+2025-08-30 13:15:45,284 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530945.6575923}
+2025-08-30 13:15:46,325 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530946.6991487}
+2025-08-30 13:15:47,357 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530947.7310379}
+2025-08-30 13:15:48,393 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530948.767335}
+2025-08-30 13:15:49,416 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530949.7915776}
+2025-08-30 13:15:50,466 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530950.8420463}
+2025-08-30 13:15:51,503 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530951.8777392}
+2025-08-30 13:15:52,543 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530952.9173214}
+2025-08-30 13:15:53,575 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530953.9512494}
+2025-08-30 13:15:54,616 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530954.9918375}
+2025-08-30 13:15:55,657 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530956.0318196}
+2025-08-30 13:15:56,685 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530957.0597029}
+2025-08-30 13:15:57,753 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530958.1294818}
+2025-08-30 13:15:58,790 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530959.165187}
+2025-08-30 13:15:59,817 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530960.1934934}
+2025-08-30 13:16:00,849 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530961.2251186}
+2025-08-30 13:16:01,868 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530962.2440689}
+2025-08-30 13:16:02,911 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530963.2853959}
+2025-08-30 13:16:03,944 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530964.3172092}
+2025-08-30 13:16:04,974 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530965.3500412}
+2025-08-30 13:16:06,024 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530966.3971136}
+2025-08-30 13:16:07,076 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530967.4508655}
+2025-08-30 13:16:08,092 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530968.4669814}
+2025-08-30 13:16:09,136 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530969.512254}
+2025-08-30 13:16:10,183 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530970.560262}
+2025-08-30 13:16:11,212 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530971.589783}
+2025-08-30 13:16:12,241 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530972.617673}
+2025-08-30 13:16:13,292 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530973.6676402}
+2025-08-30 13:16:14,319 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530974.6957238}
+2025-08-30 13:16:15,344 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756530975.720763}
+2025-08-30 13:18:19,655 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531098.7499669}
+2025-08-30 13:18:20,771 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531099.8268073}
+2025-08-30 13:18:22,469 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531101.412727}
+2025-08-30 13:18:23,602 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531102.699057}
+2025-08-30 13:18:24,616 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531103.7242024}
+2025-08-30 13:18:25,640 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531104.7487323}
+2025-08-30 13:18:26,665 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531105.7760756}
+2025-08-30 13:18:27,694 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531106.806467}
+2025-08-30 13:18:28,722 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531107.8339143}
+2025-08-30 13:18:29,741 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531108.8532548}
+2025-08-30 13:18:30,756 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531109.867468}
+2025-08-30 13:18:31,771 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531110.8833554}
+2025-08-30 13:18:32,790 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531111.9034371}
+2025-08-30 13:18:33,806 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531112.9190502}
+2025-08-30 13:18:34,834 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531113.9459634}
+2025-08-30 13:18:35,865 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531114.9764414}
+2025-08-30 13:18:36,902 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531116.0130332}
+2025-08-30 13:18:37,916 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531117.0284724}
+2025-08-30 13:18:38,942 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531118.0536711}
+2025-08-30 13:18:39,966 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531119.0790849}
+2025-08-30 13:18:40,978 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531120.0910892}
+2025-08-30 13:18:41,996 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531121.107885}
+2025-08-30 13:18:43,012 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531122.1232035}
+2025-08-30 13:18:44,035 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531123.1463416}
+2025-08-30 13:18:45,059 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531124.172772}
+2025-08-30 13:18:46,076 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531125.1873014}
+2025-08-30 13:18:47,099 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531126.211352}
+2025-08-30 13:18:48,129 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531127.2395048}
+2025-08-30 13:18:49,148 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531128.2584946}
+2025-08-30 13:18:50,161 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531129.275197}
+2025-08-30 13:18:51,225 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531130.334009}
+2025-08-30 13:18:52,246 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531131.356026}
+2025-08-30 13:18:52,898 - INFO - Gateway: Received message from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4357173632', 'method': 'start_app', 'params': {'package_name': 'com.google.android.youtube', 'stop': True}}
+2025-08-30 13:18:52,898 - INFO - Gateway: RPC call from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4357173632', 'method': 'start_app', 'params': {'package_name': 'com.google.android.youtube', 'stop': True}}
+2025-08-30 13:18:52,898 - INFO - Gateway: Forwarding RPC call mcp-start_app-4357173632: start_app
+2025-08-30 13:18:52,898 - INFO - Gateway: Forwarding RPC call to device bYkyliGDmURlrIJ1AAAZ
+2025-08-30 13:18:53,797 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'rpc.result', 'id': 'mcp-start_app-4357173632', 'result': {'success': True, 'message': 'App com.google.android.youtube started'}}
+2025-08-30 13:18:53,797 - INFO - Gateway: RPC result from bYkyliGDmURlrIJ1AAAZ: {'type': 'rpc.result', 'id': 'mcp-start_app-4357173632', 'result': {'success': True, 'message': 'App com.google.android.youtube started'}}
+2025-08-30 13:19:23,805 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531162.9067898}
+2025-08-30 13:19:24,833 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531163.9471376}
+2025-08-30 13:19:25,851 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531164.96335}
+2025-08-30 13:19:26,870 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531165.983694}
+2025-08-30 13:19:27,894 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531167.0079882}
+2025-08-30 13:19:28,918 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531168.031247}
+2025-08-30 13:19:29,933 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531169.0477204}
+2025-08-30 13:19:30,954 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531170.066546}
+2025-08-30 13:19:31,976 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531171.0888631}
+2025-08-30 13:19:33,006 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531172.1174536}
+2025-08-30 13:19:34,033 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531173.1459434}
+2025-08-30 13:19:35,050 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531174.1646605}
+2025-08-30 13:19:36,064 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531175.1776621}
+2025-08-30 13:19:37,086 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531176.1993237}
+2025-08-30 13:19:38,110 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531177.2258823}
+2025-08-30 13:19:39,138 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531178.2525578}
+2025-08-30 13:19:40,155 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531179.27021}
+2025-08-30 13:19:41,181 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531180.296751}
+2025-08-30 13:19:42,201 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531181.3162766}
+2025-08-30 13:19:43,229 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531182.3420205}
+2025-08-30 13:19:44,255 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531183.3686626}
+2025-08-30 13:19:45,279 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531184.3920262}
+2025-08-30 13:19:46,306 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531185.419895}
+2025-08-30 13:19:47,328 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531186.442419}
+2025-08-30 13:19:48,351 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531187.4635}
+2025-08-30 13:19:49,374 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531188.4885287}
+2025-08-30 13:19:50,392 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531189.5063853}
+2025-08-30 13:19:51,416 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531190.5287423}
+2025-08-30 13:19:52,451 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531191.5642333}
+2025-08-30 13:19:53,478 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531192.5915477}
+2025-08-30 13:19:54,504 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531193.6167977}
+2025-08-30 13:19:55,528 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531194.6415575}
+2025-08-30 13:19:56,548 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531195.6625383}
+2025-08-30 13:19:57,583 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531196.6964104}
+2025-08-30 13:19:58,608 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531197.7242932}
+2025-08-30 13:19:59,632 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531198.7464843}
+2025-08-30 13:20:00,652 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531199.7670825}
+2025-08-30 13:20:01,676 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531200.7903402}
+2025-08-30 13:20:02,710 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531201.8251762}
+2025-08-30 13:20:03,736 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531202.8511066}
+2025-08-30 13:20:04,762 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531203.877027}
+2025-08-30 13:20:05,785 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531204.9001033}
+2025-08-30 13:20:06,811 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531205.9229436}
+2025-08-30 13:20:07,837 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531206.9518483}
+2025-08-30 13:20:08,854 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531207.970629}
+2025-08-30 13:20:09,871 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531208.986911}
+2025-08-30 13:20:10,896 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531210.0115154}
+2025-08-30 13:20:11,915 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531211.0290248}
+2025-08-30 13:20:12,938 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531212.0503829}
+2025-08-30 13:20:13,960 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531213.0768306}
+2025-08-30 13:20:14,988 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531214.103959}
+2025-08-30 13:20:16,008 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531215.1247795}
+2025-08-30 13:20:17,038 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531216.1525059}
+2025-08-30 13:20:18,062 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531217.1773388}
+2025-08-30 13:20:19,084 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531218.199897}
+2025-08-30 13:20:20,107 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531219.2226071}
+2025-08-30 13:20:21,134 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531220.2488916}
+2025-08-30 13:20:22,155 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531221.2719984}
+2025-08-30 13:20:23,171 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531222.285802}
+2025-08-30 13:20:24,184 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531223.3015447}
+2025-08-30 13:20:25,218 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531224.3338046}
+2025-08-30 13:20:26,242 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531225.3571591}
+2025-08-30 13:20:27,262 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531226.3781958}
+2025-08-30 13:20:28,288 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531227.405008}
+2025-08-30 13:20:29,311 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531228.4271667}
+2025-08-30 13:20:30,325 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531229.440582}
+2025-08-30 13:20:31,334 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531230.4518633}
+2025-08-30 13:20:32,350 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531231.4658113}
+2025-08-30 13:20:33,363 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531232.4789069}
+2025-08-30 13:20:34,379 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531233.4945004}
+2025-08-30 13:20:35,399 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531234.5162737}
+2025-08-30 13:20:36,425 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531235.5408342}
+2025-08-30 13:20:37,447 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531236.564736}
+2025-08-30 13:20:38,475 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531237.5908058}
+2025-08-30 13:20:39,500 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531238.6160676}
+2025-08-30 13:20:40,526 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531239.6423035}
+2025-08-30 13:20:41,543 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531240.6598604}
+2025-08-30 13:20:42,581 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531241.6961737}
+2025-08-30 13:20:43,602 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531242.7195065}
+2025-08-30 13:20:44,614 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531243.731697}
+2025-08-30 13:20:45,637 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531244.7520185}
+2025-08-30 13:20:46,666 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531245.7817802}
+2025-08-30 13:20:47,694 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531246.810399}
+2025-08-30 13:20:48,719 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531247.836769}
+2025-08-30 13:20:49,746 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531248.8614545}
+2025-08-30 13:20:50,789 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531249.9035625}
+2025-08-30 13:20:51,801 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531250.9179873}
+2025-08-30 13:20:52,822 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531251.9354281}
+2025-08-30 13:20:53,835 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531252.9522777}
+2025-08-30 13:20:54,852 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531253.9674783}
+2025-08-30 13:20:55,870 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531254.9884245}
+2025-08-30 13:20:56,885 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531256.0013342}
+2025-08-30 13:20:57,909 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531257.0239189}
+2025-08-30 13:20:58,925 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531258.042182}
+2025-08-30 13:20:59,950 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531259.0662048}
+2025-08-30 13:21:00,961 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531260.0794597}
+2025-08-30 13:21:01,994 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531261.109728}
+2025-08-30 13:21:03,023 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531262.140449}
+2025-08-30 13:21:04,045 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531263.1608758}
+2025-08-30 13:21:05,072 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531264.1896443}
+2025-08-30 13:21:06,098 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531265.214488}
+2025-08-30 13:21:07,114 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531266.2331407}
+2025-08-30 13:21:08,148 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531267.2652006}
+2025-08-30 13:21:09,173 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531268.2897644}
+2025-08-30 13:21:10,198 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531269.315279}
+2025-08-30 13:21:11,226 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531270.3432312}
+2025-08-30 13:21:12,273 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531271.368421}
+2025-08-30 13:21:13,291 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531272.409682}
+2025-08-30 13:21:14,314 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531273.4321444}
+2025-08-30 13:21:15,358 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531274.4754698}
+2025-08-30 13:21:16,372 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531275.4897718}
+2025-08-30 13:21:17,394 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531276.5124598}
+2025-08-30 13:21:18,427 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531277.541302}
+2025-08-30 13:21:19,458 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531278.5761907}
+2025-08-30 13:21:20,487 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531279.606002}
+2025-08-30 13:21:21,517 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531280.6349185}
+2025-08-30 13:21:22,539 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531281.6572666}
+2025-08-30 13:21:23,567 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531282.6865096}
+2025-08-30 13:21:24,595 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531283.7120533}
+2025-08-30 13:21:25,614 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531284.7327037}
+2025-08-30 13:21:26,640 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531285.7574556}
+2025-08-30 13:21:27,664 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531286.7805796}
+2025-08-30 13:21:28,685 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531287.8040798}
+2025-08-30 13:21:29,709 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531288.8258839}
+2025-08-30 13:21:30,736 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531289.8538914}
+2025-08-30 13:21:31,757 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531290.8748941}
+2025-08-30 13:21:32,782 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531291.900665}
+2025-08-30 13:21:33,804 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531292.923493}
+2025-08-30 13:21:34,827 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531293.9452558}
+2025-08-30 13:21:35,849 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531294.9682453}
+2025-08-30 13:21:36,866 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531295.983562}
+2025-08-30 13:21:37,892 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531297.0107167}
+2025-08-30 13:21:38,920 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531298.0367236}
+2025-08-30 13:21:39,930 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531299.0499165}
+2025-08-30 13:21:40,950 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531300.0691752}
+2025-08-30 13:21:41,973 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531301.0916705}
+2025-08-30 13:21:42,999 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531302.1170733}
+2025-08-30 13:21:44,020 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531303.1368408}
+2025-08-30 13:21:45,039 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531304.158292}
+2025-08-30 13:21:46,058 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531305.1752095}
+2025-08-30 13:21:47,075 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531306.195552}
+2025-08-30 13:21:48,100 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531307.2191439}
+2025-08-30 13:21:49,122 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531308.2417839}
+2025-08-30 13:21:50,140 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531309.2586353}
+2025-08-30 13:21:51,156 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531310.2744067}
+2025-08-30 13:21:52,171 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531311.2885942}
+2025-08-30 13:21:53,187 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531312.3075268}
+2025-08-30 13:21:54,210 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531313.329248}
+2025-08-30 13:21:55,226 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531314.3453963}
+2025-08-30 13:21:56,237 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531315.3575127}
+2025-08-30 13:21:57,256 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531316.3752434}
+2025-08-30 13:21:58,277 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531317.3957233}
+2025-08-30 13:21:59,305 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531318.423532}
+2025-08-30 13:22:00,326 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531319.445892}
+2025-08-30 13:22:01,359 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531320.476495}
+2025-08-30 13:22:02,381 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531321.4996946}
+2025-08-30 13:22:03,395 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531322.5148065}
+2025-08-30 13:22:04,428 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531323.5478234}
+2025-08-30 13:22:05,456 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531324.572053}
+2025-08-30 13:22:06,483 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531325.6011522}
+2025-08-30 13:22:07,510 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531326.626684}
+2025-08-30 13:22:08,532 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531327.6526792}
+2025-08-30 13:22:09,556 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531328.676756}
+2025-08-30 13:22:10,577 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531329.6975365}
+2025-08-30 13:22:11,596 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531330.7143939}
+2025-08-30 13:22:12,628 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531331.7485075}
+2025-08-30 13:22:13,641 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531332.7606666}
+2025-08-30 13:22:14,655 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531333.7752826}
+2025-08-30 13:22:15,685 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531334.8056214}
+2025-08-30 13:22:16,711 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531335.8299549}
+2025-08-30 13:22:17,730 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531336.8490136}
+2025-08-30 13:22:18,754 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531337.8747785}
+2025-08-30 13:22:19,780 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531338.8998063}
+2025-08-30 13:22:20,796 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531339.9177287}
+2025-08-30 13:22:21,810 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531340.9308255}
+2025-08-30 13:22:22,831 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531341.9513721}
+2025-08-30 13:22:23,853 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531342.96935}
+2025-08-30 13:22:24,866 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531343.9874227}
+2025-08-30 13:22:25,890 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531345.0114086}
+2025-08-30 13:22:26,908 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531346.0280762}
+2025-08-30 13:22:27,948 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531347.0686767}
+2025-08-30 13:22:28,975 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531348.0949886}
+2025-08-30 13:22:29,994 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531349.1159918}
+2025-08-30 13:22:31,019 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531350.1391675}
+2025-08-30 13:22:32,047 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531351.168276}
+2025-08-30 13:22:33,064 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531352.1849437}
+2025-08-30 13:22:34,089 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531353.2086885}
+2025-08-30 13:22:35,106 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531354.2275891}
+2025-08-30 13:22:36,123 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531355.243759}
+2025-08-30 13:22:37,143 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531356.2634923}
+2025-08-30 13:22:38,167 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531357.2876542}
+2025-08-30 13:22:39,194 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531358.3154542}
+2025-08-30 13:22:40,210 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531359.3303568}
+2025-08-30 13:22:41,224 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531360.3456843}
+2025-08-30 13:22:42,246 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531361.3657753}
+2025-08-30 13:22:43,260 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531362.3802385}
+2025-08-30 13:22:44,285 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531363.4043617}
+2025-08-30 13:22:45,311 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531364.4302015}
+2025-08-30 13:22:46,340 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531365.460261}
+2025-08-30 13:22:47,358 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531366.4785488}
+2025-08-30 13:22:48,386 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531367.5069776}
+2025-08-30 13:22:49,406 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531368.5266325}
+2025-08-30 13:22:50,427 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531369.5459766}
+2025-08-30 13:22:51,443 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531370.563561}
+2025-08-30 13:22:52,464 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531371.586859}
+2025-08-30 13:22:53,486 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531372.6079142}
+2025-08-30 13:22:54,518 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531373.639154}
+2025-08-30 13:22:55,548 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531374.6691206}
+2025-08-30 13:22:56,566 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531375.6873422}
+2025-08-30 13:22:57,582 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531376.7024164}
+2025-08-30 13:22:58,607 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531377.7282934}
+2025-08-30 13:22:59,631 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531378.7519076}
+2025-08-30 13:23:00,655 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531379.7761338}
+2025-08-30 13:23:01,683 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531380.8038263}
+2025-08-30 13:23:02,710 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531381.8315885}
+2025-08-30 13:23:03,726 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531382.8488848}
+2025-08-30 13:23:04,743 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531383.864044}
+2025-08-30 13:23:05,762 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531384.8810863}
+2025-08-30 13:23:06,786 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531385.907596}
+2025-08-30 13:23:07,813 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531386.9336464}
+2025-08-30 13:23:08,835 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531387.9582202}
+2025-08-30 13:23:09,868 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531388.9915633}
+2025-08-30 13:23:10,886 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531390.009221}
+2025-08-30 13:23:11,925 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531391.046797}
+2025-08-30 13:23:12,949 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531392.0710588}
+2025-08-30 13:23:13,971 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531393.0934193}
+2025-08-30 13:23:14,996 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531394.1165717}
+2025-08-30 13:23:16,033 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531395.1545208}
+2025-08-30 13:23:17,053 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531396.174855}
+2025-08-30 13:23:18,081 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531397.2026489}
+2025-08-30 13:23:19,098 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531398.2196074}
+2025-08-30 13:23:20,119 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531399.2422733}
+2025-08-30 13:23:21,145 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531400.2655244}
+2025-08-30 13:23:22,165 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531401.2864432}
+2025-08-30 13:23:23,186 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531402.3091593}
+2025-08-30 13:23:24,205 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531403.3284116}
+2025-08-30 13:23:25,227 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531404.3490257}
+2025-08-30 13:23:26,241 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531405.363719}
+2025-08-30 13:23:27,264 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531406.387538}
+2025-08-30 13:23:28,296 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531407.4157696}
+2025-08-30 13:23:29,317 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531408.43887}
+2025-08-30 13:23:30,330 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531409.4532342}
+2025-08-30 13:23:31,356 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531410.4799886}
+2025-08-30 13:23:32,372 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531411.4959614}
+2025-08-30 13:23:33,392 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531412.5152495}
+2025-08-30 13:23:34,432 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531413.537215}
+2025-08-30 13:23:35,444 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531414.56649}
+2025-08-30 13:23:36,454 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531415.577904}
+2025-08-30 13:23:37,475 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531416.5973094}
+2025-08-30 13:23:38,489 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531417.6117663}
+2025-08-30 13:23:39,505 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531418.6292555}
+2025-08-30 13:23:40,541 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531419.6617098}
+2025-08-30 13:23:41,562 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531420.6848192}
+2025-08-30 13:23:42,592 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531421.7147}
+2025-08-30 13:23:43,609 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531422.7313118}
+2025-08-30 13:23:44,631 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531423.756175}
+2025-08-30 13:23:45,656 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531424.7783115}
+2025-08-30 13:23:46,686 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531425.8090005}
+2025-08-30 13:23:47,716 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531426.839462}
+2025-08-30 13:23:48,738 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531427.862229}
+2025-08-30 13:23:49,756 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531428.8786657}
+2025-08-30 13:23:50,785 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531429.9036636}
+2025-08-30 13:23:51,798 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531430.921691}
+2025-08-30 13:23:52,823 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531431.9453514}
+2025-08-30 13:23:53,848 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531432.9725616}
+2025-08-30 13:23:54,870 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531433.9941204}
+2025-08-30 13:23:55,893 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531435.0177386}
+2025-08-30 13:23:56,922 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531436.0446475}
+2025-08-30 13:23:57,959 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531437.0819733}
+2025-08-30 13:23:58,986 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531438.1084232}
+2025-08-30 13:24:00,005 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531439.1293082}
+2025-08-30 13:24:01,022 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531440.1464274}
+2025-08-30 13:24:02,037 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531441.1600857}
+2025-08-30 13:24:03,049 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531442.1744683}
+2025-08-30 13:24:04,063 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531443.1872835}
+2025-08-30 13:24:05,083 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531444.2087379}
+2025-08-30 13:24:06,099 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531445.2245367}
+2025-08-30 13:24:07,124 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531446.2468677}
+2025-08-30 13:24:08,148 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531447.2710588}
+2025-08-30 13:24:09,167 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531448.292253}
+2025-08-30 13:24:10,186 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531449.3110967}
+2025-08-30 13:24:11,203 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531450.326492}
+2025-08-30 13:24:12,225 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531451.3480687}
+2025-08-30 13:24:13,246 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531452.3713338}
+2025-08-30 13:24:14,269 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531453.3928776}
+2025-08-30 13:24:15,286 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531454.4095771}
+2025-08-30 13:24:16,314 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531455.439593}
+2025-08-30 13:24:17,334 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531456.4575782}
+2025-08-30 13:24:18,355 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531457.4783611}
+2025-08-30 13:24:19,383 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531458.5084379}
+2025-08-30 13:24:20,418 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531459.5415635}
+2025-08-30 13:24:21,449 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531460.5743368}
+2025-08-30 13:24:22,483 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531461.6072295}
+2025-08-30 13:24:23,495 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531462.6191845}
+2025-08-30 13:24:24,510 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531463.6336648}
+2025-08-30 13:24:25,533 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531464.6592448}
+2025-08-30 13:24:26,557 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531465.6797018}
+2025-08-30 13:24:27,578 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531466.702886}
+2025-08-30 13:24:28,596 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531467.7202988}
+2025-08-30 13:24:29,622 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531468.7465692}
+2025-08-30 13:24:30,644 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531469.7685108}
+2025-08-30 13:24:31,655 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531470.780872}
+2025-08-30 13:24:32,676 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531471.8011787}
+2025-08-30 13:24:33,704 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531472.8311205}
+2025-08-30 13:24:34,731 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531473.8563986}
+2025-08-30 13:24:35,759 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531474.8822956}
+2025-08-30 13:24:36,785 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531475.908593}
+2025-08-30 13:24:37,807 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531476.93086}
+2025-08-30 13:24:38,831 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531477.956681}
+2025-08-30 13:24:39,858 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531478.9831483}
+2025-08-30 13:24:40,899 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531480.0238318}
+2025-08-30 13:24:41,921 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531481.046286}
+2025-08-30 13:24:42,940 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531482.064084}
+2025-08-30 13:24:43,969 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531483.09094}
+2025-08-30 13:24:44,994 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531484.120352}
+2025-08-30 13:24:46,022 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531485.1482563}
+2025-08-30 13:24:47,052 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531486.177848}
+2025-08-30 13:24:48,080 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531487.2062342}
+2025-08-30 13:24:49,095 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531488.2206383}
+2025-08-30 13:24:50,116 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531489.2435648}
+2025-08-30 13:24:51,143 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531490.2678392}
+2025-08-30 13:24:52,168 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531491.2925868}
+2025-08-30 13:24:53,185 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531492.3124862}
+2025-08-30 13:24:54,202 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531493.3281639}
+2025-08-30 13:24:55,221 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531494.347532}
+2025-08-30 13:24:56,251 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531495.3764956}
+2025-08-30 13:24:57,268 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531496.393344}
+2025-08-30 13:24:58,283 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531497.40894}
+2025-08-30 13:24:59,301 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531498.4262767}
+2025-08-30 13:25:00,322 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531499.4479742}
+2025-08-30 13:25:01,343 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531500.462836}
+2025-08-30 13:25:02,364 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531501.4885843}
+2025-08-30 13:25:03,384 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531502.5090866}
+2025-08-30 13:25:04,403 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531503.5281763}
+2025-08-30 13:25:05,423 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531504.548014}
+2025-08-30 13:25:06,437 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531505.563566}
+2025-08-30 13:25:07,459 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531506.5848951}
+2025-08-30 13:25:08,495 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531507.6194315}
+2025-08-30 13:25:09,522 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531508.6476042}
+2025-08-30 13:25:10,546 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531509.6715562}
+2025-08-30 13:25:11,556 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531510.682252}
+2025-08-30 13:25:12,580 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531511.7057319}
+2025-08-30 13:25:13,606 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531512.7318666}
+2025-08-30 13:25:14,650 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531513.776079}
+2025-08-30 13:25:15,686 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531514.8118882}
+2025-08-30 13:25:16,711 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531515.8387053}
+2025-08-30 13:25:17,726 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531516.8516972}
+2025-08-30 13:25:18,747 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531517.874683}
+2025-08-30 13:25:19,773 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531518.9003541}
+2025-08-30 13:25:20,797 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531519.9243834}
+2025-08-30 13:25:21,833 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531520.9587512}
+2025-08-30 13:25:22,855 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531521.9814715}
+2025-08-30 13:25:23,867 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531522.9945261}
+2025-08-30 13:25:24,883 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531524.009289}
+2025-08-30 13:25:25,899 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531525.02464}
+2025-08-30 13:25:26,923 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531526.0487573}
+2025-08-30 13:25:27,937 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531527.0641723}
+2025-08-30 13:25:28,969 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531528.0959334}
+2025-08-30 13:25:30,004 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531529.1303887}
+2025-08-30 13:25:31,024 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531530.1514106}
+2025-08-30 13:25:32,042 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531531.1683855}
+2025-08-30 13:25:33,059 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531532.1824408}
+2025-08-30 13:25:34,081 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531533.2066708}
+2025-08-30 13:25:35,099 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531534.22504}
+2025-08-30 13:25:36,125 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531535.2527235}
+2025-08-30 13:25:37,147 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531536.275233}
+2025-08-30 13:25:38,172 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531537.299437}
+2025-08-30 13:25:39,197 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531538.3235252}
+2025-08-30 13:25:40,229 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531539.3580434}
+2025-08-30 13:25:41,264 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531540.391502}
+2025-08-30 13:25:42,291 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531541.418272}
+2025-08-30 13:25:43,312 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531542.438309}
+2025-08-30 13:25:44,349 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531543.4753616}
+2025-08-30 13:25:45,370 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531544.4979868}
+2025-08-30 13:25:46,404 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531545.5319138}
+2025-08-30 13:25:47,447 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531546.5751343}
+2025-08-30 13:25:48,480 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531547.606648}
+2025-08-30 13:25:49,511 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531548.6408172}
+2025-08-30 13:25:50,545 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531549.674158}
+2025-08-30 13:25:51,565 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531550.6866896}
+2025-08-30 13:25:52,582 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531551.7082973}
+2025-08-30 13:25:53,602 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531552.7286618}
+2025-08-30 13:25:54,621 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531553.7484555}
+2025-08-30 13:25:55,643 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531554.771581}
+2025-08-30 13:25:56,680 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531555.806828}
+2025-08-30 13:25:57,715 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531556.841907}
+2025-08-30 13:25:58,748 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531557.8766608}
+2025-08-30 13:25:59,766 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531558.8935559}
+2025-08-30 13:26:00,792 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531559.9190798}
+2025-08-30 13:26:01,822 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531560.9492068}
+2025-08-30 13:26:02,854 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531561.9814622}
+2025-08-30 13:26:03,872 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531563.0013344}
+2025-08-30 13:26:04,898 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531564.0171432}
+2025-08-30 13:26:05,914 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531565.0437045}
+2025-08-30 13:26:06,934 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531566.0625353}
+2025-08-30 13:26:07,949 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531567.0782034}
+2025-08-30 13:26:08,970 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531568.098816}
+2025-08-30 13:26:09,994 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531569.119367}
+2025-08-30 13:26:11,007 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531570.1361573}
+2025-08-30 13:26:12,035 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531571.1646821}
+2025-08-30 13:26:13,053 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531572.1815186}
+2025-08-30 13:26:14,072 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531573.2009819}
+2025-08-30 13:26:15,084 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531574.2122004}
+2025-08-30 13:26:16,103 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531575.2289085}
+2025-08-30 13:26:17,123 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531576.252382}
+2025-08-30 13:26:18,150 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531577.279809}
+2025-08-30 13:26:19,177 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531578.304534}
+2025-08-30 13:26:20,202 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531579.331423}
+2025-08-30 13:26:21,229 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531580.3587067}
+2025-08-30 13:26:22,262 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531581.3903277}
+2025-08-30 13:26:23,285 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531582.4144003}
+2025-08-30 13:26:24,311 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531583.440098}
+2025-08-30 13:26:25,339 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531584.469095}
+2025-08-30 13:26:26,356 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'heartbeat', 'session': 'a393f3a8-b0e9-46b9-b8b9-88e06c535ab7', 'timestamp': 1756531585.4864085}
+2025-08-30 13:26:26,710 - INFO - Gateway: Received message from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4358819200', 'method': 'start_app', 'params': {'package_name': 'com.google.android.youtube', 'stop': True}}
+2025-08-30 13:26:26,710 - INFO - Gateway: RPC call from p-0FvXmc3_zE9U5ZAAAF: {'type': 'rpc.call', 'id': 'mcp-start_app-4358819200', 'method': 'start_app', 'params': {'package_name': 'com.google.android.youtube', 'stop': True}}
+2025-08-30 13:26:26,710 - INFO - Gateway: Forwarding RPC call mcp-start_app-4358819200: start_app
+2025-08-30 13:26:26,710 - INFO - Gateway: Forwarding RPC call to device bYkyliGDmURlrIJ1AAAZ
+2025-08-30 13:26:29,558 - INFO - Gateway: Received message from bYkyliGDmURlrIJ1AAAZ: {'type': 'rpc.result', 'id': 'mcp-start_app-4358819200', 'result': {'success': True, 'message': 'App com.google.android.youtube started'}}
+2025-08-30 13:26:29,559 - INFO - Gateway: RPC result from bYkyliGDmURlrIJ1AAAZ: {'type': 'rpc.result', 'id': 'mcp-start_app-4358819200', 'result': {'success': True, 'message': 'App com.google.android.youtube started'}}

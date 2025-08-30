@@ -1,6 +1,8 @@
 package com.chaquo.python.console;
 
 import android.app.*;
+import android.content.Intent;
+import android.os.Build;
 import android.system.ErrnoException;
 
 import com.chaquo.python.PyObject;
@@ -22,6 +24,24 @@ public class MainActivity extends PythonConsoleActivity {
 
     @Override protected Class<? extends Task> getTaskClass() {
         return Task.class;
+    }
+    
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Start foreground service to keep MCP bridge alive
+        Intent serviceIntent = new Intent(this, MCPBridgeService.class);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            startForegroundService(serviceIntent);
+        } else {
+            startService(serviceIntent);
+        }
+    }
+    
+    @Override
+    protected void onPause() {
+        super.onPause();
+        // Service will continue running in background
     }
 
     public static class Task extends PythonConsoleActivity.Task

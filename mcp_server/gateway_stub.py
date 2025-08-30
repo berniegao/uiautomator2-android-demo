@@ -50,6 +50,8 @@ class Gateway:
         self.connection_types: Dict[str, str] = {}    # sid -> connection_type ("device" or "client")
         self.pending: Dict[str, threading.Event] = {}
         self.results: Dict[str, dict] = {}
+        self.connection_heartbeats: Dict[str, float] = {}  # sid -> last heartbeat time
+        self.heartbeat_timeout = 60  # 60 seconds timeout
         
         logger.info("Gateway: Initializing Socket.IO server...")
         
@@ -66,7 +68,37 @@ class Gateway:
         self.sio.on('rpc_result', self.on_rpc_result)
         self.sio.on('rpc_error', self.on_rpc_error)
         
+        # Start heartbeat monitoring thread
+        self.heartbeat_thread = threading.Thread(target=self._monitor_heartbeats, daemon=True)
+        self.heartbeat_thread.start()
+        
         logger.info("Gateway: Socket.IO event handlers registered successfully")
+        
+    def _monitor_heartbeats(self):
+        """Monitor connection heartbeats and disconnect stale connections"""
+        while True:
+            try:
+                current_time = time.time()
+                stale_connections = []
+                
+                for sid, last_heartbeat in self.connection_heartbeats.items():
+                    if current_time - last_heartbeat > self.heartbeat_timeout:
+                        stale_connections.append(sid)
+                        logger.warning(f"Gateway: Connection {sid} timed out, marking for disconnect")
+                
+                # Disconnect stale connections
+                for sid in stale_connections:
+                    try:
+                        self.sio.disconnect(sid)
+                        logger.info(f"Gateway: Disconnected stale connection {sid}")
+                    except Exception as e:
+                        logger.error(f"Gateway: Error disconnecting stale connection {sid}: {e}")
+                
+                time.sleep(10)  # Check every 10 seconds
+                
+            except Exception as e:
+                logger.error(f"Gateway: Error in heartbeat monitor: {e}")
+                time.sleep(10)
 
     def on_connect(self, sid, environ):
         logger.info(f"Gateway: New connection from {sid}")
@@ -74,6 +106,8 @@ class Gateway:
         # 新连接暂时不分配类型，等待第一个消息来判断
         logger.info(f"Gateway: New connection established, waiting for message type...")
         logger.info(f"Gateway: Total connections: {len(self.connection_types)}")
+        # Initialize heartbeat for new connection
+        self.connection_heartbeats[sid] = time.time()
 
     def on_disconnect(self, sid):
         logger.info(f"Gateway: Client disconnected: {sid}")
@@ -95,8 +129,9 @@ class Gateway:
                     logger.info(f"Gateway: Client disconnected: {client_id}")
                     break
         
-        # 清理连接类型
+        # 清理连接类型和心跳
         self.connection_types.pop(sid, None)
+        self.connection_heartbeats.pop(sid, None)
         logger.info(f"Gateway: Remaining connections: {len(self.connection_types)}")
         logger.info(f"Gateway: Devices: {len(self.device_connections)}, Clients: {len(self.client_connections)}")
 
@@ -116,10 +151,20 @@ class Gateway:
                 logger.info(f"Gateway: hello from {sid}: {data}")
             elif msg_type == "ping":
                 logger.debug(f"Gateway: ping from {sid}")
+                # Update heartbeat
+                self.connection_heartbeats[sid] = time.time()
                 # Send pong response
                 pong_msg = {"type": "pong", "session": data.get("session", "unknown")}
                 self.sio.emit('message', pong_msg, room=sid)
                 logger.debug(f"Gateway: Sent pong response to {sid}")
+            elif msg_type == "heartbeat":
+                logger.debug(f"Gateway: heartbeat from {sid}")
+                # Update heartbeat time
+                self.connection_heartbeats[sid] = time.time()
+                # Send heartbeat acknowledgment
+                heartbeat_ack = {"type": "heartbeat_ack", "session": data.get("session", "unknown")}
+                self.sio.emit('message', heartbeat_ack, room=sid)
+                logger.debug(f"Gateway: Sent heartbeat ack to {sid}")
             elif msg_type == "rpc.call":
                 logger.info(f"Gateway: RPC call from {sid}: {data}")
                 # 检查发送者是否是客户端

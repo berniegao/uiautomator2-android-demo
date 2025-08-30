@@ -37,9 +37,9 @@ def main():
     # Start reverse MCP bridge in background
     print("Starting MCP bridge connection...")
     
-    # Use 127.0.0.1 for adb reverse
-    gateway_url = "http://127.0.0.1:8765"
-    print(f"Using adb reverse gateway URL: {gateway_url}")
+    # Use local network IP for gateway connection
+    gateway_url = "http://192.168.1.6:8765"
+    print(f"Using local network gateway URL: {gateway_url}")
     
     os.environ.setdefault("MCP_GATEWAY_WS_URL", gateway_url)
     os.environ.setdefault("MCP_GATEWAY_TOKEN", "devtoken")
@@ -50,31 +50,3 @@ def main():
     # Start MCP bridge in background
     start_reverse_mcp_from_env(adb_address)
     print("MCP bridge started in background thread")
-
-    try:
-        # Launch Settings APP
-        print("Starting Settings APP...")
-        d.app_start('com.android.settings', stop=True)
-        print("Settings APP started successfully")
-        
-        # Wait for main activity
-        print("Waiting for main activity...")
-        d.wait_activity('.Settings', timeout=30)
-        print("Settings activity loaded")
-        
-        # Wait a bit for the app to fully load
-        import time
-        time.sleep(3)
-        
-        # Show current page info
-        print("Current page info:", d.app_current())
-        
-        # Keep the app running for MCP bridge to work
-        print("Keeping app running for MCP bridge...")
-        while True:
-            time.sleep(10)
-            print("App still running, MCP bridge active...")
-            
-    except Exception as e:
-        print(f"Error in main execution: {e}")
-        print("Current app info:", d.app_current())
