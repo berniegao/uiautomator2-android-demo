@@ -2,8 +2,12 @@ package com.chaquo.python.console;
 
 import android.app.*;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Build;
+import android.os.Bundle;
 import android.system.ErrnoException;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.chaquo.python.PyObject;
 import com.chaquo.python.adb_utils.AdbActivator;
@@ -16,10 +20,61 @@ import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends PythonConsoleActivity {
+    private static final int REQUEST_USB_DEBUG_PERMISSION = 1001;
+    private static final String[] REQUIRED_PERMISSIONS = {
+        "android.permission.WRITE_SECURE_SETTINGS"
+    };
+    
     // On API level 31 and higher, pressing Back in a launcher activity sends it to the back by
     // default, but that would make it difficult to restart the activity.
     @Override public void onBackPressed() {
         finish();
+    }
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // Check and request permissions on startup
+        checkAndRequestPermissions();
+    }
+    
+    private void checkAndRequestPermissions() {
+        // Check if we have all required permissions
+        boolean allPermissionsGranted = true;
+        for (String permission : REQUIRED_PERMISSIONS) {
+            if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
+                allPermissionsGranted = false;
+                break;
+            }
+        }
+        
+        if (!allPermissionsGranted) {
+            // Request permissions
+            ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_USB_DEBUG_PERMISSION);
+        } else {
+            // All permissions already granted
+        }
+    }
+    
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        
+        if (requestCode == REQUEST_USB_DEBUG_PERMISSION) {
+            boolean allGranted = true;
+            for (int result : grantResults) {
+                if (result != PackageManager.PERMISSION_GRANTED) {
+                    allGranted = false;
+                    break;
+                }
+            }
+            
+            if (allGranted) {
+                // All permissions granted successfully
+            } else {
+                // Some permissions were denied
+            }
+        }
     }
 
     @Override protected Class<? extends Task> getTaskClass() {
@@ -59,6 +114,12 @@ public class MainActivity extends PythonConsoleActivity {
         // This run() will be called in a background thread, no need to worry about ANR here
         @Override public void run()
         {
+            // Check permissions before proceeding
+            if (!checkPermissionsBeforeExecution()) {
+                print("Required permissions not granted. Cannot proceed with ADB operations.");
+                return;
+            }
+            
             // 1. Construct runtime environment in private directory for ADB binaries
             File adbDir = new File(getApplication().getFilesDir(), "adb");    // {PrivateDir}/adb/
             File adbExecutable = new File(adbDir, "adb");                     // {PrivateDir}/adb/adb (Executable)
@@ -131,6 +192,17 @@ public class MainActivity extends PythonConsoleActivity {
             } catch (Exception e) {
                 print("Error executing Python script: " + e.getMessage());
             }
+        }
+        
+        private boolean checkPermissionsBeforeExecution() {
+            for (String permission : REQUIRED_PERMISSIONS) {
+                if (ContextCompat.checkSelfPermission(getApplication(), permission) != PackageManager.PERMISSION_GRANTED) {
+                    print("Permission denied: " + permission);
+                    return false;
+                }
+            }
+            print("All required permissions verified. Proceeding with ADB operations...");
+            return true;
         }
     }
 }

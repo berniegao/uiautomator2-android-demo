@@ -16,6 +16,7 @@ def load_android_configs(app_context, adb_path: str, ld_dir: str, adb_port: int)
     global context
     context = app_context
     global adb_address
+    
     adb_address = f"127.0.0.1:{adb_port}"
 
     print("")
@@ -38,7 +39,7 @@ def main():
     print("Starting MCP bridge connection...")
     
     # Use local network IP for gateway connection
-    gateway_url = "http://192.168.1.6:8765"
+    gateway_url = "http://192.168.2.53:8765"
     print(f"Using local network gateway URL: {gateway_url}")
     
     os.environ.setdefault("MCP_GATEWAY_WS_URL", gateway_url)
