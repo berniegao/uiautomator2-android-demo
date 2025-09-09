@@ -114,11 +114,7 @@ public class MainActivity extends PythonConsoleActivity {
         // This run() will be called in a background thread, no need to worry about ANR here
         @Override public void run()
         {
-            // Check permissions before proceeding
-            if (!checkPermissionsBeforeExecution()) {
-                print("Required permissions not granted. Cannot proceed with ADB operations.");
-                return;
-            }
+            // Skip initial permission check - will be checked again after emulator detection
             
             // 1. Construct runtime environment in private directory for ADB binaries
             File adbDir = new File(getApplication().getFilesDir(), "adb");    // {PrivateDir}/adb/
@@ -162,6 +158,12 @@ public class MainActivity extends PythonConsoleActivity {
             print("Device info - PRODUCT: " + android.os.Build.PRODUCT);
             print("Is emulator detected: " + isEmulator);
             
+            // Re-check permissions with actual emulator status
+            if (!checkPermissionsBeforeExecution(isEmulator)) {
+                print("Required permissions not granted. Cannot proceed with ADB operations.");
+                return;
+            }
+            
             if (isEmulator) {
                 print("Running in emulator environment, using direct ADB connection...");
                 // For emulator, use direct connection without wireless ADB pairing
@@ -184,20 +186,34 @@ public class MainActivity extends PythonConsoleActivity {
             }
 
             // 3. Execute UiAutomator2 Python script
+            print("About to execute Python script...");
             try (PyObject mainModule = py.getModule("main")) {
+                print("Python module loaded successfully");
                 // Call: load_android_configs(app, adb_dir, ld_dir, adb_port)
+                print("Calling load_android_configs...");
                 mainModule.callAttr("load_android_configs", getApplication(), adbExecutable.getAbsolutePath(), adbDir.getAbsolutePath(), adbPort);
+                print("load_android_configs completed");
                 // Call: main()
+                print("Calling main()...");
                 mainModule.callAttr("main");
+                print("main() completed");
             } catch (Exception e) {
                 print("Error executing Python script: " + e.getMessage());
+                e.printStackTrace();
             }
         }
         
-        private boolean checkPermissionsBeforeExecution() {
+        private boolean checkPermissionsBeforeExecution(boolean isEmulator) {
+            // Skip permission check for emulator environment
+            if (isEmulator) {
+                print("Running in emulator - skipping WRITE_SECURE_SETTINGS permission check");
+                return true;
+            }
+            
             for (String permission : REQUIRED_PERMISSIONS) {
                 if (ContextCompat.checkSelfPermission(getApplication(), permission) != PackageManager.PERMISSION_GRANTED) {
                     print("Permission denied: " + permission);
+                    print("Required permissions not granted. Cannot proceed with ADB operations.");
                     return false;
                 }
             }
@@ -206,3 +222,4 @@ public class MainActivity extends PythonConsoleActivity {
         }
     }
 }
+

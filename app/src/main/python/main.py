@@ -31,9 +31,17 @@ def print_to_console(text: str, end="\n"):
 
 
 def main():
-    print(f"Connecting to {adb_address}...\n")
-    d = uiautomator2.connect(adb_address)
-    print(f"Device has been connected. Device Info: {d.info}\n")
+    print(f"Connecting to uiautomator2 server...\n")
+    
+    # Try to connect to local uiautomator2 server (port 9008)
+    try:
+        print("Trying local uiautomator2 server connection...")
+        d = uiautomator2.connect("127.0.0.1:5555")
+        print(f"✅ Real device connected via uiautomator2 server: {d.info}")
+    except Exception as e:
+        print(f"❌ Failed to connect to uiautomator2 server: {e}")
+        print("Continuing with MCP bridge setup...\n")
+        d = None
 
     # Start reverse MCP bridge in background
     print("Starting MCP bridge connection...")
